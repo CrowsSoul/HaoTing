@@ -7,22 +7,20 @@ import sys
 import unittest
 from pathlib import Path
 
-PLUGIN_ROOT = Path(__file__).resolve().parents[1]
-REPO_ROOT = PLUGIN_ROOT.parent
-for _path in (str(REPO_ROOT), str(PLUGIN_ROOT)):
-    if _path not in sys.path:
-        sys.path.insert(0, _path)
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 from nxdrp.contracts import ModelBundle, RuleBook
 from nxdrp.pipeline import run
 from nxdrp.registry import discover
 
-FIXTURE = PLUGIN_ROOT / "__tests__" / "fixtures" / "bent_sheet.model.json"
+FIXTURE = REPO_ROOT / "tests" / "fixtures" / "bent_sheet.model.json"
 MODELS = REPO_ROOT / "mockdata" / "models"
 M6A_IDS = [f"DFM-{i}" for i in range(19, 27)]
 
-REGISTRY = discover([str(PLUGIN_ROOT)])
-RULEBOOK = RuleBook.load(str(PLUGIN_ROOT / "rules_m6a.json"))
+REGISTRY = discover()
+RULEBOOK = RuleBook.load(str(REPO_ROOT / "rules" / "dfm_default.json"))
 
 
 def model_path(name: str) -> str:

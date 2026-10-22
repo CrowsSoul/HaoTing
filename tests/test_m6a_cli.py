@@ -11,22 +11,20 @@ import tempfile
 import unittest
 from pathlib import Path
 
-PLUGIN_ROOT = Path(__file__).resolve().parents[1]
-REPO_ROOT = PLUGIN_ROOT.parent
-for _path in (str(REPO_ROOT), str(PLUGIN_ROOT)):
-    if _path not in sys.path:
-        sys.path.insert(0, _path)
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 from nxdrp import cli
 from nxdrp.checkers.base import REQUIREMENTS
 from nxdrp.contracts import ModelBundle, RuleBook
 from nxdrp.registry import discover
 
-FIXTURE = PLUGIN_ROOT / "__tests__" / "fixtures" / "bent_sheet.model.json"
-RULES = PLUGIN_ROOT / "rules_m6a.json"
+FIXTURE = REPO_ROOT / "tests" / "fixtures" / "bent_sheet.model.json"
+RULES = REPO_ROOT / "rules" / "dfm_default.json"
 M6A_IDS = [f"DFM-{i}" for i in range(19, 27)]
 
-REGISTRY = discover([str(PLUGIN_ROOT)])
+REGISTRY = discover()
 RULEBOOK = RuleBook.load(str(RULES))
 
 
@@ -47,11 +45,9 @@ class DiscoveryTests(unittest.TestCase):
                 with self.subTest(checker=cid, key=key):
                     self.assertIn(key, REQUIREMENTS)
 
-    def test_defaults_match_plugin_rulebook(self):
-        self.assertEqual(len(RULEBOOK.rules), 8)
+    def test_defaults_match_shared_rulebook(self):
         RULEBOOK.validate()
         by_item = RULEBOOK.by_item()
-        self.assertEqual(set(by_item), set(M6A_IDS))
         for cid in M6A_IDS:
             rule = by_item[cid]
             self.assertEqual(rule.process_type, "sheet_metal")
@@ -75,7 +71,6 @@ class CliSmokeTests(unittest.TestCase):
             out = Path(tmp) / "findings.json"
             argv = [
                 "check", str(FIXTURE),
-                "--plugin", str(PLUGIN_ROOT),
                 "-r", str(RULES),
                 "--only", "DFM-22",
                 "-o", str(out),
@@ -91,7 +86,9 @@ class CliSmokeTests(unittest.TestCase):
                 self.assertTrue(finding["message"].startswith("【粗筛】"))
                 self.assertLessEqual(finding["confidence"], 0.6)
                 self.assertTrue(finding["extra"]["coarse"])
-                self.assertTrue(finding["detector"]["module"].startswith("nxdrp_ext_"))
+                self.assertTrue(
+                    finding["detector"]["module"].startswith("nxdrp.checkers.m6a_sheet_metal.")
+                )
 
 
 if __name__ == "__main__":

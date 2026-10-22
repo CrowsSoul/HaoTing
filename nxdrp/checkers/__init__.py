@@ -10,7 +10,8 @@
       m3_injection/          代世航   注塑/铸造 DFM（DFM-08 ~ DFM-18）
       m4_assembly/           汪琪俊   装配 DFM（DFM-01 ~ DFM-07）
       m5_performance/        杜滨芳   性能预测（PERF-*）
-      m6_sheet_machining/    张百瑞   钣金 + 机加工 DFM（DFM-19 ~ DFM-38）
+      m6a_sheet_metal/       于大淇   钣金 DFM（DFM-19 ~ DFM-26）
+      m6b_machining/         张百瑞   机加工 DFM（DFM-27 ~ DFM-38）
       m7_platform_web/       陈卉妍   （不放 checker，放 Web 与调度）
       m8_report/             赵文哲   （不放 checker，放报告与知识库）
 

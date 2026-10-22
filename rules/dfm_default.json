@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "name": "dfm_default",
-  "version": "0.1",
-  "updated_at": "2026-10-22T09:26:09+08:00",
+  "version": "0.2",
+  "updated_at": "2026-10-22T22:01:47+08:00",
   "rules": [
     {
       "rule_id": "R-DFM-01",
@@ -280,9 +280,9 @@
       "enabled": true,
       "params": {
         "min_bend_radius_ratio": 0.5,
-        "sheet_thickness_mm": 1.0
+        "sheet_thickness_mm": null
       },
-      "version": "0.1",
+      "version": "0.2",
       "source_standard": "",
       "severity": "P2",
       "notes": "内 R/料厚 t < 材料下限（冷轧钢 0.5~1.0）",
@@ -295,9 +295,10 @@
       "name": "孔到边缘距离",
       "enabled": true,
       "params": {
-        "min_edge_distance_ratio": 1.5
+        "min_edge_distance_ratio": 1.5,
+        "sheet_thickness_mm": null
       },
-      "version": "0.1",
+      "version": "0.2",
       "source_standard": "",
       "severity": "P2",
       "notes": "孔边到板边距离 < 1.5t~2t",
@@ -310,9 +311,10 @@
       "name": "孔间距",
       "enabled": true,
       "params": {
-        "min_hole_spacing_ratio": 2.0
+        "min_hole_spacing_ratio": 2.0,
+        "sheet_thickness_mm": null
       },
-      "version": "0.1",
+      "version": "0.2",
       "source_standard": "",
       "severity": "P2",
       "notes": "相邻孔净距 < 2t",
@@ -325,9 +327,10 @@
       "name": "孔径与料厚比",
       "enabled": true,
       "params": {
-        "min_hole_diameter_ratio": 1.0
+        "min_hole_diameter_ratio": 1.0,
+        "sheet_thickness_mm": null
       },
-      "version": "0.1",
+      "version": "0.2",
       "source_standard": "",
       "severity": "P2",
       "notes": "冲孔直径 < 料厚",
@@ -340,9 +343,10 @@
       "name": "槽的最小宽度",
       "enabled": true,
       "params": {
-        "min_slot_width_ratio": 1.2
+        "min_slot_width_ratio": 1.2,
+        "sheet_thickness_mm": null
       },
-      "version": "0.1",
+      "version": "0.2",
       "source_standard": "",
       "severity": "P2",
       "notes": "槽宽 < 1.2t",
@@ -354,8 +358,12 @@
       "process_type": "sheet_metal",
       "name": "折弯与切口距离",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
+      "params": {
+        "bend_clearance_ratio": 3.0,
+        "bend_radius_override_mm": null,
+        "sheet_thickness_mm": null
+      },
+      "version": "0.2",
       "source_standard": "",
       "severity": "P2",
       "notes": "切口/孔到折弯线距离 < 3t + R",
@@ -368,9 +376,11 @@
       "name": "翻边高度",
       "enabled": true,
       "params": {
-        "min_flange_height_ratio": 3.0
+        "min_flange_height_ratio": 3.0,
+        "bend_radius_override_mm": null,
+        "sheet_thickness_mm": null
       },
-      "version": "0.1",
+      "version": "0.2",
       "source_standard": "",
       "severity": "P2",
       "notes": "翻边高 < 3t + R（否则边缘撕裂）",
@@ -382,8 +392,12 @@
       "process_type": "sheet_metal",
       "name": "冲压凸台高度",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
+      "params": {
+        "min_boss_height_ratio": 0.6,
+        "max_boss_height_ratio": 1.5,
+        "sheet_thickness_mm": null
+      },
+      "version": "0.2",
       "source_standard": "",
       "severity": "P2",
       "notes": "凸台高/t 超出允许区间",

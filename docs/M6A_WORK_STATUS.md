@@ -1,22 +1,25 @@
-# M6A 钣金 DFM 插件 — 工作完成情况
+# M6A 钣金 DFM — 工作完成情况（已合并入内置子包）
 
 - 负责人：于大淇（M6A）
 - 日期：2026-10-22
 - 范围：DFM-19 ~ DFM-26（8 项钣金检查）
-- 结论：**流程级验证通过**（插件发现 → 加载规则 → 执行检查 → 产出 Finding → 评测 → 报告），
-  共享目录零改动。**未达到验收精度**，本轮目标本身也不是验收精度。
+- 位置：`nxdrp/checkers/m6a_sheet_metal/`
+- 结论：**流程级验证通过**（发现 → 规则 → 检查 → Finding → 评测 → 报告），
+  已合并进共享框架。**未达到验收精度**，本轮目标本身也不是验收精度。
 
-> 手头没有真实 NX 钣金 `.prt`，数据契约也没有料厚、弯曲线、翻边、凸台、槽等专有字段。
-> 所有检查均为低置信度几何粗筛，Finding 带 `【粗筛】`、`coarse: true`、
+> 独立插件 `m6a_dfm_plugin/` 已在合并时退役（历史见 commit `ea694ac`）。
+> 手头没有真实 NX 钣金 `.prt`，数据契约也没有料厚、弯曲线、翻边、凸台、槽等专有
+> 字段。所有检查为低置信度几何粗筛，Finding 带 `【粗筛】`、`coarse: true`、
 > `confidence ≤ 0.6`，必须人工复核。
 
 ---
 
-## 1. 交付物
+## 1. 合并后的文件位置
 
 ```text
-m6a_dfm_plugin/
-├── _m6a_dfm_common.py          # 公共几何工具：料厚推断、圆柱分类、孔组、槽识别
+nxdrp/checkers/m6a_sheet_metal/
+├── __init__.py                 # 导出 8 个 checker
+├── _m6a_dfm_common.py          # 料厚推断、圆柱分类、孔组、槽识别
 ├── dfm19_bend_radius.py        # 最小弯曲半径
 ├── dfm20_hole_edge.py          # 孔到边缘距离
 ├── dfm21_hole_spacing.py       # 孔间距
@@ -25,24 +28,19 @@ m6a_dfm_plugin/
 ├── dfm24_bend_cutout.py        # 折弯与切口距离（二期占位）
 ├── dfm25_flange_height.py      # 翻边高度
 ├── dfm26_boss_height.py        # 冲压凸台高度（二期占位）
-├── rules_m6a.json              # 插件专用 RuleBook（8 条）
-├── README_M6A.md               # 用法、规则、限制、基线
-├── WORK_STATUS_M6A.md          # 本文档
-├── validation/
-│   └── labels/                 # 5 份插件本地标注集（仅用于流程验证）
-│       ├── bent_sheet.labels.json
-│       ├── plate_holes.labels.json
-│       ├── deep_slot.labels.json
-│       ├── bosses.labels.json
-│       └── board_a.labels.json
-└── __tests__/                  # 双下划线目录，registry 整目录跳过
-    ├── test_common.py
-    ├── test_checkers.py
-    ├── test_plugin_cli.py
-    └── fixtures/bent_sheet.model.json
+└── README.md
+
+rules/dfm_default.json          # R-DFM-19 ~ R-DFM-26 参数（v0.2）
+tests/test_m6a_common.py        # 公共几何工具测试
+tests/test_m6a_checkers.py      # 8 项流程基线测试
+tests/test_m6a_cli.py           # 发现、规则一致性、CLI 端到端测试
+tests/fixtures/bent_sheet.model.json   # 合成夹具
+mockdata/labels/m6a/*.labels.json      # 5 份流程验证标注集
+docs/M6A_WORK_STATUS.md         # 本文档
 ```
 
-共享文件（`nxdrp/`、`rules/dfm_default.json`、`mockdata/`、`tests/`、`tools/`）零 diff。
+`tools/gen_rules.py` 的 `PARAM_SKELETON` 已同步 DFM-19~26，重新生成规则库不会
+丢失合并参数。
 
 ---
 
@@ -50,7 +48,7 @@ m6a_dfm_plugin/
 
 ### 2.1 评测链路（`docs/LABELING.md`）
 
-按标注规范新增 5 份插件本地标注集（正样本 + 负样本），执行
+按标注规范整理 5 份标注集（正样本 + 负样本），执行
 `nxdrp check` → `nxdrp eval`：
 
 | 模型 | 标注（正/负） | 预测 | TP | FP | FN | macro-F1 | 误报率 |
@@ -61,13 +59,13 @@ m6a_dfm_plugin/
 | `bosses` | 1 / 1 | 1 | 1 | 0 | 0 | 1.000 | 0.000 |
 | `board_a` | 2 / 1 | 2 | 2 | 0 | 0 | 1.000 | 0.000 |
 
-**重要说明**：这些标注是按夹具/Mock 的设计意图和几何尺寸人工整理的，位置与
-face_id 与同一套粗筛几何同源。满分只能证明「标注 → 匹配 → 指标」链路跑通，
-**不能证明验收精度**；`plate_holes` / `deep_slot` 只有正样本，负样本覆盖有限。
+**重要说明**：标注按夹具/Mock 的设计意图和几何尺寸人工整理，与同一套粗筛几何
+同源。满分只证明「标注 → 匹配 → 指标」链路跑通，**不能证明验收精度**；
+`plate_holes` / `deep_slot` 只有正样本，负样本覆盖有限。
 
 ### 2.2 场景验证（`docs/DEMO_SCENE.md`）
 
-在三个共享演示场景上同时加载内置 checker 与 M6A 插件，使用共享规则库和共享标注：
+在三个共享演示场景上运行完整检查（含 M6A），使用共享规则和共享标注：
 
 | 场景 | 总 Finding | 其中 M6A | checker 状态 | macro-F1 | P / R | 误报率 |
 |---|---:|---:|---|---:|---:|---:|
@@ -76,11 +74,11 @@ face_id 与同一套粗筛几何同源。满分只能证明「标注 → 匹配 
 | `demo_edge` | 22 | 16（20:4，22:4，26:8） | ok 7 / skipped 4 | 1.000 | 1.000 / 1.000 | 0.000 |
 | `demo_large` | 120 | 96（20:24，22:24，26:48） | ok 7 / skipped 4 | 未标注 | — | — |
 
-- 现有 DFM-02 / DFM-31 / DFM-32 的共享标注指标**未被插件破坏**（上表与无插件时一致）。
-- 演示场景是 Pressure Port 模型，不是钣金件，M6A 结果在共享标注中按
-  `unscored_items` 处理；上表 M6A 计数属于**场景外噪声**，不能作为精度结论。
-- 这暴露了粗筛的边界：非钣金件上的圆柱面也会被归类为孔/凸台。数据契约补充钣金
-  专有字段后，应以真实钣金件重新校准。
+- 现有 DFM-02 / DFM-31 / DFM-32 的共享标注指标未被破坏。
+- 演示场景是 Pressure Port 模型，不是钣金件；M6A 结果在共享标注中按
+  `unscored_items` 处理，上表 M6A 计数属于**场景外噪声**，不能作为精度结论。
+- 非钣金件上的圆柱面也会被归类为孔/凸台。数据契约补充钣金专有字段后，应以
+  真实钣金件重新校准。
 
 ### 2.3 性能（`docs/PERF.md`）
 
@@ -89,14 +87,14 @@ face_id 与同一套粗筛几何同源。满分只能证明「标注 → 匹配 
 
 | 模型 | 面数 | CLI 墙钟（min/median/max） | 检查逻辑（min/median/max） |
 |---|---:|---|---|
-| `bent_sheet` | 8 | 118 / 119 / 121 ms | 1 / 1 / 1 ms |
-| `board_a` | 20 | 113 / 118 / 123 ms | 1 / 1 / 1 ms |
-| `demo_asm` | 78 | 125 / 128 / 138 ms | 6 / 7 / 8 ms |
-| `demo_large` | 312 | 156 / 159 / 165 ms | 27 / 28 / 29 ms |
+| `bent_sheet` | 8 | 133 / 136 / 138 ms | 1 / 1 / 1 ms |
+| `board_a` | 20 | 134 / 135 / 139 ms | 1 / 1 / 1 ms |
+| `demo_asm` | 78 | 142 / 144 / 153 ms | 6 / 7 / 8 ms |
+| `demo_large` | 312 | 173 / 178 / 181 ms | 28 / 28 / 30 ms |
 
-- `python -c pass` 启动基线：28 / 29 / 30 ms。
+- `python -c pass` 启动基线：23 / 24 / 24 ms。
 - 合同要求：单次完整检查 ≤ 30 分钟、报告输出 ≤ 1 分钟。当前 8 项检查即使含
-  启动也只有 **0.12–0.17 s**，余量极大。
+  启动也只有 **0.13–0.18 s**，余量极大。
 - 解析（NX 起进程）本机无法实测：没有 NX 与真实 `.prt`。可复用
   `docs/PERF.md` 的基线（固定 31 s + 5.6 ms/面），但需真实模型最终确认。
 
@@ -122,12 +120,11 @@ face_id 与同一套粗筛几何同源。满分只能证明「标注 → 匹配 
 
 | 检查 | 结果 |
 |---|---|
-| `python -m nxdrp checkers --plugin m6a_dfm_plugin` | 11 个 checker（3 内置 + 8 M6A），0 加载错误 |
-| `python -m nxdrp selftest --plugin m6a_dfm_plugin` | 通过 |
-| `python -m unittest discover -s m6a_dfm_plugin/__tests__ -p "test_*.py"` | 30 个通过 |
-| `python -m unittest discover -s tests` | 74 个通过（1 skipped） |
-| `git diff --name-only -- nxdrp rules mockdata tests tools` | 空 |
-| `git status --porcelain` | 仅 `m6a_dfm_plugin/` |
+| `python -m nxdrp checkers` | 11 个 checker（3 内置示例 + 8 M6A），0 加载错误 |
+| `python -m nxdrp selftest` | 通过 |
+| `python -m unittest discover -s tests -p "test_m6a_*.py"` | 30 个通过 |
+| `python -m unittest discover -s tests` | 104 个通过（1 skipped） |
+| 共享规则库 | R-DFM-19~26 与 checker `default_params` 一致（由测试保证） |
 
 ---
 
@@ -146,38 +143,35 @@ face_id 与同一套粗筛几何同源。满分只能证明「标注 → 匹配 
 ## 6. 复现命令
 
 ```bash
-# 插件发现（应为 11 个 checker，0 加载错误）
-python -m nxdrp checkers --plugin m6a_dfm_plugin
-
-# 自检
-python -m nxdrp selftest --plugin m6a_dfm_plugin
+# 发现与自检
+python -m nxdrp checkers
+python -m nxdrp selftest
 
 # 测试
-python -m unittest discover -s m6a_dfm_plugin/__tests__ -p "test_*.py" -v
+python -m unittest discover -s tests -p "test_m6a_*.py" -v
 python -m unittest discover -s tests -v
 
 # 单模型评测（以 bent_sheet 为例；输出放 .cache，避免污染仓库根目录）
 mkdir -p .cache/m6a_validation
-python -m nxdrp check m6a_dfm_plugin/__tests__/fixtures/bent_sheet.model.json \
-  --plugin m6a_dfm_plugin -r m6a_dfm_plugin/rules_m6a.json \
+python -m nxdrp check tests/fixtures/bent_sheet.model.json \
+  -r rules/dfm_default.json \
   --only DFM-19,DFM-20,DFM-21,DFM-22,DFM-23,DFM-24,DFM-25,DFM-26 \
   -o .cache/m6a_validation/bent_sheet.findings.json
 python -m nxdrp eval .cache/m6a_validation/bent_sheet.findings.json \
-  -l m6a_dfm_plugin/validation/labels/bent_sheet.labels.json \
+  -l mockdata/labels/m6a/bent_sheet.labels.json \
   --no-high-risk -o .cache/m6a_validation/bent_sheet.eval.json
 
 # 其余标注模型：plate_holes / deep_slot / bosses / board_a
-# 将上面的模型路径与标注文件名替换即可。
+# 将模型路径与标注文件名替换即可。
 
-# 共享目录零 diff
-git diff --name-only -- nxdrp rules mockdata tests tools
+# 共享目录检查
+git status --porcelain
 ```
 
 ---
 
 ## 7. 下一步
 
-1. 拿到真实 NX 钣金 `.prt` 后，用同一插件直接验证；不为真实件修改框架。
+1. 拿到真实 NX 钣金 `.prt` 后，用内置 M6A 子包直接验证。
 2. 数据契约补充料厚、弯曲线、翻边、凸台、槽等字段后，替换对应粗筛逻辑。
-3. 验收精度达标后，由平台方将 checker 合并进 `nxdrp/checkers/m6a_sheet_metal/`
-   （平铺导入改相对导入），并把 `rules_m6a.json` 参数并入共享规则库。
+3. 验收精度达标后再更新本文档的基线数据。
