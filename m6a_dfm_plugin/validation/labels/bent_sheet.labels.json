@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "bent_sheet",
+  "annotator": "M6A 于大淇（按合成夹具设计意图标注，仅用于流程验证）",
+  "created_at": "2026-10-22",
+  "labels": [
+    {
+      "label_id": "L001",
+      "check_item_id": "DFM-19",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [40.0, 15.0, 2.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F5"],
+      "note": "折弯半径 R=0.6 mm < 0.5t=1.0 mm（t=2.0）"
+    },
+    {
+      "label_id": "L002",
+      "check_item_id": "DFM-20",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [2.0, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F7"],
+      "note": "孔 F7 到板边距离 1.2 mm < 1.5t=3.0 mm"
+    },
+    {
+      "label_id": "L003",
+      "check_item_id": "DFM-21",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [3.75, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F7", "F8"],
+      "note": "F7-F8 中心距 3.5 mm，净间距 1.9 mm < 2t=4.0 mm"
+    },
+    {
+      "label_id": "L004",
+      "check_item_id": "DFM-22",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [35.0, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F6"],
+      "note": "孔 F6 直径 1.6 mm < t=2.0 mm"
+    },
+    {
+      "label_id": "L005",
+      "check_item_id": "DFM-22",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [2.0, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F7"],
+      "note": "孔 F7 直径 1.6 mm < t=2.0 mm"
+    },
+    {
+      "label_id": "L006",
+      "check_item_id": "DFM-22",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [5.5, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F8"],
+      "note": "孔 F8 直径 1.6 mm < t=2.0 mm"
+    },
+    {
+      "label_id": "L007",
+      "check_item_id": "DFM-24",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [35.0, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F6", "F5"],
+      "note": "孔 F6 到折弯轴线净距离 4.2 mm < 3t+R=6.6 mm"
+    },
+    {
+      "label_id": "L008",
+      "check_item_id": "DFM-25",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [40.0, 15.0, 4.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F5", "F4"],
+      "note": "翻边高度 4.0 mm < 3t+R=6.6 mm"
+    },
+    {
+      "label_id": "N001",
+      "check_item_id": "DFM-20",
+      "expected": "ok",
+      "part_refs": ["P01"],
+      "location": [35.0, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F6"],
+      "note": "孔 F6 距板边 6.2 mm，大于阈值，不应报"
+    },
+    {
+      "label_id": "N002",
+      "check_item_id": "DFM-20",
+      "expected": "ok",
+      "part_refs": ["P01"],
+      "location": [5.5, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F8"],
+      "note": "孔 F8 距板边 4.7 mm，大于阈值，不应报"
+    },
+    {
+      "label_id": "N003",
+      "check_item_id": "DFM-21",
+      "expected": "ok",
+      "part_refs": ["P01"],
+      "location": [18.5, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F6", "F7"],
+      "note": "F6-F7 间距 33 mm，远大于阈值，不应报"
+    },
+    {
+      "label_id": "N004",
+      "check_item_id": "DFM-24",
+      "expected": "ok",
+      "part_refs": ["P01"],
+      "location": [2.0, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F7"],
+      "note": "孔 F7 远离折弯区，不应报折弯切口距离"
+    },
+    {
+      "label_id": "N005",
+      "check_item_id": "DFM-24",
+      "expected": "ok",
+      "part_refs": ["P01"],
+      "location": [5.5, 15.0, 1.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F8"],
+      "note": "孔 F8 远离折弯区，不应报折弯切口距离"
+    }
+  ]
+}

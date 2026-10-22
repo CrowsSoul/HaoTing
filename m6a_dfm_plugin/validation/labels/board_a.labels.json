@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "board_a",
+  "annotator": "M6A 于大淇（按 Mock 几何标注，仅用于流程验证）",
+  "created_at": "2026-10-22",
+  "labels": [
+    {
+      "label_id": "L001",
+      "check_item_id": "DFM-20",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [10.0, 10.0, 6.0],
+      "tolerance_mm": 2.0,
+      "face_ids": ["F5", "F6", "F7", "F8"],
+      "note": "孔组到板边距离 6.0 mm < 1.5t≈8.571 mm"
+    },
+    {
+      "label_id": "L002",
+      "check_item_id": "DFM-22",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [10.0, 10.0, 6.0],
+      "tolerance_mm": 2.0,
+      "face_ids": ["F5", "F6", "F7", "F8"],
+      "note": "孔径 3.0 mm < t≈5.714 mm"
+    },
+    {
+      "label_id": "N001",
+      "check_item_id": "DFM-22",
+      "expected": "ok",
+      "part_refs": ["P02"],
+      "location": [47.5, 12.5, 6.0],
+      "tolerance_mm": 2.0,
+      "face_ids": ["F19", "F20"],
+      "note": "P02 的孔径不小于料厚，不应报"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "plate_holes",
+  "annotator": "M6A 于大淇（按 Mock 几何标注，仅用于流程验证）",
+  "created_at": "2026-10-22",
+  "labels": [
+    {
+      "label_id": "L001",
+      "check_item_id": "DFM-22",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [15.0, 15.0, 5.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F38988"],
+      "note": "孔径 2.2 mm < t≈7.389 mm"
+    },
+    {
+      "label_id": "L002",
+      "check_item_id": "DFM-22",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [40.0, 15.0, 5.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F38987"],
+      "note": "孔径 3.7 mm < t≈7.389 mm"
+    },
+    {
+      "label_id": "L003",
+      "check_item_id": "DFM-22",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [65.0, 15.0, 5.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F38986"],
+      "note": "孔径 5.2 mm < t≈7.389 mm"
+    },
+    {
+      "label_id": "L004",
+      "check_item_id": "DFM-22",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [25.0, 45.0, 5.0],
+      "tolerance_mm": 1.0,
+      "face_ids": ["F38989"],
+      "note": "孔径 6.25 mm < t≈7.389 mm"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "deep_slot",
+  "annotator": "M6A 于大淇（按 Mock 几何标注，仅用于流程验证）",
+  "created_at": "2026-10-22",
+  "labels": [
+    {
+      "label_id": "L001",
+      "check_item_id": "DFM-23",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [20.0, 15.0, 9.0],
+      "tolerance_mm": 2.0,
+      "face_ids": ["F38954", "F38956", "F38955"],
+      "note": "槽宽 2.0 mm < 1.2t≈8.019 mm"
+    }
+  ]
+}

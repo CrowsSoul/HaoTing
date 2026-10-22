@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "bosses",
+  "annotator": "M6A 于大淇（按 Mock 几何标注，仅用于流程验证）",
+  "created_at": "2026-10-22",
+  "labels": [
+    {
+      "label_id": "L001",
+      "check_item_id": "DFM-26",
+      "expected": "defect",
+      "part_refs": ["P01"],
+      "location": [20.0, 20.0, 10.0],
+      "tolerance_mm": 2.0,
+      "face_ids": ["F38964"],
+      "note": "凸台高度 h=8.0 mm，h/t≈1.67 > 上限 1.5"
+    },
+    {
+      "label_id": "N001",
+      "check_item_id": "DFM-26",
+      "expected": "ok",
+      "part_refs": ["P01"],
+      "location": [42.0, 20.0, 8.0],
+      "tolerance_mm": 2.0,
+      "face_ids": ["F38962"],
+      "note": "另一凸台高度落在 [0.6, 1.5] 区间内，不应报"
+    }
+  ]
+}
