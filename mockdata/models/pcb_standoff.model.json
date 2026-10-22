@@ -1,0 +1,2144 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "PCB Standoff",
+  "source": "C:\\Program Files\\Siemens\\Designcenter2606\\NXPARTS\\feature template\\resource\\Metric\\PCB Standoff.prt",
+  "nx_version": "v2606",
+  "units": "mm",
+  "created_at": "",
+  "generator": "nxdrp.journals.extract_geometry",
+  "parts": [
+    {
+      "part_id": "P01",
+      "name": "",
+      "journal_id": "SWOOP(1)",
+      "part_file": "C:\\Program Files\\Siemens\\Designcenter2606\\NXPARTS\\feature template\\resource\\Metric\\PCB Standoff.prt",
+      "material": "",
+      "body_type": "sheet",
+      "is_sheet": true,
+      "volume": 0.0,
+      "mass": 0.0,
+      "area": 0.0,
+      "bbox": {
+        "xmin": 68.20252315268039,
+        "ymin": 72.40457434218197,
+        "zmin": -27.25783633300192,
+        "xmax": 593.7821565472693,
+        "ymax": 374.9522599862996,
+        "zmax": 35.57337600174772
+      },
+      "face_count": 1,
+      "edge_count": 4,
+      "occurrence_path": ""
+    },
+    {
+      "part_id": "P02",
+      "name": "",
+      "journal_id": "EXTRUDE(3)",
+      "part_file": "C:\\Program Files\\Siemens\\Designcenter2606\\NXPARTS\\feature template\\resource\\Metric\\PCB Standoff.prt",
+      "material": "",
+      "body_type": "solid",
+      "is_sheet": false,
+      "volume": 567361.473569935,
+      "mass": 1446.7574657528692,
+      "area": 232929.09275862676,
+      "bbox": {
+        "xmin": 68.20252315268039,
+        "ymin": 72.40457434218197,
+        "zmin": -27.25783633300192,
+        "xmax": 593.7821565472693,
+        "ymax": 374.9522599862996,
+        "zmax": 35.57337600174772
+      },
+      "face_count": 11,
+      "edge_count": 24,
+      "occurrence_path": ""
+    },
+    {
+      "part_id": "P03",
+      "name": "",
+      "journal_id": "EXTRUDE(17)",
+      "part_file": "C:\\Program Files\\Siemens\\Designcenter2606\\NXPARTS\\feature template\\resource\\Metric\\PCB Standoff.prt",
+      "material": "",
+      "body_type": "solid",
+      "is_sheet": false,
+      "volume": 1333.7239406598585,
+      "mass": 1.963823705840445,
+      "area": 1041.694872944572,
+      "bbox": {
+        "xmin": 525.0,
+        "ymin": 120.0,
+        "zmin": -11.715639187233041,
+        "xmax": 525.0000000000001,
+        "ymax": 320.00000000000017,
+        "zmax": 19.99999999999999
+      },
+      "face_count": 20,
+      "edge_count": 50,
+      "occurrence_path": ""
+    }
+  ],
+  "faces": [
+    {
+      "face_id": "F42330",
+      "part_id": "P01",
+      "tag": 42330,
+      "solid_face_type": "general",
+      "solid_face_code": 6,
+      "area": 161057.55243208006,
+      "perimeter": 1667.475452567349,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        331.00613129205396,
+        224.33693198940105,
+        -11.806323595092353
+      ],
+      "bbox": {
+        "xmin": 68.20252315268039,
+        "ymin": 72.40457434218197,
+        "zmin": -27.25783633300192,
+        "xmax": 593.7821565472693,
+        "ymax": 374.9522599862996,
+        "zmax": 35.57337600174772
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40181",
+      "part_id": "P02",
+      "tag": 40181,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 9258.319954176693,
+      "perimeter": 810.3177425921616,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        340.317690198322,
+        315.0,
+        7.545773784104791
+      ],
+      "bbox": {
+        "xmin": 68.20252315268039,
+        "ymin": 72.40457434218197,
+        "zmin": -27.25783633300192,
+        "xmax": 593.7821565472693,
+        "ymax": 374.9522599862996,
+        "zmax": 35.57337600174772
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40183",
+      "part_id": "P02",
+      "tag": 40183,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 16264.091116304578,
+      "perimeter": 863.3384043592978,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        317.6753676077595,
+        120.0,
+        -0.6447008598805926
+      ],
+      "bbox": {
+        "xmin": 68.20252315268039,
+        "ymin": 72.40457434218197,
+        "zmin": -27.25783633300192,
+        "xmax": 593.7821565472693,
+        "ymax": 374.9522599862996,
+        "zmax": 35.57337600174772
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40188",
+      "part_id": "P02",
+      "tag": 40188,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 5613.639915514194,
+      "perimeter": 449.24426705996484,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        125.0,
+        206.06810318143164,
+        5.0794475075611585
+      ],
+      "bbox": {
+        "xmin": 68.20252315268039,
+        "ymin": 72.40457434218197,
+        "zmin": -27.25783633300192,
+        "xmax": 593.7821565472693,
+        "ymax": 374.9522599862996,
+        "zmax": 35.57337600174772
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40180",
+      "part_id": "P02",
+      "tag": 40180,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 4813.578268423452,
+      "perimeter": 423.2728688528648,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        520.0,
+        218.29312093694162,
+        7.258920369345754
+      ],
+      "bbox": {
+        "xmin": 520.0,
+        "ymin": 125.0,
+        "zmin": -7.386304302653254,
+        "xmax": 520.0,
+        "ymax": 314.99999999999994,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40185",
+      "part_id": "P02",
+      "tag": 40185,
+      "solid_face_type": "bsurface",
+      "solid_face_code": 8,
+      "area": 74742.78532364519,
+      "perimeter": 1165.21162294216,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        324.7521785064311,
+        220.25855175144952,
+        -13.898131713149377
+      ],
+      "bbox": {
+        "xmin": 520.0,
+        "ymin": 125.0,
+        "zmin": -7.386304302653254,
+        "xmax": 520.0,
+        "ymax": 314.99999999999994,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40186",
+      "part_id": "P02",
+      "tag": 40186,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 5900.000000000016,
+      "perimeter": 2360.0000000000005,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        324.9999999999997,
+        219.99999999999943,
+        19.99999999999999
+      ],
+      "bbox": {
+        "xmin": 520.0,
+        "ymin": 125.0,
+        "zmin": -7.386304302653254,
+        "xmax": 520.0,
+        "ymax": 314.99999999999994,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 8
+    },
+    {
+      "face_id": "F40182",
+      "part_id": "P02",
+      "tag": 40182,
+      "solid_face_type": "general",
+      "solid_face_code": 6,
+      "area": 80724.85146204758,
+      "perimeter": 1205.6522232734874,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        324.7440859423064,
+        220.28250490062325,
+        -18.48271647628544
+      ],
+      "bbox": {
+        "xmin": 520.0,
+        "ymin": 125.0,
+        "zmin": -7.386304302653254,
+        "xmax": 520.0,
+        "ymax": 314.99999999999994,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40187",
+      "part_id": "P02",
+      "tag": 40187,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 4546.015582930433,
+      "perimeter": 421.6226349621221,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        130.0,
+        205.2964644836372,
+        7.1100805209232725
+      ],
+      "bbox": {
+        "xmin": 520.0,
+        "ymin": 125.0,
+        "zmin": -7.386304302653254,
+        "xmax": 520.0,
+        "ymax": 314.99999999999994,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40179",
+      "part_id": "P02",
+      "tag": 40179,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 14113.65935435489,
+      "perimeter": 835.1832561337752,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        317.5704611791736,
+        125.0,
+        1.5885797202334935
+      ],
+      "bbox": {
+        "xmin": 520.0,
+        "ymin": 125.0,
+        "zmin": -7.386304302653254,
+        "xmax": 520.0,
+        "ymax": 314.99999999999994,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40178",
+      "part_id": "P02",
+      "tag": 40178,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 5895.48699300264,
+      "perimeter": 450.8315500206956,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        525.0,
+        218.51208741626735,
+        5.1874362595439285
+      ],
+      "bbox": {
+        "xmin": 525.0,
+        "ymin": 120.0,
+        "zmin": -11.715639187233041,
+        "xmax": 525.0000000000001,
+        "ymax": 320.00000000000017,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40184",
+      "part_id": "P02",
+      "tag": 40184,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 11056.663625727386,
+      "perimeter": 837.3342131339489,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        339.30986473506596,
+        320.00000000000006,
+        5.622727970624441
+      ],
+      "bbox": {
+        "xmin": 525.0,
+        "ymin": 120.0,
+        "zmin": -11.715639187233041,
+        "xmax": 525.0000000000001,
+        "ymax": 320.00000000000017,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42325",
+      "part_id": "P03",
+      "tag": 42325,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 7.978118070040738,
+      "perimeter": 12.217505543965354,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        188.0,
+        256.6662781552251,
+        12.0
+      ],
+      "bbox": {
+        "xmin": 525.0,
+        "ymin": 120.0,
+        "zmin": -11.715639187233041,
+        "xmax": 525.0000000000001,
+        "ymax": 320.00000000000017,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42322",
+      "part_id": "P03",
+      "tag": 42322,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 67.65042921850689,
+      "perimeter": 49.89767877328861,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        191.6474384008604,
+        251.30741049280954,
+        0.9665545225692295
+      ],
+      "bbox": {
+        "xmin": 525.0,
+        "ymin": 120.0,
+        "zmin": -11.715639187233041,
+        "xmax": 525.0000000000001,
+        "ymax": 320.00000000000017,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42319",
+      "part_id": "P03",
+      "tag": 42319,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 68.273658317624,
+      "perimeter": 47.43715122777158,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        188.00710394791253,
+        258.1838416096865,
+        1.467721234925054
+      ],
+      "bbox": {
+        "xmin": 525.0,
+        "ymin": 120.0,
+        "zmin": -11.715639187233041,
+        "xmax": 525.0000000000001,
+        "ymax": 320.00000000000017,
+        "zmax": 19.99999999999999
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42321",
+      "part_id": "P03",
+      "tag": 42321,
+      "solid_face_type": "conical",
+      "solid_face_code": 3,
+      "area": 17.221905591485374,
+      "perimeter": 24.145663857496753,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        187.99999999999997,
+        253.0,
+        16.455955957675158
+      ],
+      "bbox": {
+        "xmin": 185.56982291820336,
+        "ymin": 250.56982291820339,
+        "zmin": 16.000152304843613,
+        "xmax": 190.4301770817966,
+        "ymax": 255.43017708179661,
+        "zmax": 17.0
+      },
+      "edge_count": 2
+    },
+    {
+      "face_id": "F42329",
+      "part_id": "P03",
+      "tag": 42329,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 68.94735470835087,
+      "perimeter": 47.82088743519869,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        182.81446453715574,
+        252.9909173763834,
+        1.370680452508598
+      ],
+      "bbox": {
+        "xmin": 185.56982291820336,
+        "ymin": 250.56982291820339,
+        "zmin": 16.000152304843613,
+        "xmax": 190.4301770817966,
+        "ymax": 255.43017708179661,
+        "zmax": 17.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42316",
+      "part_id": "P03",
+      "tag": 42316,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 7.9781180700408205,
+      "perimeter": 12.217505543965409,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        188.0,
+        249.33372184477483,
+        12.0
+      ],
+      "bbox": {
+        "xmin": 185.56982291820336,
+        "ymin": 250.56982291820339,
+        "zmin": 16.000152304843613,
+        "xmax": 190.4301770817966,
+        "ymax": 255.43017708179661,
+        "zmax": 17.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42326",
+      "part_id": "P03",
+      "tag": 42326,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 63.20011031778455,
+      "perimeter": 47.08892367825201,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        184.37106366867863,
+        254.68017228679025,
+        1.6779366028628746
+      ],
+      "bbox": {
+        "xmin": 185.56982291820336,
+        "ymin": 250.56982291820339,
+        "zmin": 16.000152304843613,
+        "xmax": 190.4301770817966,
+        "ymax": 255.43017708179661,
+        "zmax": 17.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42313",
+      "part_id": "P03",
+      "tag": 42313,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 7.978118070040783,
+      "perimeter": 12.217505543965409,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        191.66627815522511,
+        253.00000000000006,
+        12.0
+      ],
+      "bbox": {
+        "xmin": 185.56982291820336,
+        "ymin": 250.56982291820339,
+        "zmin": 16.000152304843613,
+        "xmax": 190.4301770817966,
+        "ymax": 255.43017708179661,
+        "zmax": 17.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42315",
+      "part_id": "P03",
+      "tag": 42315,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 73.47517592834605,
+      "perimeter": 50.28539879527438,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        193.19683483963124,
+        252.9913211808127,
+        0.723339589929674
+      ],
+      "bbox": {
+        "xmin": 185.56982291820336,
+        "ymin": 250.56982291820339,
+        "zmin": 16.000152304843613,
+        "xmax": 190.4301770817966,
+        "ymax": 255.43017708179661,
+        "zmax": 17.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40189",
+      "part_id": "P03",
+      "tag": 40189,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 6.269962369992989,
+      "perimeter": 8.87641092330778,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        187.99999999999997,
+        253.0,
+        17.0
+      ],
+      "bbox": {
+        "xmin": 186.58727532464064,
+        "ymin": 251.58727532464064,
+        "zmin": 17.0,
+        "xmax": 189.4127246753593,
+        "ymax": 254.41272467535936,
+        "zmax": 17.0
+      },
+      "edge_count": 1
+    },
+    {
+      "face_id": "F42320",
+      "part_id": "P03",
+      "tag": 42320,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 67.83752962001617,
+      "perimeter": 50.027516541081546,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        189.6931134819483,
+        249.35096659928618,
+        0.9365360287987763
+      ],
+      "bbox": {
+        "xmin": 186.58727532464064,
+        "ymin": 251.58727532464064,
+        "zmin": 17.0,
+        "xmax": 189.4127246753593,
+        "ymax": 254.41272467535936,
+        "zmax": 17.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42317",
+      "part_id": "P03",
+      "tag": 42317,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 65.91796494758404,
+      "perimeter": 48.808566967463555,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        191.64399811891283,
+        254.6877595406194,
+        1.2432631221043398
+      ],
+      "bbox": {
+        "xmin": 186.58727532464064,
+        "ymin": 251.58727532464064,
+        "zmin": 17.0,
+        "xmax": 189.4127246753593,
+        "ymax": 254.41272467535936,
+        "zmax": 17.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42327",
+      "part_id": "P03",
+      "tag": 42327,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 64.33977837294438,
+      "perimeter": 47.81951083979163,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        189.68335888173138,
+        256.6299218615944,
+        1.49537670094945
+      ],
+      "bbox": {
+        "xmin": 186.58727532464064,
+        "ymin": 251.58727532464064,
+        "zmin": 17.0,
+        "xmax": 189.4127246753593,
+        "ymax": 254.41272467535936,
+        "zmax": 17.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42314",
+      "part_id": "P03",
+      "tag": 42314,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 74.10189601171308,
+      "perimeter": 50.61016030123463,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        188.006699747306,
+        247.80161270835097,
+        0.6343996733974804
+      ],
+      "bbox": {
+        "xmin": 186.58727532464064,
+        "ymin": 251.58727532464064,
+        "zmin": 17.0,
+        "xmax": 189.4127246753593,
+        "ymax": 254.41272467535936,
+        "zmax": 17.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42324",
+      "part_id": "P03",
+      "tag": 42324,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 66.4920122854811,
+      "perimeter": 49.18203408891796,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        186.31063675775357,
+        249.35361389012402,
+        1.1513871174265897
+      ],
+      "bbox": {
+        "xmin": 186.58727532464064,
+        "ymin": 251.58727532464064,
+        "zmin": 17.0,
+        "xmax": 189.4127246753593,
+        "ymax": 254.41272467535936,
+        "zmax": 17.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40177",
+      "part_id": "P03",
+      "tag": 40177,
+      "solid_face_type": "bsurface",
+      "solid_face_code": 8,
+      "area": 67.61422888219207,
+      "perimeter": 42.585065825812826,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        188.01312924042062,
+        252.98349167570504,
+        -9.140208262386038
+      ],
+      "bbox": {
+        "xmin": 182.6369683712581,
+        "ymin": 247.61398984760226,
+        "zmin": -10.114506819948241,
+        "xmax": 193.38415086703517,
+        "ymax": 258.3588168581221,
+        "zmax": -8.133884860130973
+      },
+      "edge_count": 16
+    },
+    {
+      "face_id": "F42323",
+      "part_id": "P03",
+      "tag": 42323,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 7.978118070040604,
+      "perimeter": 12.217505543965299,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        184.33372184477486,
+        253.00000000000006,
+        12.0
+      ],
+      "bbox": {
+        "xmin": 182.6369683712581,
+        "ymin": 247.61398984760226,
+        "zmin": -10.114506819948241,
+        "xmax": 193.38415086703517,
+        "ymax": 258.3588168581221,
+        "zmax": -8.133884860130973
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F40190",
+      "part_id": "P03",
+      "tag": 40190,
+      "solid_face_type": "conical",
+      "solid_face_code": 3,
+      "area": 110.5135579288542,
+      "perimeter": 199.04306300102,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        188.00731977621626,
+        252.99057653498113,
+        8.841617549377299
+      ],
+      "bbox": {
+        "xmin": 182.6369683712581,
+        "ymin": 247.61398984760226,
+        "zmin": -10.114506819948241,
+        "xmax": 193.38415086703517,
+        "ymax": 258.3588168581221,
+        "zmax": -8.133884860130973
+      },
+      "edge_count": 17
+    },
+    {
+      "face_id": "F42318",
+      "part_id": "P03",
+      "tag": 42318,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 62.99332783091285,
+      "perimeter": 46.97065723839889,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        186.32040211283277,
+        256.6270254063935,
+        1.7108439352229483
+      ],
+      "bbox": {
+        "xmin": 182.6369683712581,
+        "ymin": 247.61398984760226,
+        "zmin": -10.114506819948241,
+        "xmax": 193.38415086703517,
+        "ymax": 258.3588168581221,
+        "zmax": -8.133884860130973
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F42328",
+      "part_id": "P03",
+      "tag": 42328,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "area": 64.9335083326234,
+      "perimeter": 48.181395803406424,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        184.36737454403382,
+        251.31498698150767,
+        1.4006112693816921
+      ],
+      "bbox": {
+        "xmin": 182.6369683712581,
+        "ymin": 247.61398984760226,
+        "zmin": -10.114506819948241,
+        "xmax": 193.38415086703517,
+        "ymax": 258.3588168581221,
+        "zmax": -8.133884860130973
+      },
+      "edge_count": 4
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E40425",
+      "part_id": "P01",
+      "tag": 40425,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42330"
+      ]
+    },
+    {
+      "edge_id": "E40426",
+      "part_id": "P01",
+      "tag": 40426,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42330"
+      ]
+    },
+    {
+      "edge_id": "E40427",
+      "part_id": "P01",
+      "tag": 40427,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42330"
+      ]
+    },
+    {
+      "edge_id": "E40428",
+      "part_id": "P01",
+      "tag": 40428,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42330"
+      ]
+    },
+    {
+      "edge_id": "E42340",
+      "part_id": "P02",
+      "tag": 42340,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40185",
+        "F40181"
+      ]
+    },
+    {
+      "edge_id": "E42341",
+      "part_id": "P02",
+      "tag": 42341,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40179",
+        "F40180"
+      ]
+    },
+    {
+      "edge_id": "E42342",
+      "part_id": "P02",
+      "tag": 42342,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40186",
+        "F40180"
+      ]
+    },
+    {
+      "edge_id": "E42343",
+      "part_id": "P02",
+      "tag": 42343,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40178",
+        "F40182"
+      ]
+    },
+    {
+      "edge_id": "E42344",
+      "part_id": "P02",
+      "tag": 42344,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40180",
+        "F40185"
+      ]
+    },
+    {
+      "edge_id": "E42345",
+      "part_id": "P02",
+      "tag": 42345,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40187",
+        "F40185"
+      ]
+    },
+    {
+      "edge_id": "E42346",
+      "part_id": "P02",
+      "tag": 42346,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40178",
+        "F40183"
+      ]
+    },
+    {
+      "edge_id": "E42347",
+      "part_id": "P02",
+      "tag": 42347,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40184",
+        "F40188"
+      ]
+    },
+    {
+      "edge_id": "E42348",
+      "part_id": "P02",
+      "tag": 42348,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40183",
+        "F40182"
+      ]
+    },
+    {
+      "edge_id": "E42349",
+      "part_id": "P02",
+      "tag": 42349,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40179",
+        "F40185"
+      ]
+    },
+    {
+      "edge_id": "E42351",
+      "part_id": "P02",
+      "tag": 42351,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40183",
+        "F40186"
+      ]
+    },
+    {
+      "edge_id": "E42352",
+      "part_id": "P02",
+      "tag": 42352,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40180",
+        "F40181"
+      ]
+    },
+    {
+      "edge_id": "E42336",
+      "part_id": "P02",
+      "tag": 42336,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40183",
+        "F40188"
+      ]
+    },
+    {
+      "edge_id": "E42353",
+      "part_id": "P02",
+      "tag": 42353,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40186",
+        "F40187"
+      ]
+    },
+    {
+      "edge_id": "E42355",
+      "part_id": "P02",
+      "tag": 42355,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40186",
+        "F40179"
+      ]
+    },
+    {
+      "edge_id": "E42356",
+      "part_id": "P02",
+      "tag": 42356,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40187",
+        "F40181"
+      ]
+    },
+    {
+      "edge_id": "E42350",
+      "part_id": "P02",
+      "tag": 42350,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40182",
+        "F40188"
+      ]
+    },
+    {
+      "edge_id": "E42333",
+      "part_id": "P02",
+      "tag": 42333,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40184",
+        "F40182"
+      ]
+    },
+    {
+      "edge_id": "E42334",
+      "part_id": "P02",
+      "tag": 42334,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40179",
+        "F40187"
+      ]
+    },
+    {
+      "edge_id": "E42335",
+      "part_id": "P02",
+      "tag": 42335,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40186",
+        "F40181"
+      ]
+    },
+    {
+      "edge_id": "E42354",
+      "part_id": "P02",
+      "tag": 42354,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40178",
+        "F40186"
+      ]
+    },
+    {
+      "edge_id": "E42337",
+      "part_id": "P02",
+      "tag": 42337,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40188",
+        "F40186"
+      ]
+    },
+    {
+      "edge_id": "E42338",
+      "part_id": "P02",
+      "tag": 42338,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40178",
+        "F40184"
+      ]
+    },
+    {
+      "edge_id": "E42339",
+      "part_id": "P02",
+      "tag": 42339,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40184",
+        "F40186"
+      ]
+    },
+    {
+      "edge_id": "E40421",
+      "part_id": "P03",
+      "tag": 40421,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40189",
+        "F42321"
+      ]
+    },
+    {
+      "edge_id": "E40422",
+      "part_id": "P03",
+      "tag": 40422,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42317",
+        "F42315"
+      ]
+    },
+    {
+      "edge_id": "E40424",
+      "part_id": "P03",
+      "tag": 40424,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42329"
+      ]
+    },
+    {
+      "edge_id": "E42364",
+      "part_id": "P03",
+      "tag": 42364,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42320"
+      ]
+    },
+    {
+      "edge_id": "E42358",
+      "part_id": "P03",
+      "tag": 42358,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42317"
+      ]
+    },
+    {
+      "edge_id": "E42359",
+      "part_id": "P03",
+      "tag": 42359,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42316"
+      ]
+    },
+    {
+      "edge_id": "E42360",
+      "part_id": "P03",
+      "tag": 42360,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42328"
+      ]
+    },
+    {
+      "edge_id": "E42361",
+      "part_id": "P03",
+      "tag": 42361,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42315",
+        "F42322"
+      ]
+    },
+    {
+      "edge_id": "E42362",
+      "part_id": "P03",
+      "tag": 42362,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42327"
+      ]
+    },
+    {
+      "edge_id": "E42363",
+      "part_id": "P03",
+      "tag": 42363,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42319",
+        "F42318"
+      ]
+    },
+    {
+      "edge_id": "E42365",
+      "part_id": "P03",
+      "tag": 42365,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42322"
+      ]
+    },
+    {
+      "edge_id": "E42366",
+      "part_id": "P03",
+      "tag": 42366,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42317",
+        "F42313"
+      ]
+    },
+    {
+      "edge_id": "E42367",
+      "part_id": "P03",
+      "tag": 42367,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42315",
+        "F42313"
+      ]
+    },
+    {
+      "edge_id": "E39328",
+      "part_id": "P03",
+      "tag": 39328,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42323",
+        "F42328"
+      ]
+    },
+    {
+      "edge_id": "E39329",
+      "part_id": "P03",
+      "tag": 39329,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42318"
+      ]
+    },
+    {
+      "edge_id": "E39330",
+      "part_id": "P03",
+      "tag": 39330,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42322",
+        "F42313"
+      ]
+    },
+    {
+      "edge_id": "E39331",
+      "part_id": "P03",
+      "tag": 39331,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42329",
+        "F42326"
+      ]
+    },
+    {
+      "edge_id": "E39332",
+      "part_id": "P03",
+      "tag": 39332,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42329",
+        "F42328"
+      ]
+    },
+    {
+      "edge_id": "E39333",
+      "part_id": "P03",
+      "tag": 39333,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42325",
+        "F42318"
+      ]
+    },
+    {
+      "edge_id": "E39334",
+      "part_id": "P03",
+      "tag": 39334,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42313"
+      ]
+    },
+    {
+      "edge_id": "E39335",
+      "part_id": "P03",
+      "tag": 39335,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42324"
+      ]
+    },
+    {
+      "edge_id": "E39336",
+      "part_id": "P03",
+      "tag": 39336,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42325"
+      ]
+    },
+    {
+      "edge_id": "E39337",
+      "part_id": "P03",
+      "tag": 39337,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42320"
+      ]
+    },
+    {
+      "edge_id": "E39339",
+      "part_id": "P03",
+      "tag": 39339,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42319",
+        "F42327"
+      ]
+    },
+    {
+      "edge_id": "E39341",
+      "part_id": "P03",
+      "tag": 39341,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42324",
+        "F42316"
+      ]
+    },
+    {
+      "edge_id": "E39340",
+      "part_id": "P03",
+      "tag": 39340,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F40177"
+      ]
+    },
+    {
+      "edge_id": "E40423",
+      "part_id": "P03",
+      "tag": 40423,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42323",
+        "F42326"
+      ]
+    },
+    {
+      "edge_id": "E39342",
+      "part_id": "P03",
+      "tag": 39342,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42326"
+      ]
+    },
+    {
+      "edge_id": "E39343",
+      "part_id": "P03",
+      "tag": 39343,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42326"
+      ]
+    },
+    {
+      "edge_id": "E39344",
+      "part_id": "P03",
+      "tag": 39344,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42320",
+        "F42314"
+      ]
+    },
+    {
+      "edge_id": "E39338",
+      "part_id": "P03",
+      "tag": 39338,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42323",
+        "F42329"
+      ]
+    },
+    {
+      "edge_id": "E39345",
+      "part_id": "P03",
+      "tag": 39345,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F40177"
+      ]
+    },
+    {
+      "edge_id": "E39346",
+      "part_id": "P03",
+      "tag": 39346,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42324",
+        "F42314"
+      ]
+    },
+    {
+      "edge_id": "E39347",
+      "part_id": "P03",
+      "tag": 39347,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F40177"
+      ]
+    },
+    {
+      "edge_id": "E39348",
+      "part_id": "P03",
+      "tag": 39348,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42328"
+      ]
+    },
+    {
+      "edge_id": "E39349",
+      "part_id": "P03",
+      "tag": 39349,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42327"
+      ]
+    },
+    {
+      "edge_id": "E39350",
+      "part_id": "P03",
+      "tag": 39350,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42317"
+      ]
+    },
+    {
+      "edge_id": "E39351",
+      "part_id": "P03",
+      "tag": 39351,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F40177"
+      ]
+    },
+    {
+      "edge_id": "E39352",
+      "part_id": "P03",
+      "tag": 39352,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42316",
+        "F42314"
+      ]
+    },
+    {
+      "edge_id": "E39353",
+      "part_id": "P03",
+      "tag": 39353,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42319"
+      ]
+    },
+    {
+      "edge_id": "E39354",
+      "part_id": "P03",
+      "tag": 39354,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42316",
+        "F42320"
+      ]
+    },
+    {
+      "edge_id": "E39355",
+      "part_id": "P03",
+      "tag": 39355,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42323"
+      ]
+    },
+    {
+      "edge_id": "E39356",
+      "part_id": "P03",
+      "tag": 39356,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42325",
+        "F42327"
+      ]
+    },
+    {
+      "edge_id": "E39357",
+      "part_id": "P03",
+      "tag": 39357,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42321"
+      ]
+    },
+    {
+      "edge_id": "E39358",
+      "part_id": "P03",
+      "tag": 39358,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42315"
+      ]
+    },
+    {
+      "edge_id": "E39359",
+      "part_id": "P03",
+      "tag": 39359,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F42325",
+        "F42319"
+      ]
+    },
+    {
+      "edge_id": "E40417",
+      "part_id": "P03",
+      "tag": 40417,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42324"
+      ]
+    },
+    {
+      "edge_id": "E40418",
+      "part_id": "P03",
+      "tag": 40418,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40190",
+        "F42318"
+      ]
+    },
+    {
+      "edge_id": "E40419",
+      "part_id": "P03",
+      "tag": 40419,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42322"
+      ]
+    },
+    {
+      "edge_id": "E40420",
+      "part_id": "P03",
+      "tag": 40420,
+      "curve_type": "unknown",
+      "length": null,
+      "bbox": null,
+      "face_ids": [
+        "F40177",
+        "F42314"
+      ]
+    }
+  ],
+  "occurrences": [],
+  "adjacency": [
+    [
+      "F40185",
+      "F40181"
+    ],
+    [
+      "F40179",
+      "F40180"
+    ],
+    [
+      "F40186",
+      "F40180"
+    ],
+    [
+      "F40178",
+      "F40182"
+    ],
+    [
+      "F40180",
+      "F40185"
+    ],
+    [
+      "F40187",
+      "F40185"
+    ],
+    [
+      "F40178",
+      "F40183"
+    ],
+    [
+      "F40184",
+      "F40188"
+    ],
+    [
+      "F40183",
+      "F40182"
+    ],
+    [
+      "F40179",
+      "F40185"
+    ],
+    [
+      "F40183",
+      "F40186"
+    ],
+    [
+      "F40180",
+      "F40181"
+    ],
+    [
+      "F40183",
+      "F40188"
+    ],
+    [
+      "F40186",
+      "F40187"
+    ],
+    [
+      "F40186",
+      "F40179"
+    ],
+    [
+      "F40187",
+      "F40181"
+    ],
+    [
+      "F40182",
+      "F40188"
+    ],
+    [
+      "F40184",
+      "F40182"
+    ],
+    [
+      "F40179",
+      "F40187"
+    ],
+    [
+      "F40186",
+      "F40181"
+    ],
+    [
+      "F40178",
+      "F40186"
+    ],
+    [
+      "F40188",
+      "F40186"
+    ],
+    [
+      "F40178",
+      "F40184"
+    ],
+    [
+      "F40184",
+      "F40186"
+    ],
+    [
+      "F40189",
+      "F42321"
+    ],
+    [
+      "F42317",
+      "F42315"
+    ],
+    [
+      "F40177",
+      "F42329"
+    ],
+    [
+      "F40177",
+      "F42320"
+    ],
+    [
+      "F40177",
+      "F42317"
+    ],
+    [
+      "F40190",
+      "F42316"
+    ],
+    [
+      "F40177",
+      "F42328"
+    ],
+    [
+      "F42315",
+      "F42322"
+    ],
+    [
+      "F40177",
+      "F42327"
+    ],
+    [
+      "F42319",
+      "F42318"
+    ],
+    [
+      "F40190",
+      "F42322"
+    ],
+    [
+      "F42317",
+      "F42313"
+    ],
+    [
+      "F42315",
+      "F42313"
+    ],
+    [
+      "F42323",
+      "F42328"
+    ],
+    [
+      "F40177",
+      "F42318"
+    ],
+    [
+      "F42322",
+      "F42313"
+    ],
+    [
+      "F42329",
+      "F42326"
+    ],
+    [
+      "F42329",
+      "F42328"
+    ],
+    [
+      "F42325",
+      "F42318"
+    ],
+    [
+      "F40190",
+      "F42313"
+    ],
+    [
+      "F40190",
+      "F42324"
+    ],
+    [
+      "F40190",
+      "F42325"
+    ],
+    [
+      "F40190",
+      "F42320"
+    ],
+    [
+      "F42319",
+      "F42327"
+    ],
+    [
+      "F42324",
+      "F42316"
+    ],
+    [
+      "F40190",
+      "F40177"
+    ],
+    [
+      "F42323",
+      "F42326"
+    ],
+    [
+      "F40177",
+      "F42326"
+    ],
+    [
+      "F40190",
+      "F42326"
+    ],
+    [
+      "F42320",
+      "F42314"
+    ],
+    [
+      "F42323",
+      "F42329"
+    ],
+    [
+      "F40190",
+      "F40177"
+    ],
+    [
+      "F42324",
+      "F42314"
+    ],
+    [
+      "F40190",
+      "F40177"
+    ],
+    [
+      "F40190",
+      "F42328"
+    ],
+    [
+      "F40190",
+      "F42327"
+    ],
+    [
+      "F40190",
+      "F42317"
+    ],
+    [
+      "F40190",
+      "F40177"
+    ],
+    [
+      "F42316",
+      "F42314"
+    ],
+    [
+      "F40177",
+      "F42319"
+    ],
+    [
+      "F42316",
+      "F42320"
+    ],
+    [
+      "F40190",
+      "F42323"
+    ],
+    [
+      "F42325",
+      "F42327"
+    ],
+    [
+      "F40190",
+      "F42321"
+    ],
+    [
+      "F40177",
+      "F42315"
+    ],
+    [
+      "F42325",
+      "F42319"
+    ],
+    [
+      "F40177",
+      "F42324"
+    ],
+    [
+      "F40190",
+      "F42318"
+    ],
+    [
+      "F40177",
+      "F42322"
+    ],
+    [
+      "F40177",
+      "F42314"
+    ]
+  ],
+  "diagnostics": {
+    "journal": "extract_geometry",
+    "warnings": [],
+    "sections": {},
+    "part_units_raw": "1",
+    "counts": {
+      "bodies": 3,
+      "faces": 32,
+      "edges": 78,
+      "occurrences": 0,
+      "adjacency_pairs": 74
+    },
+    "elapsed_s": 1.26
+  },
+  "meta": {
+    "has_normals": false,
+    "journal_face_type_map": {
+      "1": "planar",
+      "2": "cylindrical",
+      "3": "conical",
+      "4": "spherical",
+      "5": "toroidal",
+      "6": "general",
+      "7": "blend",
+      "8": "bsurface",
+      "9": "offset"
+    },
+    "cache": "miss"
+  }
+}

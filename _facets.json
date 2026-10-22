@@ -1,0 +1,1 @@
+{"ok": true, "meshes": [], "uf_modules": ["Modl", "Std"], "uf_disp": ["FaceFacetData", "FreeTempFacetData", "GetFacetData"], "mesh_errors": ["NXException('Function expects a facet topology, but input given is a non-facet topology.')"], "api": null, "components": 1, "triangles": 0, "diagnostics": {"journal_elapsed_s": 30.3, "returncode": 0}}

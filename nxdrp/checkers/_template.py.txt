@@ -1,0 +1,78 @@
+# -*- coding: utf-8 -*-
+"""【模板】复制本文件到你的子包，改名，然后按注释改三处即可。
+
+以 M6 的 DFM-33「顶部圆角」为例。整个过程只有三步：
+    1. 改 check_item_id / name / owner
+    2. 在 default_params 里写默认阈值
+    3. 实现 check()
+"""
+
+from __future__ import annotations
+
+from typing import Iterable
+
+# 从框架导入基类与上下文（相对层级取决于你的目录深度，见下方说明）
+#   在 nxdrp/checkers/mX_xxx/my_checker.py 里是 "..." 三层
+#   在 nxdrp/checkers/my_checker.py 里是 ".." 两层
+from ...checkers.base import BaseChecker, CheckContext
+from ...contracts import Finding
+
+
+class MyChecker(BaseChecker):
+    # ---------- 1. 身份：与 nxdrp/catalog.py 的 ID 一一对应 ----------
+    check_item_id = "DFM-33"          # 必填，且必须在 catalog 里存在
+    name = "顶部圆角"                  # 必填，会出现在报告里
+    version = "0.1.0"                 # 算法版本，改算法就升版本
+    owner = "M6 张百瑞"                # 模块 + 姓名，覆盖率报表用
+    process_types = ("machining",)    # 适用工艺
+
+    #: 数据能力声明。缺数据时管线会跳过本 checker 并说明原因，
+    #: 而不是让它算出错误结果。可用值见 nxdrp/checkers/base.py 的 REQUIREMENTS。
+    requires = ("cylindrical_faces",)
+
+    # ---------- 2. 默认阈值：规则库里的 params 会覆盖这里 ----------
+    default_params = {
+        "min_top_fillet_mm": 0.5,
+        "tolerance_mm": 0.05,
+    }
+
+    # 可选：自定义跳过条件
+    def applies(self, model, params) -> tuple[bool, str]:
+        if not model.parts:
+            return False, "模型没有实体"
+        return True, ""
+
+    # ---------- 3. 算法本体 ----------
+    def check(self, ctx: CheckContext) -> Iterable[Finding]:
+        threshold = float(ctx.param("min_top_fillet_mm", 0.5))
+
+        findings = []
+        for face in ctx.faces(face_type="toroidal"):
+            radius = face.radius_diameter
+            if radius is None:
+                continue
+            radius = radius if face.is_radius else radius / 2.0
+            if radius >= threshold:
+                continue
+
+            findings.append(
+                ctx.finding(
+                    # severity 不填则用规则库里的值
+                    message=f"圆角 R{radius:.2f} 小于最小刀尖半径 {threshold:.2f} mm",
+                    part_refs=[face.part_id],
+                    location=face.cog,
+                    bbox=face.bbox,
+                    measured_value=round(radius, 4),
+                    threshold_value=threshold,
+                    confidence=0.85,
+                    face_ids=[face.face_id],
+                    suggestion_text=f"将圆角增大到 R{threshold:.1f} 以上，避免小刀具易断与加工效率低",
+                    suggestion_delta={"radius_mm": threshold},
+                    note="按回转面半径判定",
+                )
+            )
+        return findings
+
+
+#: 必须导出。框架靠它发现你的 checker。
+CHECKERS = [MyChecker()]

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "demo_normal",
+  "annotator": "场景设计者（间距全部 20 mm，装配类检查不该有任何输出）",
+  "created_at": "2026-10-22",
+  "labels": [
+    {
+      "label_id": "N_P01",
+      "check_item_id": "DFM-02",
+      "expected": "ok",
+      "part_refs": [
+        "P01"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "与邻件相距 20 mm，不该报"
+    },
+    {
+      "label_id": "N_P02",
+      "check_item_id": "DFM-02",
+      "expected": "ok",
+      "part_refs": [
+        "P02"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "与邻件相距 20 mm，不该报"
+    },
+    {
+      "label_id": "N_P03",
+      "check_item_id": "DFM-02",
+      "expected": "ok",
+      "part_refs": [
+        "P03"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "与邻件相距 20 mm，不该报"
+    },
+    {
+      "label_id": "N_P04",
+      "check_item_id": "DFM-02",
+      "expected": "ok",
+      "part_refs": [
+        "P04"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "与邻件相距 20 mm，不该报"
+    },
+    {
+      "label_id": "N_P05",
+      "check_item_id": "DFM-02",
+      "expected": "ok",
+      "part_refs": [
+        "P05"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "与邻件相距 20 mm，不该报"
+    }
+  ]
+}

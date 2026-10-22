@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://harting.local/nxdrp/model_bundle.schema.json",
+  "title": "ModelBundle",
+  "type": "object",
+  "required": [
+    "model_id",
+    "schema_version"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "nx_version": {
+      "type": "string"
+    },
+    "units": {
+      "enum": [
+        "mm",
+        "inch"
+      ]
+    },
+    "parts": {
+      "type": "array"
+    },
+    "faces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "face_id",
+          "part_id"
+        ],
+        "properties": {
+          "face_id": {
+            "type": "string"
+          },
+          "part_id": {
+            "type": "string"
+          },
+          "solid_face_type": {
+            "type": "string"
+          },
+          "solid_face_code": {
+            "type": "integer"
+          },
+          "area": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "perimeter": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "radius_diameter": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "is_radius": {
+            "type": "boolean"
+          },
+          "cog": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "number"
+            }
+          },
+          "edge_count": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array"
+    },
+    "occurrences": {
+      "type": "array"
+    },
+    "adjacency": {
+      "type": "array"
+    },
+    "diagnostics": {
+      "type": "object"
+    },
+    "meta": {
+      "type": "object"
+    }
+  }
+}

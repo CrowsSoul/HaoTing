@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# 模型缓存（可重新生成，勿提交）
+.cache/
+
+# 运行产物
+findings.json
+findings_*.json
+*.model.json.bak
+
+# 编辑器
+.vscode/
+.idea/

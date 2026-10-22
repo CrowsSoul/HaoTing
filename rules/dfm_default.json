@@ -1,0 +1,694 @@
+{
+  "schema_version": "1.0.0",
+  "name": "dfm_default",
+  "version": "0.1",
+  "updated_at": "2026-10-22T09:26:09+08:00",
+  "rules": [
+    {
+      "rule_id": "R-DFM-01",
+      "check_item_id": "DFM-01",
+      "process_type": "assembly",
+      "name": "干涉检测",
+      "enabled": true,
+      "params": {
+        "interference_volume_mm3": 0.01,
+        "critical_gap_mm": 0.05,
+        "ignore_face_area_below_mm2": 0.1
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P1",
+      "notes": "两两实体求交，体积>0；需区分硬干涉/临界间隙/碎面虚假干涉",
+      "owner": "M4"
+    },
+    {
+      "rule_id": "R-DFM-02",
+      "check_item_id": "DFM-02",
+      "process_type": "assembly",
+      "name": "最小间隙",
+      "enabled": true,
+      "params": {
+        "min_clearance_mm": 0.3
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "零件间最小距离 < 阈值（默认 0.2~0.5mm，可配）",
+      "owner": "M4"
+    },
+    {
+      "rule_id": "R-DFM-03",
+      "check_item_id": "DFM-03",
+      "process_type": "assembly",
+      "name": "孔对齐",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "跨零件孔轴线同轴度偏差 ≤ 允许值，且公称直径匹配",
+      "owner": "M4"
+    },
+    {
+      "rule_id": "R-DFM-04",
+      "check_item_id": "DFM-04",
+      "process_type": "assembly",
+      "name": "孔/槽对齐",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "槽中线与孔轴线偏差 ≤ 允许值",
+      "owner": "M4"
+    },
+    {
+      "rule_id": "R-DFM-05",
+      "check_item_id": "DFM-05",
+      "process_type": "assembly",
+      "name": "紧固件可达性",
+      "enabled": true,
+      "params": {
+        "tool_envelope_diameter_mm": 10.0,
+        "tool_envelope_height_mm": 40.0
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P1",
+      "notes": "沿螺栓轴线扫掠工具包络，不得与周边件碰撞",
+      "owner": "M4"
+    },
+    {
+      "rule_id": "R-DFM-06",
+      "check_item_id": "DFM-06",
+      "process_type": "assembly",
+      "name": "紧固件间隙",
+      "enabled": true,
+      "params": {
+        "axial_clearance_mm": 0.5,
+        "radial_clearance_mm": 0.5
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "螺栓头/垫圈与周边件的轴向、径向间隙 ≥ 阈值",
+      "owner": "M4"
+    },
+    {
+      "rule_id": "R-DFM-07",
+      "check_item_id": "DFM-07",
+      "process_type": "assembly",
+      "name": "紧固件啮合长度",
+      "enabled": true,
+      "params": {
+        "engagement_ratio_steel": 1.0,
+        "engagement_ratio_plastic": 1.5
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "螺纹旋合长度/公称直径 ≥ 1.0（钢）~1.5（铝/塑料）",
+      "owner": "M4"
+    },
+    {
+      "rule_id": "R-DFM-08",
+      "check_item_id": "DFM-08",
+      "process_type": "injection",
+      "name": "最小壁厚",
+      "enabled": true,
+      "params": {
+        "material": "PA66",
+        "min_wall_thickness_mm": 0.8
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P1",
+      "notes": "壁厚 < 材料最小壁厚（PC 1.5 / PA66 0.8 / PBT 0.8 …）",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-09",
+      "check_item_id": "DFM-09",
+      "process_type": "injection",
+      "name": "均匀壁厚",
+      "enabled": true,
+      "params": {
+        "uniform_ratio_low": 0.8,
+        "uniform_ratio_high": 1.25,
+        "max_area_ratio": 0.1
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "局部壁厚/名义壁厚超出 [0.8,1.25] 的面积占比 > 阈值",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-10",
+      "check_item_id": "DFM-10",
+      "process_type": "injection",
+      "name": "壁厚变化",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "相邻区域壁厚梯度超过允许变化率",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-11",
+      "check_item_id": "DFM-11",
+      "process_type": "injection",
+      "name": "加强筋设计",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "筋根厚/名义壁厚 ≤ 0.5~0.6；筋高/根厚 ≤ 3~5",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-12",
+      "check_item_id": "DFM-12",
+      "process_type": "injection",
+      "name": "模具壁厚",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "筋与筋、凸台与凸台之间模具钢厚度 ≥ 阈值",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-13",
+      "check_item_id": "DFM-13",
+      "process_type": "injection",
+      "name": "拔模角",
+      "enabled": true,
+      "params": {
+        "pull_direction": [
+          0,
+          0,
+          1
+        ],
+        "min_draft_angle_deg": 0.5
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P1",
+      "notes": "面法向与开模方向夹角 < 最小拔模角（0.5°~1°）",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-14",
+      "check_item_id": "DFM-14",
+      "process_type": "injection",
+      "name": "倒扣",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "沿开模方向存在遮挡（面在投影方向互相覆盖）",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-15",
+      "check_item_id": "DFM-15",
+      "process_type": "injection",
+      "name": "凸台设计",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "凸台根部 R/壁厚、顶部厚度、凸台与侧壁距离",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-16",
+      "check_item_id": "DFM-16",
+      "process_type": "injection",
+      "name": "圆角半径",
+      "enabled": true,
+      "params": {
+        "inner_radius_ratio": 0.25,
+        "outer_radius_ratio": 0.5
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "内角缺 R 或 R<0.25t；外角 R<0.5t",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-17",
+      "check_item_id": "DFM-17",
+      "process_type": "injection",
+      "name": "多抽芯方向",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "统计倒扣方向聚类，>1 个主方向则判定需多抽芯",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-18",
+      "check_item_id": "DFM-18",
+      "process_type": "injection",
+      "name": "尖角",
+      "enabled": true,
+      "params": {
+        "sharp_angle_deg": 60.0
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "相邻面二面角 < 阈值（如 60°）且非设计意图",
+      "owner": "M3"
+    },
+    {
+      "rule_id": "R-DFM-19",
+      "check_item_id": "DFM-19",
+      "process_type": "sheet_metal",
+      "name": "最小弯曲半径",
+      "enabled": true,
+      "params": {
+        "min_bend_radius_ratio": 0.5,
+        "sheet_thickness_mm": 1.0
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "内 R/料厚 t < 材料下限（冷轧钢 0.5~1.0）",
+      "owner": "M6A"
+    },
+    {
+      "rule_id": "R-DFM-20",
+      "check_item_id": "DFM-20",
+      "process_type": "sheet_metal",
+      "name": "孔到边缘距离",
+      "enabled": true,
+      "params": {
+        "min_edge_distance_ratio": 1.5
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "孔边到板边距离 < 1.5t~2t",
+      "owner": "M6A"
+    },
+    {
+      "rule_id": "R-DFM-21",
+      "check_item_id": "DFM-21",
+      "process_type": "sheet_metal",
+      "name": "孔间距",
+      "enabled": true,
+      "params": {
+        "min_hole_spacing_ratio": 2.0
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "相邻孔净距 < 2t",
+      "owner": "M6A"
+    },
+    {
+      "rule_id": "R-DFM-22",
+      "check_item_id": "DFM-22",
+      "process_type": "sheet_metal",
+      "name": "孔径与料厚比",
+      "enabled": true,
+      "params": {
+        "min_hole_diameter_ratio": 1.0
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "冲孔直径 < 料厚",
+      "owner": "M6A"
+    },
+    {
+      "rule_id": "R-DFM-23",
+      "check_item_id": "DFM-23",
+      "process_type": "sheet_metal",
+      "name": "槽的最小宽度",
+      "enabled": true,
+      "params": {
+        "min_slot_width_ratio": 1.2
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "槽宽 < 1.2t",
+      "owner": "M6A"
+    },
+    {
+      "rule_id": "R-DFM-24",
+      "check_item_id": "DFM-24",
+      "process_type": "sheet_metal",
+      "name": "折弯与切口距离",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "切口/孔到折弯线距离 < 3t + R",
+      "owner": "M6A"
+    },
+    {
+      "rule_id": "R-DFM-25",
+      "check_item_id": "DFM-25",
+      "process_type": "sheet_metal",
+      "name": "翻边高度",
+      "enabled": true,
+      "params": {
+        "min_flange_height_ratio": 3.0
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "翻边高 < 3t + R（否则边缘撕裂）",
+      "owner": "M6A"
+    },
+    {
+      "rule_id": "R-DFM-26",
+      "check_item_id": "DFM-26",
+      "process_type": "sheet_metal",
+      "name": "冲压凸台高度",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "凸台高/t 超出允许区间",
+      "owner": "M6A"
+    },
+    {
+      "rule_id": "R-DFM-27",
+      "check_item_id": "DFM-27",
+      "process_type": "machining",
+      "name": "深孔",
+      "enabled": true,
+      "params": {
+        "deep_hole_ratio": 4.0,
+        "very_deep_hole_ratio": 10.0
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "孔深/孔径 > 4（标准钻）或 > 10（深孔）",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-28",
+      "check_item_id": "DFM-28",
+      "process_type": "machining",
+      "name": "深窄槽",
+      "enabled": true,
+      "params": {
+        "deep_slot_ratio": 3.0
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "槽深/槽宽 > 3~4",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-29",
+      "check_item_id": "DFM-29",
+      "process_type": "machining",
+      "name": "平底盲孔",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "盲孔底面为平面（无钻尖角），不利排屑",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-30",
+      "check_item_id": "DFM-30",
+      "process_type": "machining",
+      "name": "刀具可达性",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "沿孔/槽轴线的刀具包络无遮挡",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-31",
+      "check_item_id": "DFM-31",
+      "process_type": "machining",
+      "name": "特征尺寸与刀具标准",
+      "enabled": true,
+      "params": {
+        "standard_diameters": [
+          1.0,
+          1.2,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0,
+          5.5,
+          6.0,
+          6.5,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          20.0
+        ],
+        "tolerance_mm": 0.05,
+        "max_hole_diameter_mm": 20.0
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "孔径/槽宽落在标准刀具系列（Φ1/2/3/4/5/6/8/10/12…）内",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-32",
+      "check_item_id": "DFM-32",
+      "process_type": "machining",
+      "name": "底部圆角一致性",
+      "enabled": true,
+      "params": {
+        "max_distinct_radii": 3,
+        "cluster_tolerance_mm": 0.1
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "底面圆角半径种类数 > N（换刀次数过多）",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-33",
+      "check_item_id": "DFM-33",
+      "process_type": "machining",
+      "name": "顶部圆角",
+      "enabled": true,
+      "params": {
+        "min_top_fillet_mm": 0.5
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "顶边 R < 刀具最小 R 或缺失",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-34",
+      "check_item_id": "DFM-34",
+      "process_type": "machining",
+      "name": "内部倒角",
+      "enabled": true,
+      "params": {
+        "standard_chamfer_deg": 45.0,
+        "standard_chamfer_mm": 0.5
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "内角倒角角度/尺寸不在标准范围",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-35",
+      "check_item_id": "DFM-35",
+      "process_type": "machining",
+      "name": "深圆角转角",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "内腔转角 R < 刀具 R（刀具进不去）",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-36",
+      "check_item_id": "DFM-36",
+      "process_type": "machining",
+      "name": "角度铣削面",
+      "enabled": true,
+      "params": {
+        "standard_angles_deg": [
+          0,
+          30,
+          45,
+          60,
+          90
+        ]
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "侧面与底面/基准面夹角非 90° 且非标准角",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-37",
+      "check_item_id": "DFM-37",
+      "process_type": "machining",
+      "name": "窄通道",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "通道宽度 < 最小刀具直径",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-DFM-38",
+      "check_item_id": "DFM-38",
+      "process_type": "machining",
+      "name": "孔的入刀/出刀面",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "孔入口/出口面法向与孔轴夹角 > 阈值",
+      "owner": "M6"
+    },
+    {
+      "rule_id": "R-SAF-01",
+      "check_item_id": "SAF-01",
+      "process_type": "safety",
+      "name": "电气间隙",
+      "enabled": true,
+      "params": {
+        "rated_voltage_v": 400,
+        "pollution_degree": 2,
+        "material_group": "II",
+        "overvoltage_category": "III"
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P0",
+      "notes": "导体两两配对求最短空间直线距离，与 IEC 60664-1 限值比对；AutoCrear 结果作对照",
+      "owner": "M2"
+    },
+    {
+      "rule_id": "R-SAF-02",
+      "check_item_id": "SAF-02",
+      "process_type": "safety",
+      "name": "爬电距离",
+      "enabled": true,
+      "params": {
+        "rated_voltage_v": 400,
+        "pollution_degree": 2,
+        "material_group": "II",
+        "cti": 600
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P0",
+      "notes": "沿绝缘表面求最短泄漏路径，处理沟槽/筋/倒角规则；AutoCrear 结果作对照",
+      "owner": "M2"
+    },
+    {
+      "rule_id": "R-SAF-03",
+      "check_item_id": "SAF-03",
+      "process_type": "safety",
+      "name": "安规不合规归集",
+      "enabled": true,
+      "params": {
+        "combine": "worst"
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P1",
+      "notes": "综合间隙与爬电结果，任一项低于限值即判不合规并分级",
+      "owner": "M2"
+    },
+    {
+      "rule_id": "R-SAF-04",
+      "check_item_id": "SAF-04",
+      "process_type": "safety",
+      "name": "安规量化建议",
+      "enabled": true,
+      "params": {
+        "target_margin_mm": 0.5
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "输出目标尺寸：增大间隙到 X mm / 增加绝缘筋使爬电达到 Y mm",
+      "owner": "M2"
+    },
+    {
+      "rule_id": "R-PERF-01",
+      "check_item_id": "PERF-01",
+      "process_type": "performance",
+      "name": "载流-温升预测",
+      "enabled": true,
+      "params": {
+        "current_a": 16.0,
+        "ambient_temp_c": 25.0,
+        "interval_confidence": 0.8
+      },
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "由几何/材料/工况特征预测稳态温升与允许载流，输出区间",
+      "owner": "M5"
+    },
+    {
+      "rule_id": "R-PERF-02",
+      "check_item_id": "PERF-02",
+      "process_type": "performance",
+      "name": "插拔力预测",
+      "enabled": true,
+      "params": {},
+      "version": "0.1",
+      "source_standard": "",
+      "severity": "P2",
+      "notes": "由接触簧片几何/材料/过盈量预测插入力、拔出力",
+      "owner": "M5"
+    }
+  ]
+}

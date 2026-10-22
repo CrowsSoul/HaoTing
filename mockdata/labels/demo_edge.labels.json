@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "demo_edge",
+  "annotator": "场景设计者（按放置坐标推导：gap 0.299 / 0.300 / 0.302）",
+  "created_at": "2026-10-22",
+  "labels": [
+    {
+      "label_id": "E01",
+      "check_item_id": "DFM-02",
+      "expected": "defect",
+      "part_refs": [
+        "P02",
+        "P03"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "实测 0.300 mm，落在阈值内"
+    },
+    {
+      "label_id": "E02",
+      "check_item_id": "DFM-02",
+      "expected": "defect",
+      "part_refs": [
+        "P03",
+        "P04"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "实测 0.299 mm，落在阈值内"
+    },
+    {
+      "label_id": "E90",
+      "check_item_id": "DFM-02",
+      "expected": "ok",
+      "part_refs": [
+        "P04"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "与邻件 0.302 mm，已过阈值，不该报"
+    }
+  ]
+}

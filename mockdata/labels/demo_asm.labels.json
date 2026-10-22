@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "demo_asm",
+  "annotator": "场景设计者（按放置坐标与几何推导）",
+  "created_at": "2026-10-22",
+  "labels": [
+    {
+      "label_id": "L001",
+      "check_item_id": "DFM-02",
+      "expected": "defect",
+      "part_refs": [
+        "P02",
+        "P05"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "零件 P02 与 P05 的包围盒间隙 0.000 mm ≤ 阈值 0.30 mm（粗筛结果，需精确"
+    },
+    {
+      "label_id": "L002",
+      "check_item_id": "DFM-02",
+      "expected": "defect",
+      "part_refs": [
+        "P02",
+        "P06"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "零件 P02 与 P06 的包围盒间隙 0.000 mm ≤ 阈值 0.30 mm（粗筛结果，需精确"
+    },
+    {
+      "label_id": "L003",
+      "check_item_id": "DFM-02",
+      "expected": "defect",
+      "part_refs": [
+        "P03",
+        "P04"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "零件 P03 与 P04 的包围盒间隙 0.300 mm ≤ 阈值 0.30 mm（粗筛结果，需精确"
+    },
+    {
+      "label_id": "L004",
+      "check_item_id": "DFM-02",
+      "expected": "defect",
+      "part_refs": [
+        "P04",
+        "P05"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "零件 P04 与 P05 的包围盒间隙 0.000 mm ≤ 阈值 0.30 mm（粗筛结果，需精确"
+    },
+    {
+      "label_id": "L005",
+      "check_item_id": "DFM-02",
+      "expected": "defect",
+      "part_refs": [
+        "P05",
+        "P06"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "零件 P05 与 P06 的包围盒间隙 0.150 mm ≤ 阈值 0.30 mm（粗筛结果，需精确"
+    },
+    {
+      "label_id": "L006",
+      "check_item_id": "DFM-31",
+      "expected": "defect",
+      "part_refs": [
+        "P01"
+      ],
+      "location": [
+        165.0,
+        14.999999999999998,
+        36.13
+      ],
+      "tolerance_mm": 3.0,
+      "face_ids": [
+        "F43013"
+      ],
+      "note": "孔直径 Ø7.65 不在标准刀具系列内（最近标准值 Ø8.0，偏差 -0.35 mm）"
+    },
+    {
+      "label_id": "L007",
+      "check_item_id": "DFM-31",
+      "expected": "defect",
+      "part_refs": [
+        "P02"
+      ],
+      "location": [
+        30.0,
+        14.999999999999998,
+        36.13
+      ],
+      "tolerance_mm": 3.0,
+      "face_ids": [
+        "F42693"
+      ],
+      "note": "孔直径 Ø7.65 不在标准刀具系列内（最近标准值 Ø8.0，偏差 -0.35 mm）"
+    },
+    {
+      "label_id": "L008",
+      "check_item_id": "DFM-31",
+      "expected": "defect",
+      "part_refs": [
+        "P03"
+      ],
+      "location": [
+        105.3,
+        14.999999999999998,
+        36.13
+      ],
+      "tolerance_mm": 3.0,
+      "face_ids": [
+        "F42885"
+      ],
+      "note": "孔直径 Ø7.65 不在标准刀具系列内（最近标准值 Ø8.0，偏差 -0.35 mm）"
+    },
+    {
+      "label_id": "L009",
+      "check_item_id": "DFM-31",
+      "expected": "defect",
+      "part_refs": [
+        "P04"
+      ],
+      "location": [
+        75.0,
+        14.999999999999998,
+        36.13
+      ],
+      "tolerance_mm": 3.0,
+      "face_ids": [
+        "F42949"
+      ],
+      "note": "孔直径 Ø7.65 不在标准刀具系列内（最近标准值 Ø8.0，偏差 -0.35 mm）"
+    },
+    {
+      "label_id": "L010",
+      "check_item_id": "DFM-31",
+      "expected": "defect",
+      "part_refs": [
+        "P05"
+      ],
+      "location": [
+        45.15,
+        14.999999999999998,
+        36.13
+      ],
+      "tolerance_mm": 3.0,
+      "face_ids": [
+        "F43205"
+      ],
+      "note": "孔直径 Ø7.65 不在标准刀具系列内（最近标准值 Ø8.0，偏差 -0.35 mm）"
+    },
+    {
+      "label_id": "L011",
+      "check_item_id": "DFM-31",
+      "expected": "defect",
+      "part_refs": [
+        "P06"
+      ],
+      "location": [
+        14.999999999999998,
+        14.999999999999998,
+        36.13
+      ],
+      "tolerance_mm": 3.0,
+      "face_ids": [
+        "F42629"
+      ],
+      "note": "孔直径 Ø7.65 不在标准刀具系列内（最近标准值 Ø8.0，偏差 -0.35 mm）"
+    },
+    {
+      "label_id": "N001",
+      "check_item_id": "DFM-02",
+      "expected": "ok",
+      "part_refs": [
+        "P01"
+      ],
+      "location": null,
+      "tolerance_mm": 3.0,
+      "face_ids": [],
+      "note": "F_ALONE 与任何件都相距 60mm 以上，不该报间隙"
+    }
+  ]
+}

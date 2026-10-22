@@ -1,0 +1,862 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "thin_wall",
+  "source": "F:\\文档\\deepseek-harness\\default-workspace\\harting_drp\\mockdata\\parts\\thin_wall.prt",
+  "nx_version": "v2606",
+  "units": "mm",
+  "created_at": "",
+  "generator": "nxdrp.journals.extract_geometry",
+  "parts": [
+    {
+      "part_id": "P01",
+      "name": "",
+      "journal_id": "BLOCK(0)",
+      "part_file": "F:\\文档\\deepseek-harness\\default-workspace\\harting_drp\\mockdata\\parts\\thin_wall.prt",
+      "material": "",
+      "body_type": "solid",
+      "is_sheet": false,
+      "volume": 10905.599999999993,
+      "mass": 2.5619348275199987,
+      "area": 12185.600000000002,
+      "bbox": {
+        "xmin": 0.0,
+        "ymin": 0.0,
+        "zmin": 0.0,
+        "xmax": 60.0,
+        "ymax": 40.0,
+        "zmax": 20.0
+      },
+      "face_count": 11,
+      "edge_count": 24,
+      "occurrence_path": ""
+    }
+  ],
+  "faces": [
+    {
+      "face_id": "F38950",
+      "part_id": "P01",
+      "tag": 38950,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        60.0,
+        20.0,
+        10.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "axis": null,
+      "area": 800.0,
+      "perimeter": 120.00000000000001,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        60.0,
+        20.000000000000004,
+        10.000000000000002
+      ],
+      "bbox": {
+        "xmin": 60.0,
+        "ymin": 0.0,
+        "zmin": 0.0,
+        "xmax": 60.0,
+        "ymax": 40.0,
+        "zmax": 20.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F38955",
+      "part_id": "P01",
+      "tag": 38955,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        57.99999999999999,
+        20.000000000000004,
+        10.8
+      ],
+      "normal": [
+        -1.0,
+        -0.0,
+        0.0
+      ],
+      "axis": null,
+      "area": 662.4000000000001,
+      "perimeter": 108.80000000000001,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        57.99999999999999,
+        20.000000000000004,
+        10.799999999999997
+      ],
+      "bbox": {
+        "xmin": 57.99999999999999,
+        "ymin": 2.0000000000000018,
+        "zmin": 1.6,
+        "xmax": 57.99999999999999,
+        "ymax": 38.00000000000001,
+        "zmax": 20.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F38953",
+      "part_id": "P01",
+      "tag": 38953,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        29.999999999999996,
+        20.000000000000004,
+        1.6
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis": null,
+      "area": 2016.0,
+      "perimeter": 184.0,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        30.0,
+        20.000000000000004,
+        1.6
+      ],
+      "bbox": {
+        "xmin": 1.9999999999999982,
+        "ymin": 2.0000000000000018,
+        "zmin": 1.6,
+        "xmax": 57.99999999999999,
+        "ymax": 38.00000000000001,
+        "zmax": 1.6
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F38952",
+      "part_id": "P01",
+      "tag": 38952,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        1.9999999999999982,
+        20.000000000000004,
+        10.8
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "axis": null,
+      "area": 662.4000000000001,
+      "perimeter": 108.80000000000001,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        1.9999999999999982,
+        20.000000000000004,
+        10.800000000000002
+      ],
+      "bbox": {
+        "xmin": 1.9999999999999982,
+        "ymin": 2.0000000000000018,
+        "zmin": 1.6,
+        "xmax": 1.9999999999999982,
+        "ymax": 38.00000000000001,
+        "zmax": 20.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F38957",
+      "part_id": "P01",
+      "tag": 38957,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        30.0,
+        20.0,
+        20.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis": null,
+      "area": 383.9999999999998,
+      "perimeter": 383.99999999999994,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        30.000000000000046,
+        19.999999999999982,
+        20.0
+      ],
+      "bbox": {
+        "xmin": 0.0,
+        "ymin": 0.0,
+        "zmin": 20.0,
+        "xmax": 60.0,
+        "ymax": 40.0,
+        "zmax": 20.0
+      },
+      "edge_count": 8
+    },
+    {
+      "face_id": "F38958",
+      "part_id": "P01",
+      "tag": 38958,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        0.0,
+        20.0,
+        10.0
+      ],
+      "normal": [
+        -1.0,
+        -0.0,
+        0.0
+      ],
+      "axis": null,
+      "area": 800.0,
+      "perimeter": 120.0,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        0.0,
+        20.000000000000004,
+        10.000000000000002
+      ],
+      "bbox": {
+        "xmin": 0.0,
+        "ymin": 0.0,
+        "zmin": 0.0,
+        "xmax": 0.0,
+        "ymax": 40.0,
+        "zmax": 20.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F38954",
+      "part_id": "P01",
+      "tag": 38954,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        29.999999999999996,
+        38.00000000000001,
+        10.8
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "axis": null,
+      "area": 1030.3999999999999,
+      "perimeter": 148.79999999999998,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        30.000000000000004,
+        38.00000000000001,
+        10.800000000000002
+      ],
+      "bbox": {
+        "xmin": 1.9999999999999982,
+        "ymin": 38.00000000000001,
+        "zmin": 1.6,
+        "xmax": 57.99999999999999,
+        "ymax": 38.00000000000001,
+        "zmax": 20.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F38959",
+      "part_id": "P01",
+      "tag": 38959,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        30.0,
+        0.0,
+        10.0
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "axis": null,
+      "area": 1200.0,
+      "perimeter": 160.0,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        30.0,
+        0.0,
+        9.999999999999998
+      ],
+      "bbox": {
+        "xmin": 0.0,
+        "ymin": 0.0,
+        "zmin": 0.0,
+        "xmax": 60.0,
+        "ymax": 0.0,
+        "zmax": 20.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F38961",
+      "part_id": "P01",
+      "tag": 38961,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        30.0,
+        20.0,
+        0.0
+      ],
+      "normal": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "axis": null,
+      "area": 2400.0,
+      "perimeter": 200.0,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        29.999999999999993,
+        20.0,
+        0.0
+      ],
+      "bbox": {
+        "xmin": 0.0,
+        "ymin": 0.0,
+        "zmin": 0.0,
+        "xmax": 60.0,
+        "ymax": 40.0,
+        "zmax": 0.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F38956",
+      "part_id": "P01",
+      "tag": 38956,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        30.0,
+        40.0,
+        10.0
+      ],
+      "normal": [
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "axis": null,
+      "area": 1200.0,
+      "perimeter": 160.0,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        30.0,
+        40.0,
+        10.000000000000002
+      ],
+      "bbox": {
+        "xmin": 0.0,
+        "ymin": 40.0,
+        "zmin": 0.0,
+        "xmax": 60.0,
+        "ymax": 40.0,
+        "zmax": 20.0
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F38960",
+      "part_id": "P01",
+      "tag": 38960,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 22,
+      "point": [
+        29.999999999999996,
+        2.0000000000000018,
+        10.8
+      ],
+      "normal": [
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "axis": null,
+      "area": 1030.3999999999999,
+      "perimeter": 148.79999999999998,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [
+        30.000000000000004,
+        2.0000000000000018,
+        10.799999999999999
+      ],
+      "bbox": {
+        "xmin": 1.9999999999999982,
+        "ymin": 2.0000000000000018,
+        "zmin": 1.6,
+        "xmax": 57.99999999999999,
+        "ymax": 2.0000000000000018,
+        "zmax": 20.0
+      },
+      "edge_count": 4
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E38980",
+      "part_id": "P01",
+      "tag": 38980,
+      "curve_type": "line",
+      "length": 59.99999999999999,
+      "bbox": null,
+      "face_ids": [
+        "F38957",
+        "F38956"
+      ]
+    },
+    {
+      "edge_id": "E38981",
+      "part_id": "P01",
+      "tag": 38981,
+      "curve_type": "line",
+      "length": 20.0,
+      "bbox": null,
+      "face_ids": [
+        "F38950",
+        "F38956"
+      ]
+    },
+    {
+      "edge_id": "E38982",
+      "part_id": "P01",
+      "tag": 38982,
+      "curve_type": "line",
+      "length": 40.0,
+      "bbox": null,
+      "face_ids": [
+        "F38950",
+        "F38961"
+      ]
+    },
+    {
+      "edge_id": "E38983",
+      "part_id": "P01",
+      "tag": 38983,
+      "curve_type": "line",
+      "length": 59.99999999999999,
+      "bbox": null,
+      "face_ids": [
+        "F38961",
+        "F38956"
+      ]
+    },
+    {
+      "edge_id": "E38985",
+      "part_id": "P01",
+      "tag": 38985,
+      "curve_type": "line",
+      "length": 40.0,
+      "bbox": null,
+      "face_ids": [
+        "F38950",
+        "F38957"
+      ]
+    },
+    {
+      "edge_id": "E38986",
+      "part_id": "P01",
+      "tag": 38986,
+      "curve_type": "line",
+      "length": 20.0,
+      "bbox": null,
+      "face_ids": [
+        "F38958",
+        "F38956"
+      ]
+    },
+    {
+      "edge_id": "E38984",
+      "part_id": "P01",
+      "tag": 38984,
+      "curve_type": "line",
+      "length": 20.0,
+      "bbox": null,
+      "face_ids": [
+        "F38958",
+        "F38959"
+      ]
+    },
+    {
+      "edge_id": "E38988",
+      "part_id": "P01",
+      "tag": 38988,
+      "curve_type": "line",
+      "length": 20.0,
+      "bbox": null,
+      "face_ids": [
+        "F38950",
+        "F38959"
+      ]
+    },
+    {
+      "edge_id": "E38989",
+      "part_id": "P01",
+      "tag": 38989,
+      "curve_type": "line",
+      "length": 59.99999999999999,
+      "bbox": null,
+      "face_ids": [
+        "F38961",
+        "F38959"
+      ]
+    },
+    {
+      "edge_id": "E38967",
+      "part_id": "P01",
+      "tag": 38967,
+      "curve_type": "line",
+      "length": 18.4,
+      "bbox": null,
+      "face_ids": [
+        "F38954",
+        "F38952"
+      ]
+    },
+    {
+      "edge_id": "E38966",
+      "part_id": "P01",
+      "tag": 38966,
+      "curve_type": "line",
+      "length": 56.0,
+      "bbox": null,
+      "face_ids": [
+        "F38960",
+        "F38953"
+      ]
+    },
+    {
+      "edge_id": "E38968",
+      "part_id": "P01",
+      "tag": 38968,
+      "curve_type": "line",
+      "length": 36.00000000000001,
+      "bbox": null,
+      "face_ids": [
+        "F38952",
+        "F38953"
+      ]
+    },
+    {
+      "edge_id": "E38969",
+      "part_id": "P01",
+      "tag": 38969,
+      "curve_type": "line",
+      "length": 18.4,
+      "bbox": null,
+      "face_ids": [
+        "F38960",
+        "F38955"
+      ]
+    },
+    {
+      "edge_id": "E38971",
+      "part_id": "P01",
+      "tag": 38971,
+      "curve_type": "line",
+      "length": 18.4,
+      "bbox": null,
+      "face_ids": [
+        "F38960",
+        "F38952"
+      ]
+    },
+    {
+      "edge_id": "E38970",
+      "part_id": "P01",
+      "tag": 38970,
+      "curve_type": "line",
+      "length": 36.00000000000001,
+      "bbox": null,
+      "face_ids": [
+        "F38955",
+        "F38953"
+      ]
+    },
+    {
+      "edge_id": "E38972",
+      "part_id": "P01",
+      "tag": 38972,
+      "curve_type": "line",
+      "length": 56.0,
+      "bbox": null,
+      "face_ids": [
+        "F38954",
+        "F38953"
+      ]
+    },
+    {
+      "edge_id": "E38987",
+      "part_id": "P01",
+      "tag": 38987,
+      "curve_type": "line",
+      "length": 40.0,
+      "bbox": null,
+      "face_ids": [
+        "F38957",
+        "F38958"
+      ]
+    },
+    {
+      "edge_id": "E38973",
+      "part_id": "P01",
+      "tag": 38973,
+      "curve_type": "line",
+      "length": 18.4,
+      "bbox": null,
+      "face_ids": [
+        "F38954",
+        "F38955"
+      ]
+    },
+    {
+      "edge_id": "E38974",
+      "part_id": "P01",
+      "tag": 38974,
+      "curve_type": "line",
+      "length": 56.0,
+      "bbox": null,
+      "face_ids": [
+        "F38957",
+        "F38960"
+      ]
+    },
+    {
+      "edge_id": "E38975",
+      "part_id": "P01",
+      "tag": 38975,
+      "curve_type": "line",
+      "length": 56.0,
+      "bbox": null,
+      "face_ids": [
+        "F38957",
+        "F38954"
+      ]
+    },
+    {
+      "edge_id": "E38976",
+      "part_id": "P01",
+      "tag": 38976,
+      "curve_type": "line",
+      "length": 36.00000000000001,
+      "bbox": null,
+      "face_ids": [
+        "F38957",
+        "F38952"
+      ]
+    },
+    {
+      "edge_id": "E38977",
+      "part_id": "P01",
+      "tag": 38977,
+      "curve_type": "line",
+      "length": 36.00000000000001,
+      "bbox": null,
+      "face_ids": [
+        "F38957",
+        "F38955"
+      ]
+    },
+    {
+      "edge_id": "E38978",
+      "part_id": "P01",
+      "tag": 38978,
+      "curve_type": "line",
+      "length": 40.0,
+      "bbox": null,
+      "face_ids": [
+        "F38961",
+        "F38958"
+      ]
+    },
+    {
+      "edge_id": "E38979",
+      "part_id": "P01",
+      "tag": 38979,
+      "curve_type": "line",
+      "length": 59.99999999999999,
+      "bbox": null,
+      "face_ids": [
+        "F38957",
+        "F38959"
+      ]
+    }
+  ],
+  "occurrences": [],
+  "adjacency": [
+    [
+      "F38957",
+      "F38956"
+    ],
+    [
+      "F38950",
+      "F38956"
+    ],
+    [
+      "F38950",
+      "F38961"
+    ],
+    [
+      "F38961",
+      "F38956"
+    ],
+    [
+      "F38950",
+      "F38957"
+    ],
+    [
+      "F38958",
+      "F38956"
+    ],
+    [
+      "F38958",
+      "F38959"
+    ],
+    [
+      "F38950",
+      "F38959"
+    ],
+    [
+      "F38961",
+      "F38959"
+    ],
+    [
+      "F38954",
+      "F38952"
+    ],
+    [
+      "F38960",
+      "F38953"
+    ],
+    [
+      "F38952",
+      "F38953"
+    ],
+    [
+      "F38960",
+      "F38955"
+    ],
+    [
+      "F38960",
+      "F38952"
+    ],
+    [
+      "F38955",
+      "F38953"
+    ],
+    [
+      "F38954",
+      "F38953"
+    ],
+    [
+      "F38957",
+      "F38958"
+    ],
+    [
+      "F38954",
+      "F38955"
+    ],
+    [
+      "F38957",
+      "F38960"
+    ],
+    [
+      "F38957",
+      "F38954"
+    ],
+    [
+      "F38957",
+      "F38952"
+    ],
+    [
+      "F38957",
+      "F38955"
+    ],
+    [
+      "F38961",
+      "F38958"
+    ],
+    [
+      "F38957",
+      "F38959"
+    ]
+  ],
+  "diagnostics": {
+    "journal": "extract_geometry",
+    "warnings": [],
+    "sections": {},
+    "part_units_raw": "1",
+    "counts": {
+      "bodies": 1,
+      "faces": 11,
+      "edges": 24,
+      "occurrences": 0,
+      "adjacency_pairs": 24
+    },
+    "elapsed_s": 0.8
+  },
+  "meta": {
+    "has_normals": true,
+    "has_axes": false,
+    "journal_face_type_map": {
+      "1": "planar",
+      "2": "cylindrical",
+      "3": "conical",
+      "4": "spherical",
+      "5": "toroidal",
+      "6": "general",
+      "7": "blend",
+      "8": "bsurface",
+      "9": "offset"
+    },
+    "cache": "miss"
+  }
+}

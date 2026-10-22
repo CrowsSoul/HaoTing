@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "board_a",
+  "annotator": "格式样例（由参考实现输出生成，不是人工标注）",
+  "created_at": "2026-10-22",
+  "labels": [
+    {
+      "label_id": "L001",
+      "check_item_id": "DFM-02",
+      "expected": "defect",
+      "part_refs": [
+        "P01",
+        "P02"
+      ],
+      "location": null,
+      "tolerance_mm": 2.0,
+      "face_ids": [],
+      "note": "零件 P01 与 P02 的包围盒间隙 0.150 mm ≤ 阈值 0.30 m"
+    },
+    {
+      "label_id": "L002",
+      "check_item_id": "DFM-31",
+      "expected": "defect",
+      "part_refs": [
+        "P01"
+      ],
+      "location": [
+        10.0,
+        10.0,
+        6.0
+      ],
+      "tolerance_mm": 2.0,
+      "face_ids": [
+        "F6"
+      ],
+      "note": "孔直径 Ø3.70 不在标准刀具系列内（最近标准值 Ø3.5，偏差 +0.20 "
+    },
+    {
+      "label_id": "L003",
+      "check_item_id": "DFM-31",
+      "expected": "defect",
+      "part_refs": [
+        "P01"
+      ],
+      "location": [
+        10.0,
+        10.0,
+        6.0
+      ],
+      "tolerance_mm": 2.0,
+      "face_ids": [
+        "F7"
+      ],
+      "note": "孔直径 Ø6.30 不在标准刀具系列内（最近标准值 Ø6.5，偏差 -0.20 "
+    },
+    {
+      "label_id": "L004",
+      "check_item_id": "DFM-32",
+      "expected": "defect",
+      "part_refs": [
+        "P01"
+      ],
+      "location": null,
+      "tolerance_mm": 2.0,
+      "face_ids": [
+        "F9",
+        "F10",
+        "F11",
+        "F12",
+        "F13",
+        "F14"
+      ],
+      "note": "零件 P01 存在 5 种不同的回转圆角半径 （R0.40, R0.80, R1"
+    },
+    {
+      "label_id": "L900",
+      "check_item_id": "DFM-31",
+      "expected": "ok",
+      "part_refs": [
+        "P01"
+      ],
+      "location": [
+        10.0,
+        10.0,
+        6.0
+      ],
+      "tolerance_mm": 1.0,
+      "face_ids": [],
+      "note": "标准孔位，不该报"
+    },
+    {
+      "label_id": "L901",
+      "check_item_id": "DFM-32",
+      "expected": "ok",
+      "part_refs": [
+        "P02"
+      ],
+      "location": [
+        47.0,
+        12.5,
+        3.0
+      ],
+      "tolerance_mm": 1.0,
+      "face_ids": [],
+      "note": "端子无圆角要求"
+    }
+  ]
+}
