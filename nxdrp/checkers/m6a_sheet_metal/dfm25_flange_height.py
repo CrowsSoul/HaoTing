@@ -13,7 +13,7 @@ from nxdrp.checkers.base import CheckContext
 from nxdrp.contracts import Finding
 from nxdrp.geom import bbox_extent_along, cross, face_normal, length, norm
 
-from _m6a_dfm_common import (
+from ._m6a_dfm_common import (
     SheetMetalChecker,
     emit_finding,
     face_point,

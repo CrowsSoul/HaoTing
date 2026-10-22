@@ -7,23 +7,20 @@ import sys
 import unittest
 from pathlib import Path
 
-PLUGIN_ROOT = Path(__file__).resolve().parents[1]
-REPO_ROOT = PLUGIN_ROOT.parent
-for _path in (str(REPO_ROOT), str(PLUGIN_ROOT)):
-    if _path not in sys.path:
-        sys.path.insert(0, _path)
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
-from nxdrp.contracts import BBox, Edge, Face, ModelBundle, Part
-
-from _m6a_dfm_common import (
+from nxdrp.checkers.m6a_sheet_metal._m6a_dfm_common import (
     adjacency_map,
     extract_features,
     line_line_distance,
     positive_number,
     resolve_thickness,
 )
+from nxdrp.contracts import BBox, Edge, Face, ModelBundle, Part
 
-FIXTURE = PLUGIN_ROOT / "__tests__" / "fixtures" / "bent_sheet.model.json"
+FIXTURE = REPO_ROOT / "tests" / "fixtures" / "bent_sheet.model.json"
 MODELS = REPO_ROOT / "mockdata" / "models"
 
 
