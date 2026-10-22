@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "deep_slot",
+  "annotator": "M6 张百瑞（按 Mock 几何标注，仅用于流程验证）",
+  "created_at": "2026-10-22",
+  "labels": [
+    { "label_id": "L001", "check_item_id": "DFM-28", "expected": "defect", "part_refs": ["P01"], "location": [20.0, 15.0, 9.0], "tolerance_mm": 2.0, "face_ids": ["F38954", "F38956", "F38955"], "note": "深窄槽，深宽比 > 3" },
+    { "label_id": "L002", "check_item_id": "DFM-33", "expected": "defect", "part_refs": ["P01"], "location": null, "tolerance_mm": 2.0, "face_ids": ["F38954"], "note": "槽口/顶面锐边，缺圆角" },
+    { "label_id": "N001", "check_item_id": "DFM-27", "expected": "ok", "part_refs": ["P01"], "location": [20.0, 15.0, 7.5], "face_ids": [], "note": "无孔特征" },
+    { "label_id": "N002", "check_item_id": "DFM-37", "expected": "ok", "part_refs": ["P01"], "location": [20.0, 15.0, 9.0], "face_ids": ["F38954", "F38956", "F38955"], "note": "槽宽 ≥ 最小刀具直径" }
+  ]
+}
