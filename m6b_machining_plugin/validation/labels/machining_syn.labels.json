@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "machining_syn",
+  "annotator": "M6 张百瑞（按夹具设计意图标注，见 build_fixtures.py 头注释）",
+  "created_at": "2026-10-22",
+  "labels": [
+    { "label_id": "L001", "check_item_id": "DFM-27", "expected": "defect", "part_refs": ["P01"], "location": [20, 20, 19], "tolerance_mm": 2.0, "face_ids": ["F10"], "note": "H1 深径比 22/4 = 5.5 > 4" },
+    { "label_id": "L002", "check_item_id": "DFM-27", "expected": "defect", "part_refs": ["P01"], "location": [40, 20, 15], "tolerance_mm": 2.0, "face_ids": ["F12"], "note": "H2 深径比 30/2.8 = 10.71 > 10，应升 P1" },
+    { "label_id": "L003", "check_item_id": "DFM-28", "expected": "defect", "part_refs": ["P01"], "location": [30, 40, 23.5], "tolerance_mm": 2.0, "face_ids": ["F21", "F22", "F23"], "note": "S1 深宽比 13/4 = 3.25 > 3" },
+    { "label_id": "L004", "check_item_id": "DFM-29", "expected": "defect", "part_refs": ["P01"], "location": [20, 20, 8], "tolerance_mm": 2.0, "face_ids": ["F10", "F11"], "note": "H1 平底盲孔" },
+    { "label_id": "L005", "check_item_id": "DFM-29", "expected": "defect", "part_refs": ["P01"], "location": [20, 45, 20], "tolerance_mm": 2.0, "face_ids": ["F15", "F16"], "note": "H5 平底盲孔" },
+    { "label_id": "L006", "check_item_id": "DFM-31", "expected": "defect", "part_refs": ["P01"], "location": [40, 20, 15], "tolerance_mm": 2.0, "face_ids": ["F12"], "note": "Ø2.8 非标准" },
+    { "label_id": "L007", "check_item_id": "DFM-31", "expected": "defect", "part_refs": ["P01"], "location": [20, 45, 25], "tolerance_mm": 2.0, "face_ids": ["F15"], "note": "Ø5.3 非标准" },
+    { "label_id": "L008", "check_item_id": "DFM-32", "expected": "defect", "part_refs": ["P01"], "location": null, "tolerance_mm": 2.0, "face_ids": ["T1", "T2", "T3", "T4"], "note": "4 种圆角半径 > 3" },
+    { "label_id": "L009", "check_item_id": "DFM-33", "expected": "defect", "part_refs": ["P01"], "location": null, "tolerance_mm": 2.0, "face_ids": ["F2", "F6"], "note": "顶区锐边，缺顶边圆角" },
+    { "label_id": "L010", "check_item_id": "DFM-33", "expected": "defect", "part_refs": ["P01"], "location": [100, 30, 29.85], "tolerance_mm": 2.0, "face_ids": ["T4"], "note": "顶边 R0.3 < 0.5" },
+    { "label_id": "L011", "check_item_id": "DFM-34", "expected": "defect", "part_refs": ["P01"], "location": [0.35, 30, 29.65], "tolerance_mm": 2.0, "face_ids": ["F34"], "note": "倒角尺寸 0.7 非标准" },
+    { "label_id": "L012", "check_item_id": "DFM-35", "expected": "defect", "part_refs": ["P01"], "location": [30, 38, 17], "tolerance_mm": 2.0, "face_ids": ["T5"], "note": "内部转角 R0.3 < 0.5" },
+    { "label_id": "L013", "check_item_id": "DFM-36", "expected": "defect", "part_refs": ["P01"], "location": [90, 45, 29.4], "tolerance_mm": 2.0, "face_ids": ["F7"], "note": "斜面 20° 非标准角" },
+    { "label_id": "L014", "check_item_id": "DFM-37", "expected": "defect", "part_refs": ["P01"], "location": [60.4, 50, 29], "tolerance_mm": 2.0, "face_ids": ["F24", "F25", "F26"], "note": "槽宽 0.8 < 最小刀具直径 1.0" },
+    { "label_id": "L015", "check_item_id": "DFM-38", "expected": "defect", "part_refs": ["P01"], "location": [90, 45, 29.4], "tolerance_mm": 2.0, "face_ids": ["F19", "F7"], "note": "孔口面斜 20°" },
+
+    { "label_id": "N001", "check_item_id": "DFM-27", "expected": "ok", "part_refs": ["P01"], "location": [60, 20, 15], "face_ids": ["F13"], "note": "Ø8 深径比 3.75 ≤ 4" },
+    { "label_id": "N002", "check_item_id": "DFM-27", "expected": "ok", "part_refs": ["P01"], "location": [80, 20, 18], "face_ids": ["F14"], "note": "深径比恰 4.0（边界，不报）" },
+    { "label_id": "N003", "check_item_id": "DFM-28", "expected": "ok", "part_refs": ["P01"], "location": [85, 10, 29], "face_ids": ["F27", "F28", "F29"], "note": "S3 深宽比 0.2" },
+    { "label_id": "N004", "check_item_id": "DFM-28", "expected": "ok", "part_refs": ["P01"], "location": [15, 52.5, 22.5], "face_ids": ["F30", "F31", "F32"], "note": "S4 深宽比恰 3.0（边界，不报）" },
+    { "label_id": "N005", "check_item_id": "DFM-29", "expected": "ok", "part_refs": ["P01"], "location": [40, 45, 19.5], "face_ids": ["F17", "F18"], "note": "H6 钻尖底（锥面），排屑正常" },
+    { "label_id": "N006", "check_item_id": "DFM-29", "expected": "ok", "part_refs": ["P01"], "location": [40, 20, 15], "face_ids": ["F12"], "note": "通孔无孔底" },
+    { "label_id": "N007", "check_item_id": "DFM-31", "expected": "ok", "part_refs": ["P01"], "location": [60, 20, 15], "face_ids": ["F13"], "note": "Ø8 标准" },
+    { "label_id": "N008", "check_item_id": "DFM-31", "expected": "ok", "part_refs": ["P01"], "location": [40, 45, 25], "face_ids": ["F17"], "note": "Ø5.04 距 Ø5.0 偏差 0.04 ≤ 0.05（容差边界，不报）" },
+    { "label_id": "N009", "check_item_id": "DFM-33", "expected": "ok", "part_refs": ["P01"], "location": [50, 60, 29.5], "face_ids": ["T1"], "note": "顶边 R0.5 恰好达标（边界，不报）" },
+    { "label_id": "N010", "check_item_id": "DFM-34", "expected": "ok", "part_refs": ["P01"], "location": [99.65, 30, 29.65], "face_ids": ["F33"], "note": "C0.5×45° 标准" },
+    { "label_id": "N011", "check_item_id": "DFM-34", "expected": "ok", "part_refs": ["P01"], "location": [50, 0.3, 29.7], "face_ids": ["F35"], "note": "C0.6 偏差恰 0.1 = 容差（边界，不报）" },
+    { "label_id": "N012", "check_item_id": "DFM-36", "expected": "ok", "part_refs": ["P01"], "location": [0, 30, 15], "face_ids": ["F3"], "note": "侧面与基准面垂直（90°）" },
+    { "label_id": "N013", "check_item_id": "DFM-37", "expected": "ok", "part_refs": ["P01"], "location": [30, 40, 23.5], "face_ids": ["F21", "F22", "F23"], "note": "S1 槽宽 4.0 ≥ 1.0" },
+    { "label_id": "N014", "check_item_id": "DFM-38", "expected": "ok", "part_refs": ["P01"], "location": [40, 20, 30], "face_ids": ["F12", "F2"], "note": "孔口面与孔轴垂直" }
+  ]
+}
