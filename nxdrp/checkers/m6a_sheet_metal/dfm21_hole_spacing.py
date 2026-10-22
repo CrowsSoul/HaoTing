@@ -14,7 +14,7 @@ from nxdrp.checkers.base import CheckContext
 from nxdrp.contracts import Finding
 from nxdrp.geom import dist, dot
 
-from _m6a_dfm_common import (
+from ._m6a_dfm_common import (
     PARALLEL_DOT,
     SheetMetalChecker,
     emit_finding,

@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "model_id": "m6a_bent_sheet_fixture",
-  "source": "synthetic://m6a_dfm_plugin/bent_sheet",
+  "source": "synthetic://tests/fixtures/bent_sheet",
   "nx_version": "synthetic",
   "units": "mm",
   "created_at": "2026-10-22",
-  "generator": "m6a_dfm_plugin.__tests__.fixtures",
+  "generator": "tests.fixtures.bent_sheet",
   "parts": [
     {
       "part_id": "P01",

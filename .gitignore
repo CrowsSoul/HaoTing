@@ -10,6 +10,9 @@ __pycache__/
 # 运行产物
 findings.json
 findings_*.json
+eval*.json
+*.eval.json
+f.json
 *.model.json.bak
 
 # 编辑器
