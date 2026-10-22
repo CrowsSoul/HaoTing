@@ -1,0 +1,209 @@
+{
+  "schema": "perf01-tree-v1",
+  "feature_names": [
+    "log_area_mm2",
+    "log_length_mm",
+    "log_rho_ohm_m",
+    "log_current_a",
+    "log_h_w_m2k"
+  ],
+  "target": "log_correction",
+  "interval_confidence": 0.8,
+  "q_low": 0.8636588983993274,
+  "q_high": 1.0907487316738285,
+  "tree": {
+    "leaf": false,
+    "feature": 1,
+    "threshold": 3.01793980022168,
+    "left": {
+      "leaf": false,
+      "feature": 3,
+      "threshold": 2.6248641781894397,
+      "left": {
+        "leaf": false,
+        "feature": 4,
+        "threshold": 2.897310273960972,
+        "left": {
+          "leaf": false,
+          "feature": 0,
+          "threshold": 1.4547483699921813,
+          "left": {
+            "leaf": true,
+            "value": -0.05742220311748965,
+            "n": 31
+          },
+          "right": {
+            "leaf": true,
+            "value": -0.01597931972096881,
+            "n": 18
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 3,
+          "threshold": 1.4409737690081528,
+          "left": {
+            "leaf": true,
+            "value": 0.015228745863802599,
+            "n": 25
+          },
+          "right": {
+            "leaf": true,
+            "value": -0.03906161805216462,
+            "n": 24
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 1,
+        "threshold": 2.4703612572148677,
+        "left": {
+          "leaf": false,
+          "feature": 4,
+          "threshold": 2.7660471294660294,
+          "left": {
+            "leaf": true,
+            "value": 0.049099092721297664,
+            "n": 8
+          },
+          "right": {
+            "leaf": true,
+            "value": 0.013556263729761512,
+            "n": 11
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 1,
+          "threshold": 2.7013525277356356,
+          "left": {
+            "leaf": true,
+            "value": -0.08737389355677729,
+            "n": 6
+          },
+          "right": {
+            "leaf": true,
+            "value": 0.0026799859322370074,
+            "n": 8
+          }
+        }
+      }
+    },
+    "right": {
+      "leaf": false,
+      "feature": 0,
+      "threshold": 1.1070499303003454,
+      "left": {
+        "leaf": false,
+        "feature": 3,
+        "threshold": 2.8147406251144886,
+        "left": {
+          "leaf": false,
+          "feature": 3,
+          "threshold": 1.495873362102404,
+          "left": {
+            "leaf": true,
+            "value": 0.04684118728704397,
+            "n": 26
+          },
+          "right": {
+            "leaf": true,
+            "value": -0.0018001440803788729,
+            "n": 43
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "threshold": 0.24830548584202214,
+          "left": {
+            "leaf": true,
+            "value": 0.04156693379555996,
+            "n": 8
+          },
+          "right": {
+            "leaf": true,
+            "value": 0.11596623400800395,
+            "n": 8
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 0,
+        "threshold": 1.543068145734275,
+        "left": {
+          "leaf": false,
+          "feature": 3,
+          "threshold": 1.1874399314792587,
+          "left": {
+            "leaf": true,
+            "value": 0.014900867748918342,
+            "n": 6
+          },
+          "right": {
+            "leaf": true,
+            "value": -0.05886390776277635,
+            "n": 15
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "threshold": 2.644551231580259,
+          "left": {
+            "leaf": true,
+            "value": 0.020433350601906423,
+            "n": 51
+          },
+          "right": {
+            "leaf": true,
+            "value": -0.0272119057779374,
+            "n": 12
+          }
+        }
+      }
+    }
+  },
+  "train_size": 300,
+  "val_size": 60,
+  "sample_count": 360,
+  "label_source": "lumped_convection_v1",
+  "metrics": {
+    "mae_c": 11.11840116727603,
+    "median_ae_c": 0.2692940762843208,
+    "band_median_ae_c": 0.5409554289973943,
+    "coverage": 0.7714285714285715,
+    "n": 60,
+    "band_n": 35
+  },
+  "scope": {
+    "area_mm2": [
+      0.5,
+      20.0
+    ],
+    "length_mm": [
+      5.0,
+      40.0
+    ],
+    "current_a": [
+      1.0,
+      40.0
+    ],
+    "ambient_temp_c": [
+      0.0,
+      80.0
+    ],
+    "h_w_m2k": [
+      8.0,
+      25.0
+    ],
+    "materials": [
+      "Cu",
+      "CuSn6",
+      "CuZn37",
+      "CuBe2"
+    ]
+  }
+}

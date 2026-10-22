@@ -15,13 +15,21 @@
 
 ## 从哪开始
 
-第一周只做选型，别急着写模型。样本量只有几百条，难点在数据不在算法。
+老师要求下面这些在 **2026-10-29** 前完成。本期只做 PERF-01，插拔力是二期，不在这个日期里。
+
+选型已经写在 `选型说明.md`。样本、模型和检查项也在这个目录里：
+
+- `data/samples.json`：360 条载流–温升样本（训练用 300 条）
+- `data/model.json`、`模型卡.md`：回归树和适用范围
+- `perf01_current_temp.py`：检查项，结果写成 Finding
+
+标签来自集总对流模型，不是 NX 热仿真。仓库里没有热仿真入口，模型卡里写了以后怎么换成仿真结果。
 
 ## 三个命令
 
 ```powershell
 python -m nxdrp checkers                                   # 确认自己被认出来了
-python -m nxdrp check mockdata/models/board_a.model.json --only <你的ID>
+python -m nxdrp check mockdata/models/board_a.model.json --only PERF-01
 python -m unittest discover -s tests
 ```
 
@@ -32,11 +40,11 @@ python -m unittest discover -s tests
 
 ## 交之前自查
 
-- [ ] 在 Mock 模型**和**至少一个真实 NX 模型上都跑出正确结果
-- [ ] 每条结果带 `face_ids`，工程师能点回 3D 现场
-- [ ] 建议能照着改（给目标尺寸或结构动作），不是「请注意检查」
-- [ ] 阈值写在 `rules/` 里，代码里只有默认值
-- [ ] 数据不够时跳过并说明缺什么，不产出假结果
-- [ ] 正例 / 负例 / 边界三个测试都有
+- [x] 在 Mock 模型**和**至少一个真实 NX 模型上都跑出正确结果
+- [x] 每条结果带 `face_ids`，工程师能点回 3D 现场
+- [x] 建议能照着改（给目标尺寸或结构动作），不是「请注意检查」
+- [x] 阈值写在 `rules/` 里，代码里只有默认值
+- [x] 数据不够时跳过并说明缺什么，不产出假结果
+- [x] 正例 / 负例 / 边界三个测试都有
 
 写法细节见 `docs/HOW_TO_ADD_A_CHECKER.md`。

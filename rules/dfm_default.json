@@ -669,12 +669,30 @@
       "params": {
         "current_a": 16.0,
         "ambient_temp_c": 25.0,
-        "interval_confidence": 0.8
+        "interval_confidence": 0.8,
+        "max_rise_c": 45.0,
+        "convection_h_w_m2k": 15.0,
+        "area_mm2_min": 0.5,
+        "area_mm2_max": 20.0,
+        "length_mm_min": 5.0,
+        "length_mm_max": 40.0,
+        "current_a_min": 1.0,
+        "current_a_max": 40.0,
+        "ambient_temp_c_min": 0.0,
+        "ambient_temp_c_max": 80.0,
+        "h_w_m2k_min": 8.0,
+        "h_w_m2k_max": 25.0,
+        "materials": {
+          "Cu": {"rho_ohm_m": 1.724e-8},
+          "CuSn6": {"rho_ohm_m": 1.3e-7},
+          "CuZn37": {"rho_ohm_m": 6.2e-8},
+          "CuBe2": {"rho_ohm_m": 7.8e-8}
+        }
       },
       "version": "0.1",
-      "source_standard": "",
+      "source_standard": "集总对流模型初值；电阻率与允许温升可在本条 params 中改",
       "severity": "P2",
-      "notes": "由几何/材料/工况特征预测稳态温升与允许载流，输出区间",
+      "notes": "由几何/材料/工况特征预测稳态温升与允许载流，输出区间。允许温升见 max_rise_c",
       "owner": "M5"
     },
     {
