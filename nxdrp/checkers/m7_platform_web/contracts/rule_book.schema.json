@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://harting.local/nxdrp/rule_book.schema.json",
+  "title": "RuleBook",
+  "type": "object",
+  "required": [
+    "rules"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rule_id",
+          "check_item_id"
+        ],
+        "properties": {
+          "rule_id": {
+            "type": "string"
+          },
+          "check_item_id": {
+            "type": "string"
+          },
+          "process_type": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "params": {
+            "type": "object"
+          },
+          "source_standard": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "P0",
+              "P1",
+              "P2",
+              "P3"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

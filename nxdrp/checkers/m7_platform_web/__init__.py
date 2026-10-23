@@ -1,14 +1,7 @@
 # -*- coding: utf-8 -*-
-"""M7 平台 Web 交互与服务（不放 checker） —— 负责人：陈卉妍
+"""M7 Web、任务调度与规则管理。此模块不提供 checker，也不在导入时启动服务。
 
-本包由 tools/scaffold_team.py 生成。往下面导出你的 checker：
-
-    from .my_checker import MyChecker
-    CHECKERS = [MyChecker()]
-
-导出后框架会自动发现，不需要改任何核心文件。
-详细步骤：docs/HOW_TO_ADD_A_CHECKER.md
+从项目根目录执行 python -m nxdrp.checkers.m7_platform_web。
+Web 依赖仅在启动时加载，公共框架继续保持零第三方依赖。
 """
-
-# 尚未实现任何 checker 时保持为空列表，框架不会报错。
 CHECKERS = []
