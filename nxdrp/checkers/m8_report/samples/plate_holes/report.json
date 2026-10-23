@@ -1,0 +1,2161 @@
+{
+  "schema_version": "m8-report-1.0",
+  "title": "离线 NX 几何样例检查报告",
+  "created_at": "2026-10-23T10:10:14+08:00",
+  "model_id": "plate_holes",
+  "model_source": "F:\\文档\\deepseek-harness\\default-workspace\\harting_drp\\mockdata\\parts\\plate_holes.prt",
+  "model_units": "mm",
+  "is_mock": false,
+  "source_digest": "b6fb540e0b7ca3674622a59f1976098ba0822b40cd0917a3ca923164b05ef270",
+  "model_digest": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+  "rule_digest": "a47637a25c7fc5ce8bc51cc732dab8665e9c5b8c3489636338c25001da712d7a",
+  "knowledge_version": "1.0.0",
+  "run_meta": {
+    "framework_version": "0.1.0",
+    "started_at": "2026-10-23T10:10:14+08:00",
+    "finished_at": "2026-10-23T10:10:14+08:00",
+    "elapsed_ms": 0.1,
+    "rulebook": "dfm_default",
+    "rulebook_version": "0.1"
+  },
+  "sections": [
+    {
+      "id": "DFM-01",
+      "name": "干涉检测",
+      "owner": "M4",
+      "phase": "一期",
+      "anchor": "item-DFM-01",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-02",
+      "name": "最小间隙",
+      "owner": "M4",
+      "phase": "一期",
+      "anchor": "item-DFM-02",
+      "status": "missing_data",
+      "status_label": "缺少数据",
+      "count": 0,
+      "reason": "模型缺少所需数据: multiple_parts",
+      "findings": []
+    },
+    {
+      "id": "DFM-03",
+      "name": "孔对齐",
+      "owner": "M4",
+      "phase": "一期",
+      "anchor": "item-DFM-03",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-04",
+      "name": "孔/槽对齐",
+      "owner": "M4",
+      "phase": "一期",
+      "anchor": "item-DFM-04",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-05",
+      "name": "紧固件可达性",
+      "owner": "M4",
+      "phase": "一期",
+      "anchor": "item-DFM-05",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-06",
+      "name": "紧固件间隙",
+      "owner": "M4",
+      "phase": "一期",
+      "anchor": "item-DFM-06",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-07",
+      "name": "紧固件啮合长度",
+      "owner": "M4",
+      "phase": "一期",
+      "anchor": "item-DFM-07",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-08",
+      "name": "最小壁厚",
+      "owner": "M3",
+      "phase": "一期",
+      "anchor": "item-DFM-08",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-09",
+      "name": "均匀壁厚",
+      "owner": "M3",
+      "phase": "一期",
+      "anchor": "item-DFM-09",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-10",
+      "name": "壁厚变化",
+      "owner": "M3",
+      "phase": "二期",
+      "anchor": "item-DFM-10",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-11",
+      "name": "加强筋设计",
+      "owner": "M3",
+      "phase": "一期",
+      "anchor": "item-DFM-11",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-12",
+      "name": "模具壁厚",
+      "owner": "M3",
+      "phase": "二期",
+      "anchor": "item-DFM-12",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-13",
+      "name": "拔模角",
+      "owner": "M3",
+      "phase": "一期",
+      "anchor": "item-DFM-13",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-14",
+      "name": "倒扣",
+      "owner": "M3",
+      "phase": "一期",
+      "anchor": "item-DFM-14",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-15",
+      "name": "凸台设计",
+      "owner": "M3",
+      "phase": "一期",
+      "anchor": "item-DFM-15",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-16",
+      "name": "圆角半径",
+      "owner": "M3",
+      "phase": "一期",
+      "anchor": "item-DFM-16",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-17",
+      "name": "多抽芯方向",
+      "owner": "M3",
+      "phase": "二期",
+      "anchor": "item-DFM-17",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-18",
+      "name": "尖角",
+      "owner": "M3",
+      "phase": "一期",
+      "anchor": "item-DFM-18",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-19",
+      "name": "最小弯曲半径",
+      "owner": "M6A",
+      "phase": "一期",
+      "anchor": "item-DFM-19",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-20",
+      "name": "孔到边缘距离",
+      "owner": "M6A",
+      "phase": "一期",
+      "anchor": "item-DFM-20",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-21",
+      "name": "孔间距",
+      "owner": "M6A",
+      "phase": "一期",
+      "anchor": "item-DFM-21",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-22",
+      "name": "孔径与料厚比",
+      "owner": "M6A",
+      "phase": "一期",
+      "anchor": "item-DFM-22",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-23",
+      "name": "槽的最小宽度",
+      "owner": "M6A",
+      "phase": "一期",
+      "anchor": "item-DFM-23",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-24",
+      "name": "折弯与切口距离",
+      "owner": "M6A",
+      "phase": "二期",
+      "anchor": "item-DFM-24",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-25",
+      "name": "翻边高度",
+      "owner": "M6A",
+      "phase": "一期",
+      "anchor": "item-DFM-25",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-26",
+      "name": "冲压凸台高度",
+      "owner": "M6A",
+      "phase": "二期",
+      "anchor": "item-DFM-26",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-27",
+      "name": "深孔",
+      "owner": "M6",
+      "phase": "一期",
+      "anchor": "item-DFM-27",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-28",
+      "name": "深窄槽",
+      "owner": "M6",
+      "phase": "一期",
+      "anchor": "item-DFM-28",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-29",
+      "name": "平底盲孔",
+      "owner": "M6",
+      "phase": "一期",
+      "anchor": "item-DFM-29",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-30",
+      "name": "刀具可达性",
+      "owner": "M6",
+      "phase": "二期",
+      "anchor": "item-DFM-30",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-31",
+      "name": "特征尺寸与刀具标准",
+      "owner": "M6",
+      "phase": "一期",
+      "anchor": "item-DFM-31",
+      "status": "issues",
+      "status_label": "发现问题",
+      "count": 4,
+      "reason": "",
+      "findings": [
+        {
+          "source": {
+            "finding_id": "DFM-31-0001",
+            "check_item_id": "DFM-31",
+            "check_item_name": "特征尺寸与刀具标准",
+            "process_type": "machining",
+            "severity": "P2",
+            "confidence": 0.9,
+            "part_refs": [
+              "P01"
+            ],
+            "location": [
+              40.0,
+              15.0,
+              4.999999999999998
+            ],
+            "bbox": {
+              "xmin": 38.150000000000006,
+              "ymin": 13.149999999999999,
+              "zmin": 0.0,
+              "xmax": 41.85,
+              "ymax": 16.85,
+              "zmax": 10.0
+            },
+            "path_points": [],
+            "measured_value": 3.7,
+            "unit": "mm",
+            "threshold_value": 3.5,
+            "deviation": 0.20000000000000018,
+            "evidence": {
+              "face_ids": [
+                "F38987"
+              ],
+              "edge_ids": [],
+              "screenshot_ref": "",
+              "note": "按标准刀具体系判定；甲方厂内刀具库应以规则参数覆盖"
+            },
+            "suggestion": {
+              "text": "将孔径改为 Ø3.5（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+              "param_delta": {
+                "diameter_mm": 3.5,
+                "delta_mm": -0.2
+              },
+              "rule_ref": "R-DFM-31"
+            },
+            "detector": {
+              "module": "nxdrp.checkers.examples.dfm31_tool_standard.ToolStandardChecker",
+              "version": "0.1.0",
+              "runtime_ms": 0.02519995905458927,
+              "params_digest": ""
+            },
+            "message": "孔直径 Ø3.70 不在标准刀具系列内（最近标准值 Ø3.5，偏差 +0.20 mm）",
+            "extra": {
+              "face_type": "cylindrical",
+              "part_id": "P01"
+            }
+          },
+          "finding_id": "DFM-31-0001",
+          "check_item_id": "DFM-31",
+          "anchor": "finding-0001",
+          "name": "特征尺寸与刀具标准",
+          "severity": "P2",
+          "confidence": 0.9,
+          "position": [
+            40.0,
+            15.0,
+            4.999999999999998
+          ],
+          "bbox": {
+            "xmin": 38.150000000000006,
+            "ymin": 13.149999999999999,
+            "zmin": 0.0,
+            "xmax": 41.85,
+            "ymax": 16.85,
+            "zmax": 10.0
+          },
+          "position_origin": "检查结果",
+          "coordinate_units": "mm",
+          "deviation": 0.20000000000000018,
+          "deviation_derived": false,
+          "suggestion": "将孔径改为 Ø3.5（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+          "param_delta": {
+            "diameter_mm": 3.5,
+            "delta_mm": -0.2
+          },
+          "suggestion_fallback": false,
+          "rule_source": "未提供规则依据",
+          "quality": [],
+          "advisories": [],
+          "image": "images/finding-0001.png",
+          "image_kind": "网格三维定位图",
+          "image_source": "plate_holes.stl",
+          "image_evidence": {
+            "method": "stl_zbuffer",
+            "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+            "view_direction": [
+              0.5196,
+              -0.6928,
+              0.5
+            ],
+            "projection": "orthographic",
+            "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+            "finding_id": "DFM-31-0001",
+            "check_item_id": "DFM-31",
+            "model_id": "plate_holes",
+            "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+            "position": [
+              40.0,
+              15.0,
+              4.999999999999998
+            ],
+            "bbox": {
+              "xmin": 38.150000000000006,
+              "ymin": 13.149999999999999,
+              "zmin": 0.0,
+              "xmax": 41.85,
+              "ymax": 16.85,
+              "zmax": 10.0
+            },
+            "coordinate_units": "mm",
+            "face_ids": [
+              "F38987"
+            ],
+            "image": "images/finding-0001.png",
+            "image_sha256": "10449496f699ef0dddce8d6574a8e839090897fbd44d728fed94ae770881a183"
+          }
+        },
+        {
+          "source": {
+            "finding_id": "DFM-31-0002",
+            "check_item_id": "DFM-31",
+            "check_item_name": "特征尺寸与刀具标准",
+            "process_type": "machining",
+            "severity": "P2",
+            "confidence": 0.9,
+            "part_refs": [
+              "P01"
+            ],
+            "location": [
+              25.0,
+              45.0,
+              5.000000000000001
+            ],
+            "bbox": {
+              "xmin": 21.875000000000004,
+              "ymin": 41.87499999999999,
+              "zmin": 0.0,
+              "xmax": 28.125,
+              "ymax": 48.125,
+              "zmax": 10.0
+            },
+            "path_points": [],
+            "measured_value": 6.25,
+            "unit": "mm",
+            "threshold_value": 6.0,
+            "deviation": 0.25,
+            "evidence": {
+              "face_ids": [
+                "F38989"
+              ],
+              "edge_ids": [],
+              "screenshot_ref": "",
+              "note": "按标准刀具体系判定；甲方厂内刀具库应以规则参数覆盖"
+            },
+            "suggestion": {
+              "text": "将孔径改为 Ø6.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+              "param_delta": {
+                "diameter_mm": 6.0,
+                "delta_mm": -0.25
+              },
+              "rule_ref": "R-DFM-31"
+            },
+            "detector": {
+              "module": "nxdrp.checkers.examples.dfm31_tool_standard.ToolStandardChecker",
+              "version": "0.1.0",
+              "runtime_ms": 0.0420999713242054,
+              "params_digest": ""
+            },
+            "message": "孔直径 Ø6.25 不在标准刀具系列内（最近标准值 Ø6.0，偏差 +0.25 mm）",
+            "extra": {
+              "face_type": "cylindrical",
+              "part_id": "P01"
+            }
+          },
+          "finding_id": "DFM-31-0002",
+          "check_item_id": "DFM-31",
+          "anchor": "finding-0002",
+          "name": "特征尺寸与刀具标准",
+          "severity": "P2",
+          "confidence": 0.9,
+          "position": [
+            25.0,
+            45.0,
+            5.000000000000001
+          ],
+          "bbox": {
+            "xmin": 21.875000000000004,
+            "ymin": 41.87499999999999,
+            "zmin": 0.0,
+            "xmax": 28.125,
+            "ymax": 48.125,
+            "zmax": 10.0
+          },
+          "position_origin": "检查结果",
+          "coordinate_units": "mm",
+          "deviation": 0.25,
+          "deviation_derived": false,
+          "suggestion": "将孔径改为 Ø6.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+          "param_delta": {
+            "diameter_mm": 6.0,
+            "delta_mm": -0.25
+          },
+          "suggestion_fallback": false,
+          "rule_source": "未提供规则依据",
+          "quality": [],
+          "advisories": [],
+          "image": "images/finding-0002.png",
+          "image_kind": "网格三维定位图",
+          "image_source": "plate_holes.stl",
+          "image_evidence": {
+            "method": "stl_zbuffer",
+            "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+            "view_direction": [
+              0.5196,
+              -0.6928,
+              0.5
+            ],
+            "projection": "orthographic",
+            "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+            "finding_id": "DFM-31-0002",
+            "check_item_id": "DFM-31",
+            "model_id": "plate_holes",
+            "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+            "position": [
+              25.0,
+              45.0,
+              5.000000000000001
+            ],
+            "bbox": {
+              "xmin": 21.875000000000004,
+              "ymin": 41.87499999999999,
+              "zmin": 0.0,
+              "xmax": 28.125,
+              "ymax": 48.125,
+              "zmax": 10.0
+            },
+            "coordinate_units": "mm",
+            "face_ids": [
+              "F38989"
+            ],
+            "image": "images/finding-0002.png",
+            "image_sha256": "2ace014ccd5155227820249c5e0c1258300450de2dc2bab14cd56cb4b8a2a479"
+          }
+        },
+        {
+          "source": {
+            "finding_id": "DFM-31-0003",
+            "check_item_id": "DFM-31",
+            "check_item_name": "特征尺寸与刀具标准",
+            "process_type": "machining",
+            "severity": "P2",
+            "confidence": 0.9,
+            "part_refs": [
+              "P01"
+            ],
+            "location": [
+              65.0,
+              15.0,
+              5.0
+            ],
+            "bbox": {
+              "xmin": 62.400000000000006,
+              "ymin": 12.4,
+              "zmin": 0.0,
+              "xmax": 67.60000000000001,
+              "ymax": 17.6,
+              "zmax": 10.0
+            },
+            "path_points": [],
+            "measured_value": 5.2,
+            "unit": "mm",
+            "threshold_value": 5.0,
+            "deviation": 0.20000000000000018,
+            "evidence": {
+              "face_ids": [
+                "F38986"
+              ],
+              "edge_ids": [],
+              "screenshot_ref": "",
+              "note": "按标准刀具体系判定；甲方厂内刀具库应以规则参数覆盖"
+            },
+            "suggestion": {
+              "text": "将孔径改为 Ø5.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+              "param_delta": {
+                "diameter_mm": 5.0,
+                "delta_mm": -0.2
+              },
+              "rule_ref": "R-DFM-31"
+            },
+            "detector": {
+              "module": "nxdrp.checkers.examples.dfm31_tool_standard.ToolStandardChecker",
+              "version": "0.1.0",
+              "runtime_ms": 0.05280005279928446,
+              "params_digest": ""
+            },
+            "message": "孔直径 Ø5.20 不在标准刀具系列内（最近标准值 Ø5.0，偏差 +0.20 mm）",
+            "extra": {
+              "face_type": "cylindrical",
+              "part_id": "P01"
+            }
+          },
+          "finding_id": "DFM-31-0003",
+          "check_item_id": "DFM-31",
+          "anchor": "finding-0003",
+          "name": "特征尺寸与刀具标准",
+          "severity": "P2",
+          "confidence": 0.9,
+          "position": [
+            65.0,
+            15.0,
+            5.0
+          ],
+          "bbox": {
+            "xmin": 62.400000000000006,
+            "ymin": 12.4,
+            "zmin": 0.0,
+            "xmax": 67.60000000000001,
+            "ymax": 17.6,
+            "zmax": 10.0
+          },
+          "position_origin": "检查结果",
+          "coordinate_units": "mm",
+          "deviation": 0.20000000000000018,
+          "deviation_derived": false,
+          "suggestion": "将孔径改为 Ø5.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+          "param_delta": {
+            "diameter_mm": 5.0,
+            "delta_mm": -0.2
+          },
+          "suggestion_fallback": false,
+          "rule_source": "未提供规则依据",
+          "quality": [],
+          "advisories": [],
+          "image": "images/finding-0003.png",
+          "image_kind": "网格三维定位图",
+          "image_source": "plate_holes.stl",
+          "image_evidence": {
+            "method": "stl_zbuffer",
+            "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+            "view_direction": [
+              0.5196,
+              -0.6928,
+              0.5
+            ],
+            "projection": "orthographic",
+            "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+            "finding_id": "DFM-31-0003",
+            "check_item_id": "DFM-31",
+            "model_id": "plate_holes",
+            "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+            "position": [
+              65.0,
+              15.0,
+              5.0
+            ],
+            "bbox": {
+              "xmin": 62.400000000000006,
+              "ymin": 12.4,
+              "zmin": 0.0,
+              "xmax": 67.60000000000001,
+              "ymax": 17.6,
+              "zmax": 10.0
+            },
+            "coordinate_units": "mm",
+            "face_ids": [
+              "F38986"
+            ],
+            "image": "images/finding-0003.png",
+            "image_sha256": "675e4aae4c42547e940f70273ad9f22d1697c19e9c56aa5b52d59f4ca29b0648"
+          }
+        },
+        {
+          "source": {
+            "finding_id": "DFM-31-0004",
+            "check_item_id": "DFM-31",
+            "check_item_name": "特征尺寸与刀具标准",
+            "process_type": "machining",
+            "severity": "P2",
+            "confidence": 0.9,
+            "part_refs": [
+              "P01"
+            ],
+            "location": [
+              15.0,
+              15.0,
+              5.000000000000001
+            ],
+            "bbox": {
+              "xmin": 13.899999999999999,
+              "ymin": 13.899999999999999,
+              "zmin": 0.0,
+              "xmax": 16.1,
+              "ymax": 16.1,
+              "zmax": 10.0
+            },
+            "path_points": [],
+            "measured_value": 2.2,
+            "unit": "mm",
+            "threshold_value": 2.0,
+            "deviation": 0.20000000000000018,
+            "evidence": {
+              "face_ids": [
+                "F38988"
+              ],
+              "edge_ids": [],
+              "screenshot_ref": "",
+              "note": "按标准刀具体系判定；甲方厂内刀具库应以规则参数覆盖"
+            },
+            "suggestion": {
+              "text": "将孔径改为 Ø2.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+              "param_delta": {
+                "diameter_mm": 2.0,
+                "delta_mm": -0.2
+              },
+              "rule_ref": "R-DFM-31"
+            },
+            "detector": {
+              "module": "nxdrp.checkers.examples.dfm31_tool_standard.ToolStandardChecker",
+              "version": "0.1.0",
+              "runtime_ms": 0.06089999806135893,
+              "params_digest": ""
+            },
+            "message": "孔直径 Ø2.20 不在标准刀具系列内（最近标准值 Ø2.0，偏差 +0.20 mm）",
+            "extra": {
+              "face_type": "cylindrical",
+              "part_id": "P01"
+            }
+          },
+          "finding_id": "DFM-31-0004",
+          "check_item_id": "DFM-31",
+          "anchor": "finding-0004",
+          "name": "特征尺寸与刀具标准",
+          "severity": "P2",
+          "confidence": 0.9,
+          "position": [
+            15.0,
+            15.0,
+            5.000000000000001
+          ],
+          "bbox": {
+            "xmin": 13.899999999999999,
+            "ymin": 13.899999999999999,
+            "zmin": 0.0,
+            "xmax": 16.1,
+            "ymax": 16.1,
+            "zmax": 10.0
+          },
+          "position_origin": "检查结果",
+          "coordinate_units": "mm",
+          "deviation": 0.20000000000000018,
+          "deviation_derived": false,
+          "suggestion": "将孔径改为 Ø2.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+          "param_delta": {
+            "diameter_mm": 2.0,
+            "delta_mm": -0.2
+          },
+          "suggestion_fallback": false,
+          "rule_source": "未提供规则依据",
+          "quality": [],
+          "advisories": [],
+          "image": "images/finding-0004.png",
+          "image_kind": "网格三维定位图",
+          "image_source": "plate_holes.stl",
+          "image_evidence": {
+            "method": "stl_zbuffer",
+            "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+            "view_direction": [
+              0.5196,
+              -0.6928,
+              0.5
+            ],
+            "projection": "orthographic",
+            "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+            "finding_id": "DFM-31-0004",
+            "check_item_id": "DFM-31",
+            "model_id": "plate_holes",
+            "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+            "position": [
+              15.0,
+              15.0,
+              5.000000000000001
+            ],
+            "bbox": {
+              "xmin": 13.899999999999999,
+              "ymin": 13.899999999999999,
+              "zmin": 0.0,
+              "xmax": 16.1,
+              "ymax": 16.1,
+              "zmax": 10.0
+            },
+            "coordinate_units": "mm",
+            "face_ids": [
+              "F38988"
+            ],
+            "image": "images/finding-0004.png",
+            "image_sha256": "afd6ff5d9756b9edb919751548d32e5f0558ab7d2c7cb7d803245b34aeb255c4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "DFM-32",
+      "name": "底部圆角一致性",
+      "owner": "M6",
+      "phase": "一期",
+      "anchor": "item-DFM-32",
+      "status": "missing_data",
+      "status_label": "缺少数据",
+      "count": 0,
+      "reason": "模型缺少所需数据: toroidal_faces",
+      "findings": []
+    },
+    {
+      "id": "DFM-33",
+      "name": "顶部圆角",
+      "owner": "M6",
+      "phase": "一期",
+      "anchor": "item-DFM-33",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-34",
+      "name": "内部倒角",
+      "owner": "M6",
+      "phase": "一期",
+      "anchor": "item-DFM-34",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-35",
+      "name": "深圆角转角",
+      "owner": "M6",
+      "phase": "二期",
+      "anchor": "item-DFM-35",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-36",
+      "name": "角度铣削面",
+      "owner": "M6",
+      "phase": "一期",
+      "anchor": "item-DFM-36",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-37",
+      "name": "窄通道",
+      "owner": "M6",
+      "phase": "二期",
+      "anchor": "item-DFM-37",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "DFM-38",
+      "name": "孔的入刀/出刀面",
+      "owner": "M6",
+      "phase": "一期",
+      "anchor": "item-DFM-38",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "SAF-01",
+      "name": "电气间隙",
+      "owner": "M2",
+      "phase": "一期",
+      "anchor": "item-SAF-01",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "SAF-02",
+      "name": "爬电距离",
+      "owner": "M2",
+      "phase": "一期",
+      "anchor": "item-SAF-02",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "SAF-03",
+      "name": "安规不合规归集",
+      "owner": "M2",
+      "phase": "一期",
+      "anchor": "item-SAF-03",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "SAF-04",
+      "name": "安规量化建议",
+      "owner": "M2",
+      "phase": "二期",
+      "anchor": "item-SAF-04",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "PERF-01",
+      "name": "载流-温升预测",
+      "owner": "M5",
+      "phase": "一期",
+      "anchor": "item-PERF-01",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    },
+    {
+      "id": "PERF-02",
+      "name": "插拔力预测",
+      "owner": "M5",
+      "phase": "二期",
+      "anchor": "item-PERF-02",
+      "status": "not_run",
+      "status_label": "未执行",
+      "count": 0,
+      "reason": "未提供该项执行记录",
+      "findings": []
+    }
+  ],
+  "findings": [
+    {
+      "source": {
+        "finding_id": "DFM-31-0001",
+        "check_item_id": "DFM-31",
+        "check_item_name": "特征尺寸与刀具标准",
+        "process_type": "machining",
+        "severity": "P2",
+        "confidence": 0.9,
+        "part_refs": [
+          "P01"
+        ],
+        "location": [
+          40.0,
+          15.0,
+          4.999999999999998
+        ],
+        "bbox": {
+          "xmin": 38.150000000000006,
+          "ymin": 13.149999999999999,
+          "zmin": 0.0,
+          "xmax": 41.85,
+          "ymax": 16.85,
+          "zmax": 10.0
+        },
+        "path_points": [],
+        "measured_value": 3.7,
+        "unit": "mm",
+        "threshold_value": 3.5,
+        "deviation": 0.20000000000000018,
+        "evidence": {
+          "face_ids": [
+            "F38987"
+          ],
+          "edge_ids": [],
+          "screenshot_ref": "",
+          "note": "按标准刀具体系判定；甲方厂内刀具库应以规则参数覆盖"
+        },
+        "suggestion": {
+          "text": "将孔径改为 Ø3.5（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+          "param_delta": {
+            "diameter_mm": 3.5,
+            "delta_mm": -0.2
+          },
+          "rule_ref": "R-DFM-31"
+        },
+        "detector": {
+          "module": "nxdrp.checkers.examples.dfm31_tool_standard.ToolStandardChecker",
+          "version": "0.1.0",
+          "runtime_ms": 0.02519995905458927,
+          "params_digest": ""
+        },
+        "message": "孔直径 Ø3.70 不在标准刀具系列内（最近标准值 Ø3.5，偏差 +0.20 mm）",
+        "extra": {
+          "face_type": "cylindrical",
+          "part_id": "P01"
+        }
+      },
+      "finding_id": "DFM-31-0001",
+      "check_item_id": "DFM-31",
+      "anchor": "finding-0001",
+      "name": "特征尺寸与刀具标准",
+      "severity": "P2",
+      "confidence": 0.9,
+      "position": [
+        40.0,
+        15.0,
+        4.999999999999998
+      ],
+      "bbox": {
+        "xmin": 38.150000000000006,
+        "ymin": 13.149999999999999,
+        "zmin": 0.0,
+        "xmax": 41.85,
+        "ymax": 16.85,
+        "zmax": 10.0
+      },
+      "position_origin": "检查结果",
+      "coordinate_units": "mm",
+      "deviation": 0.20000000000000018,
+      "deviation_derived": false,
+      "suggestion": "将孔径改为 Ø3.5（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+      "param_delta": {
+        "diameter_mm": 3.5,
+        "delta_mm": -0.2
+      },
+      "suggestion_fallback": false,
+      "rule_source": "未提供规则依据",
+      "quality": [],
+      "advisories": [],
+      "image": "images/finding-0001.png",
+      "image_kind": "网格三维定位图",
+      "image_source": "plate_holes.stl",
+      "image_evidence": {
+        "method": "stl_zbuffer",
+        "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+        "view_direction": [
+          0.5196,
+          -0.6928,
+          0.5
+        ],
+        "projection": "orthographic",
+        "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+        "finding_id": "DFM-31-0001",
+        "check_item_id": "DFM-31",
+        "model_id": "plate_holes",
+        "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+        "position": [
+          40.0,
+          15.0,
+          4.999999999999998
+        ],
+        "bbox": {
+          "xmin": 38.150000000000006,
+          "ymin": 13.149999999999999,
+          "zmin": 0.0,
+          "xmax": 41.85,
+          "ymax": 16.85,
+          "zmax": 10.0
+        },
+        "coordinate_units": "mm",
+        "face_ids": [
+          "F38987"
+        ],
+        "image": "images/finding-0001.png",
+        "image_sha256": "10449496f699ef0dddce8d6574a8e839090897fbd44d728fed94ae770881a183"
+      }
+    },
+    {
+      "source": {
+        "finding_id": "DFM-31-0002",
+        "check_item_id": "DFM-31",
+        "check_item_name": "特征尺寸与刀具标准",
+        "process_type": "machining",
+        "severity": "P2",
+        "confidence": 0.9,
+        "part_refs": [
+          "P01"
+        ],
+        "location": [
+          25.0,
+          45.0,
+          5.000000000000001
+        ],
+        "bbox": {
+          "xmin": 21.875000000000004,
+          "ymin": 41.87499999999999,
+          "zmin": 0.0,
+          "xmax": 28.125,
+          "ymax": 48.125,
+          "zmax": 10.0
+        },
+        "path_points": [],
+        "measured_value": 6.25,
+        "unit": "mm",
+        "threshold_value": 6.0,
+        "deviation": 0.25,
+        "evidence": {
+          "face_ids": [
+            "F38989"
+          ],
+          "edge_ids": [],
+          "screenshot_ref": "",
+          "note": "按标准刀具体系判定；甲方厂内刀具库应以规则参数覆盖"
+        },
+        "suggestion": {
+          "text": "将孔径改为 Ø6.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+          "param_delta": {
+            "diameter_mm": 6.0,
+            "delta_mm": -0.25
+          },
+          "rule_ref": "R-DFM-31"
+        },
+        "detector": {
+          "module": "nxdrp.checkers.examples.dfm31_tool_standard.ToolStandardChecker",
+          "version": "0.1.0",
+          "runtime_ms": 0.0420999713242054,
+          "params_digest": ""
+        },
+        "message": "孔直径 Ø6.25 不在标准刀具系列内（最近标准值 Ø6.0，偏差 +0.25 mm）",
+        "extra": {
+          "face_type": "cylindrical",
+          "part_id": "P01"
+        }
+      },
+      "finding_id": "DFM-31-0002",
+      "check_item_id": "DFM-31",
+      "anchor": "finding-0002",
+      "name": "特征尺寸与刀具标准",
+      "severity": "P2",
+      "confidence": 0.9,
+      "position": [
+        25.0,
+        45.0,
+        5.000000000000001
+      ],
+      "bbox": {
+        "xmin": 21.875000000000004,
+        "ymin": 41.87499999999999,
+        "zmin": 0.0,
+        "xmax": 28.125,
+        "ymax": 48.125,
+        "zmax": 10.0
+      },
+      "position_origin": "检查结果",
+      "coordinate_units": "mm",
+      "deviation": 0.25,
+      "deviation_derived": false,
+      "suggestion": "将孔径改为 Ø6.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+      "param_delta": {
+        "diameter_mm": 6.0,
+        "delta_mm": -0.25
+      },
+      "suggestion_fallback": false,
+      "rule_source": "未提供规则依据",
+      "quality": [],
+      "advisories": [],
+      "image": "images/finding-0002.png",
+      "image_kind": "网格三维定位图",
+      "image_source": "plate_holes.stl",
+      "image_evidence": {
+        "method": "stl_zbuffer",
+        "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+        "view_direction": [
+          0.5196,
+          -0.6928,
+          0.5
+        ],
+        "projection": "orthographic",
+        "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+        "finding_id": "DFM-31-0002",
+        "check_item_id": "DFM-31",
+        "model_id": "plate_holes",
+        "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+        "position": [
+          25.0,
+          45.0,
+          5.000000000000001
+        ],
+        "bbox": {
+          "xmin": 21.875000000000004,
+          "ymin": 41.87499999999999,
+          "zmin": 0.0,
+          "xmax": 28.125,
+          "ymax": 48.125,
+          "zmax": 10.0
+        },
+        "coordinate_units": "mm",
+        "face_ids": [
+          "F38989"
+        ],
+        "image": "images/finding-0002.png",
+        "image_sha256": "2ace014ccd5155227820249c5e0c1258300450de2dc2bab14cd56cb4b8a2a479"
+      }
+    },
+    {
+      "source": {
+        "finding_id": "DFM-31-0003",
+        "check_item_id": "DFM-31",
+        "check_item_name": "特征尺寸与刀具标准",
+        "process_type": "machining",
+        "severity": "P2",
+        "confidence": 0.9,
+        "part_refs": [
+          "P01"
+        ],
+        "location": [
+          65.0,
+          15.0,
+          5.0
+        ],
+        "bbox": {
+          "xmin": 62.400000000000006,
+          "ymin": 12.4,
+          "zmin": 0.0,
+          "xmax": 67.60000000000001,
+          "ymax": 17.6,
+          "zmax": 10.0
+        },
+        "path_points": [],
+        "measured_value": 5.2,
+        "unit": "mm",
+        "threshold_value": 5.0,
+        "deviation": 0.20000000000000018,
+        "evidence": {
+          "face_ids": [
+            "F38986"
+          ],
+          "edge_ids": [],
+          "screenshot_ref": "",
+          "note": "按标准刀具体系判定；甲方厂内刀具库应以规则参数覆盖"
+        },
+        "suggestion": {
+          "text": "将孔径改为 Ø5.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+          "param_delta": {
+            "diameter_mm": 5.0,
+            "delta_mm": -0.2
+          },
+          "rule_ref": "R-DFM-31"
+        },
+        "detector": {
+          "module": "nxdrp.checkers.examples.dfm31_tool_standard.ToolStandardChecker",
+          "version": "0.1.0",
+          "runtime_ms": 0.05280005279928446,
+          "params_digest": ""
+        },
+        "message": "孔直径 Ø5.20 不在标准刀具系列内（最近标准值 Ø5.0，偏差 +0.20 mm）",
+        "extra": {
+          "face_type": "cylindrical",
+          "part_id": "P01"
+        }
+      },
+      "finding_id": "DFM-31-0003",
+      "check_item_id": "DFM-31",
+      "anchor": "finding-0003",
+      "name": "特征尺寸与刀具标准",
+      "severity": "P2",
+      "confidence": 0.9,
+      "position": [
+        65.0,
+        15.0,
+        5.0
+      ],
+      "bbox": {
+        "xmin": 62.400000000000006,
+        "ymin": 12.4,
+        "zmin": 0.0,
+        "xmax": 67.60000000000001,
+        "ymax": 17.6,
+        "zmax": 10.0
+      },
+      "position_origin": "检查结果",
+      "coordinate_units": "mm",
+      "deviation": 0.20000000000000018,
+      "deviation_derived": false,
+      "suggestion": "将孔径改为 Ø5.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+      "param_delta": {
+        "diameter_mm": 5.0,
+        "delta_mm": -0.2
+      },
+      "suggestion_fallback": false,
+      "rule_source": "未提供规则依据",
+      "quality": [],
+      "advisories": [],
+      "image": "images/finding-0003.png",
+      "image_kind": "网格三维定位图",
+      "image_source": "plate_holes.stl",
+      "image_evidence": {
+        "method": "stl_zbuffer",
+        "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+        "view_direction": [
+          0.5196,
+          -0.6928,
+          0.5
+        ],
+        "projection": "orthographic",
+        "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+        "finding_id": "DFM-31-0003",
+        "check_item_id": "DFM-31",
+        "model_id": "plate_holes",
+        "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+        "position": [
+          65.0,
+          15.0,
+          5.0
+        ],
+        "bbox": {
+          "xmin": 62.400000000000006,
+          "ymin": 12.4,
+          "zmin": 0.0,
+          "xmax": 67.60000000000001,
+          "ymax": 17.6,
+          "zmax": 10.0
+        },
+        "coordinate_units": "mm",
+        "face_ids": [
+          "F38986"
+        ],
+        "image": "images/finding-0003.png",
+        "image_sha256": "675e4aae4c42547e940f70273ad9f22d1697c19e9c56aa5b52d59f4ca29b0648"
+      }
+    },
+    {
+      "source": {
+        "finding_id": "DFM-31-0004",
+        "check_item_id": "DFM-31",
+        "check_item_name": "特征尺寸与刀具标准",
+        "process_type": "machining",
+        "severity": "P2",
+        "confidence": 0.9,
+        "part_refs": [
+          "P01"
+        ],
+        "location": [
+          15.0,
+          15.0,
+          5.000000000000001
+        ],
+        "bbox": {
+          "xmin": 13.899999999999999,
+          "ymin": 13.899999999999999,
+          "zmin": 0.0,
+          "xmax": 16.1,
+          "ymax": 16.1,
+          "zmax": 10.0
+        },
+        "path_points": [],
+        "measured_value": 2.2,
+        "unit": "mm",
+        "threshold_value": 2.0,
+        "deviation": 0.20000000000000018,
+        "evidence": {
+          "face_ids": [
+            "F38988"
+          ],
+          "edge_ids": [],
+          "screenshot_ref": "",
+          "note": "按标准刀具体系判定；甲方厂内刀具库应以规则参数覆盖"
+        },
+        "suggestion": {
+          "text": "将孔径改为 Ø2.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+          "param_delta": {
+            "diameter_mm": 2.0,
+            "delta_mm": -0.2
+          },
+          "rule_ref": "R-DFM-31"
+        },
+        "detector": {
+          "module": "nxdrp.checkers.examples.dfm31_tool_standard.ToolStandardChecker",
+          "version": "0.1.0",
+          "runtime_ms": 0.06089999806135893,
+          "params_digest": ""
+        },
+        "message": "孔直径 Ø2.20 不在标准刀具系列内（最近标准值 Ø2.0，偏差 +0.20 mm）",
+        "extra": {
+          "face_type": "cylindrical",
+          "part_id": "P01"
+        }
+      },
+      "finding_id": "DFM-31-0004",
+      "check_item_id": "DFM-31",
+      "anchor": "finding-0004",
+      "name": "特征尺寸与刀具标准",
+      "severity": "P2",
+      "confidence": 0.9,
+      "position": [
+        15.0,
+        15.0,
+        5.000000000000001
+      ],
+      "bbox": {
+        "xmin": 13.899999999999999,
+        "ymin": 13.899999999999999,
+        "zmin": 0.0,
+        "xmax": 16.1,
+        "ymax": 16.1,
+        "zmax": 10.0
+      },
+      "position_origin": "检查结果",
+      "coordinate_units": "mm",
+      "deviation": 0.20000000000000018,
+      "deviation_derived": false,
+      "suggestion": "将孔径改为 Ø2.0（标准刀具），或确认该孔为非标定制并承担刀具成本；若为销孔/螺纹底孔，请以配合件为准并在此处豁免。",
+      "param_delta": {
+        "diameter_mm": 2.0,
+        "delta_mm": -0.2
+      },
+      "suggestion_fallback": false,
+      "rule_source": "未提供规则依据",
+      "quality": [],
+      "advisories": [],
+      "image": "images/finding-0004.png",
+      "image_kind": "网格三维定位图",
+      "image_source": "plate_holes.stl",
+      "image_evidence": {
+        "method": "stl_zbuffer",
+        "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+        "view_direction": [
+          0.5196,
+          -0.6928,
+          0.5
+        ],
+        "projection": "orthographic",
+        "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+        "finding_id": "DFM-31-0004",
+        "check_item_id": "DFM-31",
+        "model_id": "plate_holes",
+        "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+        "position": [
+          15.0,
+          15.0,
+          5.000000000000001
+        ],
+        "bbox": {
+          "xmin": 13.899999999999999,
+          "ymin": 13.899999999999999,
+          "zmin": 0.0,
+          "xmax": 16.1,
+          "ymax": 16.1,
+          "zmax": 10.0
+        },
+        "coordinate_units": "mm",
+        "face_ids": [
+          "F38988"
+        ],
+        "image": "images/finding-0004.png",
+        "image_sha256": "afd6ff5d9756b9edb919751548d32e5f0558ab7d2c7cb7d803245b34aeb255c4"
+      }
+    }
+  ],
+  "warnings": [],
+  "summary": {
+    "catalog_count": 44,
+    "finding_count": 4,
+    "executed_count": 1,
+    "clear_count": 0,
+    "issue_item_count": 1,
+    "not_run_count": 41,
+    "by_severity": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 4,
+      "P3": 0
+    },
+    "quality_issue_count": 0,
+    "review_ready": false
+  },
+  "report_id": "20261023T101014-5ed049719cac",
+  "acceptance": {
+    "version": "1.0",
+    "scope": "M8 报告数据完整性检查，不代表检测算法正确或产品合格",
+    "requires_human_review": true,
+    "catalog_complete": true,
+    "four_fields_complete_count": 4,
+    "finding_count": 4,
+    "data_complete": false,
+    "status": "草稿，待补充检查结果或证据",
+    "criteria_labels": {
+      "position": "位置与三维图及面编号",
+      "deviation": "实测、阈值、单位及一致偏差",
+      "severity": "有效严重程度",
+      "recommendation": "非占位整改建议"
+    },
+    "findings": [
+      {
+        "finding_id": "DFM-31-0001",
+        "check_item_id": "DFM-31",
+        "criteria": {
+          "position": true,
+          "deviation": true,
+          "severity": true,
+          "recommendation": true
+        },
+        "four_fields_complete": true,
+        "quality": [],
+        "advisories": [],
+        "result_location": {
+          "html": "#finding-0001",
+          "item_anchor": "item-DFM-31"
+        }
+      },
+      {
+        "finding_id": "DFM-31-0002",
+        "check_item_id": "DFM-31",
+        "criteria": {
+          "position": true,
+          "deviation": true,
+          "severity": true,
+          "recommendation": true
+        },
+        "four_fields_complete": true,
+        "quality": [],
+        "advisories": [],
+        "result_location": {
+          "html": "#finding-0002",
+          "item_anchor": "item-DFM-31"
+        }
+      },
+      {
+        "finding_id": "DFM-31-0003",
+        "check_item_id": "DFM-31",
+        "criteria": {
+          "position": true,
+          "deviation": true,
+          "severity": true,
+          "recommendation": true
+        },
+        "four_fields_complete": true,
+        "quality": [],
+        "advisories": [],
+        "result_location": {
+          "html": "#finding-0003",
+          "item_anchor": "item-DFM-31"
+        }
+      },
+      {
+        "finding_id": "DFM-31-0004",
+        "check_item_id": "DFM-31",
+        "criteria": {
+          "position": true,
+          "deviation": true,
+          "severity": true,
+          "recommendation": true
+        },
+        "four_fields_complete": true,
+        "quality": [],
+        "advisories": [],
+        "result_location": {
+          "html": "#finding-0004",
+          "item_anchor": "item-DFM-31"
+        }
+      }
+    ],
+    "items": [
+      {
+        "check_item_id": "DFM-01",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-01",
+          "pdf_bookmark": "item-DFM-01",
+          "word_bookmark": "item_DFM_01"
+        }
+      },
+      {
+        "check_item_id": "DFM-02",
+        "status": "missing_data",
+        "reason": "模型缺少所需数据: multiple_parts",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-02",
+          "pdf_bookmark": "item-DFM-02",
+          "word_bookmark": "item_DFM_02"
+        }
+      },
+      {
+        "check_item_id": "DFM-03",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-03",
+          "pdf_bookmark": "item-DFM-03",
+          "word_bookmark": "item_DFM_03"
+        }
+      },
+      {
+        "check_item_id": "DFM-04",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-04",
+          "pdf_bookmark": "item-DFM-04",
+          "word_bookmark": "item_DFM_04"
+        }
+      },
+      {
+        "check_item_id": "DFM-05",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-05",
+          "pdf_bookmark": "item-DFM-05",
+          "word_bookmark": "item_DFM_05"
+        }
+      },
+      {
+        "check_item_id": "DFM-06",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-06",
+          "pdf_bookmark": "item-DFM-06",
+          "word_bookmark": "item_DFM_06"
+        }
+      },
+      {
+        "check_item_id": "DFM-07",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-07",
+          "pdf_bookmark": "item-DFM-07",
+          "word_bookmark": "item_DFM_07"
+        }
+      },
+      {
+        "check_item_id": "DFM-08",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-08",
+          "pdf_bookmark": "item-DFM-08",
+          "word_bookmark": "item_DFM_08"
+        }
+      },
+      {
+        "check_item_id": "DFM-09",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-09",
+          "pdf_bookmark": "item-DFM-09",
+          "word_bookmark": "item_DFM_09"
+        }
+      },
+      {
+        "check_item_id": "DFM-10",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-10",
+          "pdf_bookmark": "item-DFM-10",
+          "word_bookmark": "item_DFM_10"
+        }
+      },
+      {
+        "check_item_id": "DFM-11",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-11",
+          "pdf_bookmark": "item-DFM-11",
+          "word_bookmark": "item_DFM_11"
+        }
+      },
+      {
+        "check_item_id": "DFM-12",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-12",
+          "pdf_bookmark": "item-DFM-12",
+          "word_bookmark": "item_DFM_12"
+        }
+      },
+      {
+        "check_item_id": "DFM-13",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-13",
+          "pdf_bookmark": "item-DFM-13",
+          "word_bookmark": "item_DFM_13"
+        }
+      },
+      {
+        "check_item_id": "DFM-14",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-14",
+          "pdf_bookmark": "item-DFM-14",
+          "word_bookmark": "item_DFM_14"
+        }
+      },
+      {
+        "check_item_id": "DFM-15",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-15",
+          "pdf_bookmark": "item-DFM-15",
+          "word_bookmark": "item_DFM_15"
+        }
+      },
+      {
+        "check_item_id": "DFM-16",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-16",
+          "pdf_bookmark": "item-DFM-16",
+          "word_bookmark": "item_DFM_16"
+        }
+      },
+      {
+        "check_item_id": "DFM-17",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-17",
+          "pdf_bookmark": "item-DFM-17",
+          "word_bookmark": "item_DFM_17"
+        }
+      },
+      {
+        "check_item_id": "DFM-18",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-18",
+          "pdf_bookmark": "item-DFM-18",
+          "word_bookmark": "item_DFM_18"
+        }
+      },
+      {
+        "check_item_id": "DFM-19",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-19",
+          "pdf_bookmark": "item-DFM-19",
+          "word_bookmark": "item_DFM_19"
+        }
+      },
+      {
+        "check_item_id": "DFM-20",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-20",
+          "pdf_bookmark": "item-DFM-20",
+          "word_bookmark": "item_DFM_20"
+        }
+      },
+      {
+        "check_item_id": "DFM-21",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-21",
+          "pdf_bookmark": "item-DFM-21",
+          "word_bookmark": "item_DFM_21"
+        }
+      },
+      {
+        "check_item_id": "DFM-22",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-22",
+          "pdf_bookmark": "item-DFM-22",
+          "word_bookmark": "item_DFM_22"
+        }
+      },
+      {
+        "check_item_id": "DFM-23",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-23",
+          "pdf_bookmark": "item-DFM-23",
+          "word_bookmark": "item_DFM_23"
+        }
+      },
+      {
+        "check_item_id": "DFM-24",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-24",
+          "pdf_bookmark": "item-DFM-24",
+          "word_bookmark": "item_DFM_24"
+        }
+      },
+      {
+        "check_item_id": "DFM-25",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-25",
+          "pdf_bookmark": "item-DFM-25",
+          "word_bookmark": "item_DFM_25"
+        }
+      },
+      {
+        "check_item_id": "DFM-26",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-26",
+          "pdf_bookmark": "item-DFM-26",
+          "word_bookmark": "item_DFM_26"
+        }
+      },
+      {
+        "check_item_id": "DFM-27",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-27",
+          "pdf_bookmark": "item-DFM-27",
+          "word_bookmark": "item_DFM_27"
+        }
+      },
+      {
+        "check_item_id": "DFM-28",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-28",
+          "pdf_bookmark": "item-DFM-28",
+          "word_bookmark": "item_DFM_28"
+        }
+      },
+      {
+        "check_item_id": "DFM-29",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-29",
+          "pdf_bookmark": "item-DFM-29",
+          "word_bookmark": "item_DFM_29"
+        }
+      },
+      {
+        "check_item_id": "DFM-30",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-30",
+          "pdf_bookmark": "item-DFM-30",
+          "word_bookmark": "item_DFM_30"
+        }
+      },
+      {
+        "check_item_id": "DFM-31",
+        "status": "issues",
+        "reason": "",
+        "finding_count": 4,
+        "result_location": {
+          "html": "#item-DFM-31",
+          "pdf_bookmark": "item-DFM-31",
+          "word_bookmark": "item_DFM_31"
+        }
+      },
+      {
+        "check_item_id": "DFM-32",
+        "status": "missing_data",
+        "reason": "模型缺少所需数据: toroidal_faces",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-32",
+          "pdf_bookmark": "item-DFM-32",
+          "word_bookmark": "item_DFM_32"
+        }
+      },
+      {
+        "check_item_id": "DFM-33",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-33",
+          "pdf_bookmark": "item-DFM-33",
+          "word_bookmark": "item_DFM_33"
+        }
+      },
+      {
+        "check_item_id": "DFM-34",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-34",
+          "pdf_bookmark": "item-DFM-34",
+          "word_bookmark": "item_DFM_34"
+        }
+      },
+      {
+        "check_item_id": "DFM-35",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-35",
+          "pdf_bookmark": "item-DFM-35",
+          "word_bookmark": "item_DFM_35"
+        }
+      },
+      {
+        "check_item_id": "DFM-36",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-36",
+          "pdf_bookmark": "item-DFM-36",
+          "word_bookmark": "item_DFM_36"
+        }
+      },
+      {
+        "check_item_id": "DFM-37",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-37",
+          "pdf_bookmark": "item-DFM-37",
+          "word_bookmark": "item_DFM_37"
+        }
+      },
+      {
+        "check_item_id": "DFM-38",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-DFM-38",
+          "pdf_bookmark": "item-DFM-38",
+          "word_bookmark": "item_DFM_38"
+        }
+      },
+      {
+        "check_item_id": "SAF-01",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-SAF-01",
+          "pdf_bookmark": "item-SAF-01",
+          "word_bookmark": "item_SAF_01"
+        }
+      },
+      {
+        "check_item_id": "SAF-02",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-SAF-02",
+          "pdf_bookmark": "item-SAF-02",
+          "word_bookmark": "item_SAF_02"
+        }
+      },
+      {
+        "check_item_id": "SAF-03",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-SAF-03",
+          "pdf_bookmark": "item-SAF-03",
+          "word_bookmark": "item_SAF_03"
+        }
+      },
+      {
+        "check_item_id": "SAF-04",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-SAF-04",
+          "pdf_bookmark": "item-SAF-04",
+          "word_bookmark": "item_SAF_04"
+        }
+      },
+      {
+        "check_item_id": "PERF-01",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-PERF-01",
+          "pdf_bookmark": "item-PERF-01",
+          "word_bookmark": "item_PERF_01"
+        }
+      },
+      {
+        "check_item_id": "PERF-02",
+        "status": "not_run",
+        "reason": "未提供该项执行记录",
+        "finding_count": 0,
+        "result_location": {
+          "html": "#item-PERF-02",
+          "pdf_bookmark": "item-PERF-02",
+          "word_bookmark": "item_PERF_02"
+        }
+      }
+    ],
+    "warnings": []
+  }
+}

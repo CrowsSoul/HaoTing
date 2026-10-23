@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "catalog_count": 44,
+    "finding_count": 4,
+    "executed_count": 1,
+    "clear_count": 0,
+    "issue_item_count": 1,
+    "not_run_count": 41,
+    "by_severity": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 4,
+      "P3": 0
+    },
+    "quality_issue_count": 0,
+    "review_ready": false
+  },
+  "warnings": [],
+  "findings": [
+    {
+      "finding_id": "DFM-31-0001",
+      "quality": []
+    },
+    {
+      "finding_id": "DFM-31-0002",
+      "quality": []
+    },
+    {
+      "finding_id": "DFM-31-0003",
+      "quality": []
+    },
+    {
+      "finding_id": "DFM-31-0004",
+      "quality": []
+    }
+  ]
+}

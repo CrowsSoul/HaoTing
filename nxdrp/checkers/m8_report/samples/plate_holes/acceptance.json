@@ -1,0 +1,573 @@
+{
+  "version": "1.0",
+  "scope": "M8 报告数据完整性检查，不代表检测算法正确或产品合格",
+  "requires_human_review": true,
+  "catalog_complete": true,
+  "four_fields_complete_count": 4,
+  "finding_count": 4,
+  "data_complete": false,
+  "status": "草稿，待补充检查结果或证据",
+  "criteria_labels": {
+    "position": "位置与三维图及面编号",
+    "deviation": "实测、阈值、单位及一致偏差",
+    "severity": "有效严重程度",
+    "recommendation": "非占位整改建议"
+  },
+  "findings": [
+    {
+      "finding_id": "DFM-31-0001",
+      "check_item_id": "DFM-31",
+      "criteria": {
+        "position": true,
+        "deviation": true,
+        "severity": true,
+        "recommendation": true
+      },
+      "four_fields_complete": true,
+      "quality": [],
+      "advisories": [],
+      "result_location": {
+        "html": "#finding-0001",
+        "item_anchor": "item-DFM-31"
+      }
+    },
+    {
+      "finding_id": "DFM-31-0002",
+      "check_item_id": "DFM-31",
+      "criteria": {
+        "position": true,
+        "deviation": true,
+        "severity": true,
+        "recommendation": true
+      },
+      "four_fields_complete": true,
+      "quality": [],
+      "advisories": [],
+      "result_location": {
+        "html": "#finding-0002",
+        "item_anchor": "item-DFM-31"
+      }
+    },
+    {
+      "finding_id": "DFM-31-0003",
+      "check_item_id": "DFM-31",
+      "criteria": {
+        "position": true,
+        "deviation": true,
+        "severity": true,
+        "recommendation": true
+      },
+      "four_fields_complete": true,
+      "quality": [],
+      "advisories": [],
+      "result_location": {
+        "html": "#finding-0003",
+        "item_anchor": "item-DFM-31"
+      }
+    },
+    {
+      "finding_id": "DFM-31-0004",
+      "check_item_id": "DFM-31",
+      "criteria": {
+        "position": true,
+        "deviation": true,
+        "severity": true,
+        "recommendation": true
+      },
+      "four_fields_complete": true,
+      "quality": [],
+      "advisories": [],
+      "result_location": {
+        "html": "#finding-0004",
+        "item_anchor": "item-DFM-31"
+      }
+    }
+  ],
+  "items": [
+    {
+      "check_item_id": "DFM-01",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-01",
+        "pdf_bookmark": "item-DFM-01",
+        "word_bookmark": "item_DFM_01"
+      }
+    },
+    {
+      "check_item_id": "DFM-02",
+      "status": "missing_data",
+      "reason": "模型缺少所需数据: multiple_parts",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-02",
+        "pdf_bookmark": "item-DFM-02",
+        "word_bookmark": "item_DFM_02"
+      }
+    },
+    {
+      "check_item_id": "DFM-03",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-03",
+        "pdf_bookmark": "item-DFM-03",
+        "word_bookmark": "item_DFM_03"
+      }
+    },
+    {
+      "check_item_id": "DFM-04",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-04",
+        "pdf_bookmark": "item-DFM-04",
+        "word_bookmark": "item_DFM_04"
+      }
+    },
+    {
+      "check_item_id": "DFM-05",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-05",
+        "pdf_bookmark": "item-DFM-05",
+        "word_bookmark": "item_DFM_05"
+      }
+    },
+    {
+      "check_item_id": "DFM-06",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-06",
+        "pdf_bookmark": "item-DFM-06",
+        "word_bookmark": "item_DFM_06"
+      }
+    },
+    {
+      "check_item_id": "DFM-07",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-07",
+        "pdf_bookmark": "item-DFM-07",
+        "word_bookmark": "item_DFM_07"
+      }
+    },
+    {
+      "check_item_id": "DFM-08",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-08",
+        "pdf_bookmark": "item-DFM-08",
+        "word_bookmark": "item_DFM_08"
+      }
+    },
+    {
+      "check_item_id": "DFM-09",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-09",
+        "pdf_bookmark": "item-DFM-09",
+        "word_bookmark": "item_DFM_09"
+      }
+    },
+    {
+      "check_item_id": "DFM-10",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-10",
+        "pdf_bookmark": "item-DFM-10",
+        "word_bookmark": "item_DFM_10"
+      }
+    },
+    {
+      "check_item_id": "DFM-11",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-11",
+        "pdf_bookmark": "item-DFM-11",
+        "word_bookmark": "item_DFM_11"
+      }
+    },
+    {
+      "check_item_id": "DFM-12",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-12",
+        "pdf_bookmark": "item-DFM-12",
+        "word_bookmark": "item_DFM_12"
+      }
+    },
+    {
+      "check_item_id": "DFM-13",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-13",
+        "pdf_bookmark": "item-DFM-13",
+        "word_bookmark": "item_DFM_13"
+      }
+    },
+    {
+      "check_item_id": "DFM-14",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-14",
+        "pdf_bookmark": "item-DFM-14",
+        "word_bookmark": "item_DFM_14"
+      }
+    },
+    {
+      "check_item_id": "DFM-15",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-15",
+        "pdf_bookmark": "item-DFM-15",
+        "word_bookmark": "item_DFM_15"
+      }
+    },
+    {
+      "check_item_id": "DFM-16",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-16",
+        "pdf_bookmark": "item-DFM-16",
+        "word_bookmark": "item_DFM_16"
+      }
+    },
+    {
+      "check_item_id": "DFM-17",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-17",
+        "pdf_bookmark": "item-DFM-17",
+        "word_bookmark": "item_DFM_17"
+      }
+    },
+    {
+      "check_item_id": "DFM-18",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-18",
+        "pdf_bookmark": "item-DFM-18",
+        "word_bookmark": "item_DFM_18"
+      }
+    },
+    {
+      "check_item_id": "DFM-19",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-19",
+        "pdf_bookmark": "item-DFM-19",
+        "word_bookmark": "item_DFM_19"
+      }
+    },
+    {
+      "check_item_id": "DFM-20",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-20",
+        "pdf_bookmark": "item-DFM-20",
+        "word_bookmark": "item_DFM_20"
+      }
+    },
+    {
+      "check_item_id": "DFM-21",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-21",
+        "pdf_bookmark": "item-DFM-21",
+        "word_bookmark": "item_DFM_21"
+      }
+    },
+    {
+      "check_item_id": "DFM-22",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-22",
+        "pdf_bookmark": "item-DFM-22",
+        "word_bookmark": "item_DFM_22"
+      }
+    },
+    {
+      "check_item_id": "DFM-23",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-23",
+        "pdf_bookmark": "item-DFM-23",
+        "word_bookmark": "item_DFM_23"
+      }
+    },
+    {
+      "check_item_id": "DFM-24",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-24",
+        "pdf_bookmark": "item-DFM-24",
+        "word_bookmark": "item_DFM_24"
+      }
+    },
+    {
+      "check_item_id": "DFM-25",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-25",
+        "pdf_bookmark": "item-DFM-25",
+        "word_bookmark": "item_DFM_25"
+      }
+    },
+    {
+      "check_item_id": "DFM-26",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-26",
+        "pdf_bookmark": "item-DFM-26",
+        "word_bookmark": "item_DFM_26"
+      }
+    },
+    {
+      "check_item_id": "DFM-27",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-27",
+        "pdf_bookmark": "item-DFM-27",
+        "word_bookmark": "item_DFM_27"
+      }
+    },
+    {
+      "check_item_id": "DFM-28",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-28",
+        "pdf_bookmark": "item-DFM-28",
+        "word_bookmark": "item_DFM_28"
+      }
+    },
+    {
+      "check_item_id": "DFM-29",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-29",
+        "pdf_bookmark": "item-DFM-29",
+        "word_bookmark": "item_DFM_29"
+      }
+    },
+    {
+      "check_item_id": "DFM-30",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-30",
+        "pdf_bookmark": "item-DFM-30",
+        "word_bookmark": "item_DFM_30"
+      }
+    },
+    {
+      "check_item_id": "DFM-31",
+      "status": "issues",
+      "reason": "",
+      "finding_count": 4,
+      "result_location": {
+        "html": "#item-DFM-31",
+        "pdf_bookmark": "item-DFM-31",
+        "word_bookmark": "item_DFM_31"
+      }
+    },
+    {
+      "check_item_id": "DFM-32",
+      "status": "missing_data",
+      "reason": "模型缺少所需数据: toroidal_faces",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-32",
+        "pdf_bookmark": "item-DFM-32",
+        "word_bookmark": "item_DFM_32"
+      }
+    },
+    {
+      "check_item_id": "DFM-33",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-33",
+        "pdf_bookmark": "item-DFM-33",
+        "word_bookmark": "item_DFM_33"
+      }
+    },
+    {
+      "check_item_id": "DFM-34",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-34",
+        "pdf_bookmark": "item-DFM-34",
+        "word_bookmark": "item_DFM_34"
+      }
+    },
+    {
+      "check_item_id": "DFM-35",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-35",
+        "pdf_bookmark": "item-DFM-35",
+        "word_bookmark": "item_DFM_35"
+      }
+    },
+    {
+      "check_item_id": "DFM-36",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-36",
+        "pdf_bookmark": "item-DFM-36",
+        "word_bookmark": "item_DFM_36"
+      }
+    },
+    {
+      "check_item_id": "DFM-37",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-37",
+        "pdf_bookmark": "item-DFM-37",
+        "word_bookmark": "item_DFM_37"
+      }
+    },
+    {
+      "check_item_id": "DFM-38",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-DFM-38",
+        "pdf_bookmark": "item-DFM-38",
+        "word_bookmark": "item_DFM_38"
+      }
+    },
+    {
+      "check_item_id": "SAF-01",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-SAF-01",
+        "pdf_bookmark": "item-SAF-01",
+        "word_bookmark": "item_SAF_01"
+      }
+    },
+    {
+      "check_item_id": "SAF-02",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-SAF-02",
+        "pdf_bookmark": "item-SAF-02",
+        "word_bookmark": "item_SAF_02"
+      }
+    },
+    {
+      "check_item_id": "SAF-03",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-SAF-03",
+        "pdf_bookmark": "item-SAF-03",
+        "word_bookmark": "item_SAF_03"
+      }
+    },
+    {
+      "check_item_id": "SAF-04",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-SAF-04",
+        "pdf_bookmark": "item-SAF-04",
+        "word_bookmark": "item_SAF_04"
+      }
+    },
+    {
+      "check_item_id": "PERF-01",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-PERF-01",
+        "pdf_bookmark": "item-PERF-01",
+        "word_bookmark": "item_PERF_01"
+      }
+    },
+    {
+      "check_item_id": "PERF-02",
+      "status": "not_run",
+      "reason": "未提供该项执行记录",
+      "finding_count": 0,
+      "result_location": {
+        "html": "#item-PERF-02",
+        "pdf_bookmark": "item-PERF-02",
+        "word_bookmark": "item_PERF_02"
+      }
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,22 @@
+{
+  "report_id": "20261023T101014-5ed049719cac",
+  "created_at": "2026-10-23T10:10:14+08:00",
+  "files": {
+    "acceptance.json": "6d0d14e551871c3a41266d586510972976161ebc70c456a57f45487a41d48cd3",
+    "image_evidence.json": "077c83779f06466b18c77308723e3bb451f0c533af0324029a29c83b73491a55",
+    "images/finding-0001.png": "10449496f699ef0dddce8d6574a8e839090897fbd44d728fed94ae770881a183",
+    "images/finding-0002.png": "2ace014ccd5155227820249c5e0c1258300450de2dc2bab14cd56cb4b8a2a479",
+    "images/finding-0003.png": "675e4aae4c42547e940f70273ad9f22d1697c19e9c56aa5b52d59f4ca29b0648",
+    "images/finding-0004.png": "afd6ff5d9756b9edb919751548d32e5f0558ab7d2c7cb7d803245b34aeb255c4",
+    "knowledge_snapshot.json": "21a9f7de79961e8ac7b14ecffbf9926f60e9bf58f3d47785aaf484365f07992b",
+    "model.json": "a6a96db7494d9b139be9c24fc3da66757b72aaf6093ccac7bb03da02bb041bf5",
+    "quality.json": "026307c352c0e1e9836783dc1e0b69822e5d61c16cdb0b0f656ffbbacb4d3e74",
+    "report.docx": "d5d09eb9c52f9b55b9f36dc63917901923f5ad0e3d587dfb44af31387719109c",
+    "report.html": "79958edccb10d94d26c79cafd0f7f0303c677e9da5120da243496b8bcdcf5f5d",
+    "report.json": "7fceb9b6a85a803a59d0cc10d5128f9c3def1cb54799368ead467b8f33c5f2d3",
+    "report.pdf": "16eb1fd184889015253097fbba90343d151cf89f17510400269cdb5ee31c171b",
+    "rules.json": "74dbc03cf012f1f4f031321793159ef0cfef81cb2fdc13068de4b49b10fbca96",
+    "source_findings.json": "256083ace32512e662b9c118a107e130aa3a9d404827b687685d88597c5c1cb1",
+    "source_mesh.stl": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680"
+  }
+}

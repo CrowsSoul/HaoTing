@@ -1,0 +1,138 @@
+[
+  {
+    "method": "stl_zbuffer",
+    "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+    "view_direction": [
+      0.5196,
+      -0.6928,
+      0.5
+    ],
+    "projection": "orthographic",
+    "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+    "finding_id": "DFM-31-0001",
+    "check_item_id": "DFM-31",
+    "model_id": "plate_holes",
+    "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+    "position": [
+      40.0,
+      15.0,
+      4.999999999999998
+    ],
+    "bbox": {
+      "xmin": 38.150000000000006,
+      "ymin": 13.149999999999999,
+      "zmin": 0.0,
+      "xmax": 41.85,
+      "ymax": 16.85,
+      "zmax": 10.0
+    },
+    "coordinate_units": "mm",
+    "face_ids": [
+      "F38987"
+    ],
+    "image": "images/finding-0001.png",
+    "image_sha256": "10449496f699ef0dddce8d6574a8e839090897fbd44d728fed94ae770881a183"
+  },
+  {
+    "method": "stl_zbuffer",
+    "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+    "view_direction": [
+      0.5196,
+      -0.6928,
+      0.5
+    ],
+    "projection": "orthographic",
+    "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+    "finding_id": "DFM-31-0002",
+    "check_item_id": "DFM-31",
+    "model_id": "plate_holes",
+    "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+    "position": [
+      25.0,
+      45.0,
+      5.000000000000001
+    ],
+    "bbox": {
+      "xmin": 21.875000000000004,
+      "ymin": 41.87499999999999,
+      "zmin": 0.0,
+      "xmax": 28.125,
+      "ymax": 48.125,
+      "zmax": 10.0
+    },
+    "coordinate_units": "mm",
+    "face_ids": [
+      "F38989"
+    ],
+    "image": "images/finding-0002.png",
+    "image_sha256": "2ace014ccd5155227820249c5e0c1258300450de2dc2bab14cd56cb4b8a2a479"
+  },
+  {
+    "method": "stl_zbuffer",
+    "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+    "view_direction": [
+      0.5196,
+      -0.6928,
+      0.5
+    ],
+    "projection": "orthographic",
+    "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+    "finding_id": "DFM-31-0003",
+    "check_item_id": "DFM-31",
+    "model_id": "plate_holes",
+    "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+    "position": [
+      65.0,
+      15.0,
+      5.0
+    ],
+    "bbox": {
+      "xmin": 62.400000000000006,
+      "ymin": 12.4,
+      "zmin": 0.0,
+      "xmax": 67.60000000000001,
+      "ymax": 17.6,
+      "zmax": 10.0
+    },
+    "coordinate_units": "mm",
+    "face_ids": [
+      "F38986"
+    ],
+    "image": "images/finding-0003.png",
+    "image_sha256": "675e4aae4c42547e940f70273ad9f22d1697c19e9c56aa5b52d59f4ca29b0648"
+  },
+  {
+    "method": "stl_zbuffer",
+    "mesh_sha256": "4f61c500d8e48df24f5986f93d1597661300e9ebc6dde463e780d750af20f680",
+    "view_direction": [
+      0.5196,
+      -0.6928,
+      0.5
+    ],
+    "projection": "orthographic",
+    "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+    "finding_id": "DFM-31-0004",
+    "check_item_id": "DFM-31",
+    "model_id": "plate_holes",
+    "model_sha256": "7c604dc56225f5be6ed6dd61cf6b72ec38c4ad70ffd04d0fb467f808a0431c03",
+    "position": [
+      15.0,
+      15.0,
+      5.000000000000001
+    ],
+    "bbox": {
+      "xmin": 13.899999999999999,
+      "ymin": 13.899999999999999,
+      "zmin": 0.0,
+      "xmax": 16.1,
+      "ymax": 16.1,
+      "zmax": 10.0
+    },
+    "coordinate_units": "mm",
+    "face_ids": [
+      "F38988"
+    ],
+    "image": "images/finding-0004.png",
+    "image_sha256": "afd6ff5d9756b9edb919751548d32e5f0558ab7d2c7cb7d803245b34aeb255c4"
+  }
+]

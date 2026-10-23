@@ -1,0 +1,141 @@
+[
+  {
+    "method": "bbox_projection",
+    "mesh_sha256": null,
+    "view_direction": [
+      0.5196,
+      -0.6928,
+      0.5
+    ],
+    "projection": "orthographic",
+    "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+    "finding_id": "DFM-02-0001",
+    "check_item_id": "DFM-02",
+    "model_id": "board_a",
+    "model_sha256": "def954fffd79c00bcbc6a2bbc8324c10841d0ed293ecec420342d0c4262d20ba",
+    "position": [
+      20.0,
+      12.5,
+      6.0
+    ],
+    "bbox": {
+      "xmin": 0.0,
+      "ymin": 0.0,
+      "zmin": 0.0,
+      "xmax": 40.0,
+      "ymax": 25.0,
+      "zmax": 12.0
+    },
+    "coordinate_units": "mm",
+    "face_ids": [],
+    "image": "images/finding-0001.png",
+    "image_sha256": "1851c1ff2bd7efb8c7686f2c72748d3af864e35f2ecdf1eecd07bdfd36e2fc93"
+  },
+  {
+    "method": "bbox_projection",
+    "mesh_sha256": null,
+    "view_direction": [
+      0.5196,
+      -0.6928,
+      0.5
+    ],
+    "projection": "orthographic",
+    "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+    "finding_id": "DFM-31-0001",
+    "check_item_id": "DFM-31",
+    "model_id": "board_a",
+    "model_sha256": "def954fffd79c00bcbc6a2bbc8324c10841d0ed293ecec420342d0c4262d20ba",
+    "position": [
+      10.0,
+      10.0,
+      6.0
+    ],
+    "bbox": {
+      "xmin": 0.0,
+      "ymin": 0.0,
+      "zmin": 0.0,
+      "xmax": 40.0,
+      "ymax": 25.0,
+      "zmax": 12.0
+    },
+    "coordinate_units": "mm",
+    "face_ids": [
+      "F6"
+    ],
+    "image": "images/finding-0002.png",
+    "image_sha256": "e8d932deb35864a3c35c68e972b62f6daa96e3fe71d43d30279ea388cc69ed09"
+  },
+  {
+    "method": "bbox_projection",
+    "mesh_sha256": null,
+    "view_direction": [
+      0.5196,
+      -0.6928,
+      0.5
+    ],
+    "projection": "orthographic",
+    "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+    "finding_id": "DFM-31-0002",
+    "check_item_id": "DFM-31",
+    "model_id": "board_a",
+    "model_sha256": "def954fffd79c00bcbc6a2bbc8324c10841d0ed293ecec420342d0c4262d20ba",
+    "position": [
+      10.0,
+      10.0,
+      6.0
+    ],
+    "bbox": {
+      "xmin": 0.0,
+      "ymin": 0.0,
+      "zmin": 0.0,
+      "xmax": 40.0,
+      "ymax": 25.0,
+      "zmax": 12.0
+    },
+    "coordinate_units": "mm",
+    "face_ids": [
+      "F7"
+    ],
+    "image": "images/finding-0003.png",
+    "image_sha256": "8db00014c437f0f2e3751dc9c856e37d4450eec4b872bdd40623ea5b8f5609c3"
+  },
+  {
+    "method": "bbox_projection",
+    "mesh_sha256": null,
+    "view_direction": [
+      0.5196,
+      -0.6928,
+      0.5
+    ],
+    "projection": "orthographic",
+    "content_confirmation": "STL 与模型的同坐标系关联由提交者确认；图中标记为问题坐标和包围盒",
+    "finding_id": "DFM-32-0001",
+    "check_item_id": "DFM-32",
+    "model_id": "board_a",
+    "model_sha256": "def954fffd79c00bcbc6a2bbc8324c10841d0ed293ecec420342d0c4262d20ba",
+    "position": [
+      20.0,
+      12.5,
+      6.0
+    ],
+    "bbox": {
+      "xmin": 0.0,
+      "ymin": 0.0,
+      "zmin": 0.0,
+      "xmax": 40.0,
+      "ymax": 25.0,
+      "zmax": 12.0
+    },
+    "coordinate_units": "mm",
+    "face_ids": [
+      "F9",
+      "F10",
+      "F11",
+      "F12",
+      "F13",
+      "F14"
+    ],
+    "image": "images/finding-0004.png",
+    "image_sha256": "8d2c9a451b858acea9b62657a00f91665055561b3d8e9d2813c745f081d79c38"
+  }
+]

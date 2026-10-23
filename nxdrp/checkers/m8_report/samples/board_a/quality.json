@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "catalog_count": 44,
+    "finding_count": 4,
+    "executed_count": 3,
+    "clear_count": 0,
+    "issue_item_count": 3,
+    "not_run_count": 41,
+    "by_severity": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 3,
+      "P3": 1
+    },
+    "quality_issue_count": 5,
+    "review_ready": false
+  },
+  "warnings": [],
+  "findings": [
+    {
+      "finding_id": "DFM-02-0001",
+      "quality": [
+        "未提供面编号，需补充可追溯证据",
+        "待补真实三维截图；当前定位示意不等同 NX 截图"
+      ]
+    },
+    {
+      "finding_id": "DFM-31-0001",
+      "quality": [
+        "待补真实三维截图；当前定位示意不等同 NX 截图"
+      ]
+    },
+    {
+      "finding_id": "DFM-31-0002",
+      "quality": [
+        "待补真实三维截图；当前定位示意不等同 NX 截图"
+      ]
+    },
+    {
+      "finding_id": "DFM-32-0001",
+      "quality": [
+        "待补真实三维截图；当前定位示意不等同 NX 截图"
+      ]
+    }
+  ]
+}
