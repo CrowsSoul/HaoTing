@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "name": "dfm_default",
-  "version": "0.2",
-  "updated_at": "2026-10-22T22:01:47+08:00",
+  "version": "0.3",
+  "updated_at": "2026-10-23T09:39:43+08:00",
   "rules": [
     {
       "rule_id": "R-DFM-01",
@@ -411,12 +411,14 @@
       "enabled": true,
       "params": {
         "deep_hole_ratio": 4.0,
-        "very_deep_hole_ratio": 10.0
+        "very_deep_hole_ratio": 10.0,
+        "min_hole_diameter_mm": 0.5,
+        "max_hole_diameter_mm": 50.0
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "经验值：标准麻花钻经济深径比 ≤ 4；> 10 需深孔钻工艺",
       "severity": "P2",
-      "notes": "孔深/孔径 > 4（标准钻）或 > 10（深孔）",
+      "notes": "孔深/孔径 > 4 报警示，> 10 升 P1；孔深取同轴孔组沿轴总跨度",
       "owner": "M6"
     },
     {
@@ -428,10 +430,10 @@
       "params": {
         "deep_slot_ratio": 3.0
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "经验值：槽深/槽宽 > 3~4 时排屑与刀具刚性急剧恶化",
       "severity": "P2",
-      "notes": "槽深/槽宽 > 3~4",
+      "notes": "粗筛版用对置内壁 + 共同槽底识别直槽，槽深取槽壁沿槽底法向的跨度",
       "owner": "M6"
     },
     {
@@ -441,10 +443,10 @@
       "name": "平底盲孔",
       "enabled": true,
       "params": {},
-      "version": "0.1",
-      "source_standard": "",
-      "severity": "P2",
-      "notes": "盲孔底面为平面（无钻尖角），不利排屑",
+      "version": "0.2",
+      "source_standard": "经验值：钻尖底（约 118°）利于排屑，平底需立铣刀清底，增加工序",
+      "severity": "P3",
+      "notes": "孔组底部端面为平面判为平底盲孔；圆锥底面（钻尖）不报",
       "owner": "M6"
     },
     {
@@ -453,11 +455,14 @@
       "process_type": "machining",
       "name": "刀具可达性",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
-      "source_standard": "",
+      "params": {
+        "tool_clearance_mm": 2.0,
+        "envelope_length_mm": 40.0
+      },
+      "version": "0.2",
+      "source_standard": "二期项；占位粗筛：其他零件包围盒与刀具包络圆柱相交即疑似遮挡",
       "severity": "P2",
-      "notes": "沿孔/槽轴线的刀具包络无遮挡",
+      "notes": "粗筛置信度低，真实可达性需扫掠实体求交（二期）",
       "owner": "M6"
     },
     {
@@ -493,12 +498,13 @@
           20.0
         ],
         "tolerance_mm": 0.05,
-        "max_hole_diameter_mm": 20.0
+        "max_hole_diameter_mm": 20.0,
+        "min_hole_diameter_mm": 0.5
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "tool_library.json 钻头系列；甲方厂内刀具库到位后整表替换",
       "severity": "P2",
-      "notes": "孔径/槽宽落在标准刀具系列（Φ1/2/3/4/5/6/8/10/12…）内",
+      "notes": "孔径/槽宽落在标准刀具系列（Φ1/2/3/4/5/6/8/10/12…）内；内置参考实现交付；孔径比对钻头系列，可用规则参数 standard_diameters 覆盖；槽宽比对立铣刀系列的扩展在平台合并时启用",
       "owner": "M6"
     },
     {
@@ -509,12 +515,13 @@
       "enabled": true,
       "params": {
         "max_distinct_radii": 3,
-        "cluster_tolerance_mm": 0.1
+        "cluster_tolerance_mm": 0.1,
+        "min_radius_mm": 0.2
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "经验值：圆角种类 > 3 显著增加换刀次数",
       "severity": "P2",
-      "notes": "底面圆角半径种类数 > N（换刀次数过多）",
+      "notes": "底面圆角半径种类数 > N（换刀次数过多）；按零件统计回转圆角面半径聚类数",
       "owner": "M6"
     },
     {
@@ -524,12 +531,18 @@
       "name": "顶部圆角",
       "enabled": true,
       "params": {
-        "min_top_fillet_mm": 0.5
+        "min_top_fillet_mm": 0.5,
+        "top_region_ratio": 0.75,
+        "up_direction": [
+          0.0,
+          0.0,
+          1.0
+        ]
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "经验值：顶边圆角不小于标准刀具最小刀尖圆角（tool_library min_tool_radius_mm）",
       "severity": "P2",
-      "notes": "顶边 R < 刀具最小 R 或缺失",
+      "notes": "粗筛版以最大平面为基准面，顶区（沿基准法向上 25%）的锐边/小圆角为候选",
       "owner": "M6"
     },
     {
@@ -539,13 +552,13 @@
       "name": "内部倒角",
       "enabled": true,
       "params": {
-        "standard_chamfer_deg": 45.0,
-        "standard_chamfer_mm": 0.5
+        "angle_tolerance_deg": 5.0,
+        "size_tolerance_mm": 0.1
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "tool_library.json 标准倒角角度/尺寸系列",
       "severity": "P2",
-      "notes": "内角倒角角度/尺寸不在标准范围",
+      "notes": "粗筛版以「与两个互垂平面相邻、法向约 45° 的小平面」识别倒角",
       "owner": "M6"
     },
     {
@@ -554,11 +567,13 @@
       "process_type": "machining",
       "name": "深圆角转角",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
-      "source_standard": "",
+      "params": {
+        "min_corner_radius_mm": 0.5
+      },
+      "version": "0.2",
+      "source_standard": "二期项；粗筛：互垂内壁间圆角半径 < 标准刀具最小刀尖圆角即报",
       "severity": "P2",
-      "notes": "内腔转角 R < 刀具 R（刀具进不去）",
+      "notes": "未评估型腔深度（深腔才够不上刀具），真实判定需结合腔深（二期）",
       "owner": "M6"
     },
     {
@@ -568,18 +583,13 @@
       "name": "角度铣削面",
       "enabled": true,
       "params": {
-        "standard_angles_deg": [
-          0,
-          30,
-          45,
-          60,
-          90
-        ]
+        "angle_tolerance_deg": 1.0,
+        "min_face_area_mm2": 1.0
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "tool_library.json 标准平面角系列（0/30/45/60/90）",
       "severity": "P2",
-      "notes": "侧面与底面/基准面夹角非 90° 且非标准角",
+      "notes": "以最大平面为基准，其余平面与基准夹角非标准即报；已识别为倒角的小面除外",
       "owner": "M6"
     },
     {
@@ -588,11 +598,13 @@
       "process_type": "machining",
       "name": "窄通道",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
-      "source_standard": "",
+      "params": {
+        "min_channel_width_mm": 1.0
+      },
+      "version": "0.2",
+      "source_standard": "二期项；粗筛：槽/通道宽 < 最小刀具直径（tool_library min_tool_diameter_mm）即报",
       "severity": "P2",
-      "notes": "通道宽度 < 最小刀具直径",
+      "notes": "复用槽识别结果，未做空间遮挡分析（二期）",
       "owner": "M6"
     },
     {
@@ -601,11 +613,13 @@
       "process_type": "machining",
       "name": "孔的入刀/出刀面",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
-      "source_standard": "",
+      "params": {
+        "max_entry_angle_deg": 5.0
+      },
+      "version": "0.2",
+      "source_standard": "经验值：孔口面法向与孔轴夹角 > 5° 时钻头入刀易滑偏",
       "severity": "P2",
-      "notes": "孔入口/出口面法向与孔轴夹角 > 阈值",
+      "notes": "孔口面取孔组端部非内部端面；曲面孔口（无法向）暂不判定",
       "owner": "M6"
     },
     {

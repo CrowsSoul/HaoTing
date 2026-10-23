@@ -25,7 +25,7 @@
 | T5 槽底内角 R0.3 | T5 | DFM-35（内部转角 R < 0.5） |
 | 顶面锐边 13 条 | 邻接对 | DFM-33（缺顶边圆角，归并 1 条） |
 
-运行：python m6b_machining_plugin/__tests__/build_fixtures.py
+运行：python tools/gen_m6b_fixture.py
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ import json
 import math
 from pathlib import Path
 
-OUT = Path(__file__).resolve().parent / "fixtures" / "machining_syn.model.json"
+OUT = Path(__file__).resolve().parents[1] / "tests" / "fixtures" / "machining_syn.model.json"
 
 SQRT2_2 = math.sqrt(0.5)  # cos45°
 SIN20, COS20 = math.sin(math.radians(20.0)), math.cos(math.radians(20.0))

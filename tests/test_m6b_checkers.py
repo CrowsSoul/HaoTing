@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """12 个 M6B checker 的流程基线 + 逐项正例/负例/边界测试。
 
-预期矩阵与夹具设计一一对应（见 build_fixtures.py 头注释）；
+预期矩阵与夹具设计一一对应（见 tools/gen_m6b_fixture.py 头注释）；
 实现改动时先更新这里再改代码。
 """
 
@@ -12,28 +12,20 @@ import sys
 import unittest
 from pathlib import Path
 
-PLUGIN_ROOT = Path(__file__).resolve().parents[1]
-REPO_ROOT = PLUGIN_ROOT.parent
-for _path in (str(REPO_ROOT), str(PLUGIN_ROOT)):
-    if _path not in sys.path:
-        sys.path.insert(0, _path)
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 from nxdrp.contracts import BBox, Face, ModelBundle, Part, Rule, RuleBook
 from nxdrp.pipeline import run
-from nxdrp.registry import Registry, discover
+from nxdrp.registry import discover
 
-FIXTURE = PLUGIN_ROOT / "__tests__" / "fixtures" / "machining_syn.model.json"
+FIXTURE = REPO_ROOT / "tests" / "fixtures" / "machining_syn.model.json"
 MODELS = REPO_ROOT / "mockdata" / "models"
 M6B_IDS = [f"DFM-{i}" for i in range(27, 39)]
 
-
-def plugin_registry() -> Registry:
-    """内置 + 本插件一起加载（DFM-31/32 由内置参考实现提供，插件交付其余 10 项）。"""
-    return discover([str(PLUGIN_ROOT)])
-
-
-REGISTRY = plugin_registry()
-RULEBOOK = RuleBook.load(str(PLUGIN_ROOT / "rules_m6b.json"))
+REGISTRY = discover()
+RULEBOOK = RuleBook.load(str(REPO_ROOT / "rules" / "dfm_default.json"))
 
 
 def run_m6b(model: ModelBundle, only=None, rulebook=None):

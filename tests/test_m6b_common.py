@@ -8,15 +8,13 @@ import sys
 import unittest
 from pathlib import Path
 
-PLUGIN_ROOT = Path(__file__).resolve().parents[1]
-REPO_ROOT = PLUGIN_ROOT.parent
-for _path in (str(REPO_ROOT), str(PLUGIN_ROOT)):
-    if _path not in sys.path:
-        sys.path.insert(0, _path)
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 from nxdrp.contracts import BBox, Face, ModelBundle, Part
 
-from _m6b_machining_common import (
+from nxdrp.checkers.m6b_machining._m6b_machining_common import (
     acute_angle_deg,
     base_planes,
     extract_chamfers,
@@ -33,7 +31,7 @@ from _m6b_machining_common import (
     tool_values,
 )
 
-FIXTURE = PLUGIN_ROOT / "__tests__" / "fixtures" / "machining_syn.model.json"
+FIXTURE = REPO_ROOT / "tests" / "fixtures" / "machining_syn.model.json"
 MODELS = REPO_ROOT / "mockdata" / "models"
 
 

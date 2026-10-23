@@ -300,15 +300,25 @@ _TOOL_LIB: dict | None = None
 
 
 def tool_library() -> dict:
-    """读取插件目录下的 tool_library.json；读不到返回空表。"""
+    """读取共享刀具库 rules/tool_library.json；读不到返回空表。
+
+    路径解析：包文件上溯到仓库根下的 rules/；兼容同目录放置的旧布局。
+    """
     global _TOOL_LIB
     if _TOOL_LIB is None:
-        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tool_library.json")
-        try:
-            with open(path, encoding="utf-8") as fh:
-                _TOOL_LIB = json.load(fh)
-        except (OSError, ValueError):
-            _TOOL_LIB = {}
+        here = os.path.dirname(os.path.abspath(__file__))
+        candidates = [
+            os.path.join(here, "..", "..", "..", "rules", "tool_library.json"),
+            os.path.join(here, "tool_library.json"),
+        ]
+        _TOOL_LIB = {}
+        for path in candidates:
+            try:
+                with open(path, encoding="utf-8") as fh:
+                    _TOOL_LIB = json.load(fh)
+                break
+            except (OSError, ValueError):
+                continue
     return _TOOL_LIB
 
 

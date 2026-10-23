@@ -13,7 +13,7 @@ from typing import Iterable
 from nxdrp.checkers.base import CheckContext
 from nxdrp.contracts import Finding
 
-from _m6b_machining_common import (
+from ._m6b_machining_common import (
     MachiningChecker,
     _is_cone,
     emit_finding,
