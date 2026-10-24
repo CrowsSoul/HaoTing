@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "simulated_nx_terminal",
+  "source": "simulated_nx://terminal",
+  "nx_version": "simulated-nx",
+  "units": "mm",
+  "created_at": "",
+  "generator": "nxdrp.checkers.m5_performance.simulated_nx_model",
+  "parts": [
+    {
+      "part_id": "P01",
+      "name": "TERMINAL",
+      "journal_id": "",
+      "part_file": "",
+      "material": "CuSn6",
+      "body_type": "solid",
+      "is_sheet": false,
+      "volume": 25.132741228718345,
+      "mass": null,
+      "area": null,
+      "bbox": {
+        "xmin": 0.0,
+        "ymin": -1.0,
+        "zmin": -1.0,
+        "xmax": 8.0,
+        "ymax": 1.0,
+        "zmax": 1.0
+      },
+      "face_count": 1,
+      "edge_count": 0,
+      "occurrence_path": "ROOT/TERMINAL(1)"
+    }
+  ],
+  "faces": [
+    {
+      "face_id": "F_cyl",
+      "part_id": "P01",
+      "tag": null,
+      "solid_face_type": "cylindrical",
+      "solid_face_code": 0,
+      "uf_face_type": 17,
+      "point": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "normal": null,
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "area": 50.26548245743669,
+      "perimeter": null,
+      "radius_diameter": 1.0,
+      "is_radius": true,
+      "cog": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "bbox": null,
+      "edge_count": 0
+    }
+  ],
+  "edges": [],
+  "occurrences": [],
+  "adjacency": [],
+  "diagnostics": {},
+  "meta": {
+    "flow": "模拟NX"
+  }
+}

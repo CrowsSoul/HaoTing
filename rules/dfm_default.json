@@ -683,12 +683,38 @@
       "params": {
         "current_a": 16.0,
         "ambient_temp_c": 25.0,
-        "interval_confidence": 0.8
+        "interval_confidence": 0.8,
+        "max_rise_c": 45.0,
+        "convection_h_w_m2k": 15.0,
+        "area_mm2_min": 0.5,
+        "area_mm2_max": 20.0,
+        "length_mm_min": 5.0,
+        "length_mm_max": 40.0,
+        "current_a_min": 1.0,
+        "current_a_max": 40.0,
+        "ambient_temp_c_min": 0.0,
+        "ambient_temp_c_max": 80.0,
+        "h_w_m2k_min": 8.0,
+        "h_w_m2k_max": 25.0,
+        "materials": {
+          "Cu": {
+            "rho_ohm_m": 1.724e-08
+          },
+          "CuSn6": {
+            "rho_ohm_m": 1.3e-07
+          },
+          "CuZn37": {
+            "rho_ohm_m": 6.2e-08
+          },
+          "CuBe2": {
+            "rho_ohm_m": 7.8e-08
+          }
+        }
       },
       "version": "0.1",
-      "source_standard": "",
+      "source_standard": "集总对流模型初值；电阻率与允许温升可在本条 params 中改",
       "severity": "P2",
-      "notes": "由几何/材料/工况特征预测稳态温升与允许载流，输出区间",
+      "notes": "由几何/材料/工况特征预测稳态温升与允许载流，输出区间。允许温升见 max_rise_c",
       "owner": "M5"
     },
     {
@@ -697,11 +723,40 @@
       "process_type": "performance",
       "name": "插拔力预测",
       "enabled": true,
-      "params": {},
+      "params": {
+        "contacts": 4.0,
+        "lead_angle_deg": 30.0,
+        "friction_coeff": 0.2,
+        "overlap_mm": 0.2,
+        "length_mm_min": 6.0,
+        "length_mm_max": 15.0,
+        "width_mm_min": 1.0,
+        "width_mm_max": 4.0,
+        "thickness_mm_min": 0.2,
+        "thickness_mm_max": 0.6,
+        "overlap_mm_min": 0.1,
+        "overlap_mm_max": 0.5,
+        "friction_min": 0.12,
+        "friction_max": 0.3,
+        "interval_confidence": 0.8,
+        "insertion_force_max_n": 20.0,
+        "withdrawal_force_min_n": 1.0,
+        "materials": {
+          "CuSn6": {
+            "e_gpa": 110.0
+          },
+          "CuBe2": {
+            "e_gpa": 131.0
+          },
+          "CuZn37": {
+            "e_gpa": 100.0
+          }
+        }
+      },
       "version": "0.1",
-      "source_standard": "",
+      "source_standard": "悬臂梁 + 摩擦模型初值；弹性模量、过盈量、摩擦系数可在本条 params 中改",
       "severity": "P2",
-      "notes": "由接触簧片几何/材料/过盈量预测插入力、拔出力",
+      "notes": "由接触簧片几何/材料/过盈量预测插入力、拔出力。标签为悬臂梁摩擦公式。",
       "owner": "M5"
     }
   ]

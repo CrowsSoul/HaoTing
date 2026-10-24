@@ -1,0 +1,189 @@
+{
+  "schema": "perf02-tree-v1",
+  "feature_names": [
+    "log_length_mm",
+    "log_width_mm",
+    "log_thickness_mm",
+    "log_overlap_mm",
+    "log_e_gpa",
+    "log_mu"
+  ],
+  "target": "log_correction",
+  "interval_confidence": 0.8,
+  "q_low": 0.922182290527852,
+  "q_high": 1.1579113308011582,
+  "contacts": 4.0,
+  "lead_angle_deg": 30.0,
+  "tree": {
+    "leaf": false,
+    "feature": 1,
+    "threshold": 0.8433802835066149,
+    "left": {
+      "leaf": false,
+      "feature": 3,
+      "threshold": -0.8790325962653128,
+      "left": {
+        "leaf": false,
+        "feature": 1,
+        "threshold": 0.09231591474180745,
+        "left": {
+          "leaf": true,
+          "value": -0.1181576104222017,
+          "n": 6
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "threshold": 2.4496218616208236,
+          "left": {
+            "leaf": true,
+            "value": -0.03770213854736685,
+            "n": 48
+          },
+          "right": {
+            "leaf": true,
+            "value": -0.0053190232449963236,
+            "n": 38
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 2,
+        "threshold": -0.7294129706727508,
+        "left": {
+          "leaf": true,
+          "value": -0.010848770606211772,
+          "n": 7
+        },
+        "right": {
+          "leaf": true,
+          "value": 0.10070257189497271,
+          "n": 6
+        }
+      }
+    },
+    "right": {
+      "leaf": false,
+      "feature": 1,
+      "threshold": 0.945446175288894,
+      "left": {
+        "leaf": false,
+        "feature": 0,
+        "threshold": 2.4473704685005524,
+        "left": {
+          "leaf": true,
+          "value": 0.08049560719921893,
+          "n": 10
+        },
+        "right": {
+          "leaf": false,
+          "feature": 2,
+          "threshold": -0.8960361928136895,
+          "left": {
+            "leaf": true,
+            "value": 0.06090527719980006,
+            "n": 8
+          },
+          "right": {
+            "leaf": true,
+            "value": -0.027258889668301037,
+            "n": 8
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 5,
+        "threshold": -1.4435765846047848,
+        "left": {
+          "leaf": false,
+          "feature": 5,
+          "threshold": -1.8180009256688787,
+          "left": {
+            "leaf": true,
+            "value": 0.020597973288071628,
+            "n": 21
+          },
+          "right": {
+            "leaf": true,
+            "value": -0.021410269596320895,
+            "n": 47
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 3,
+          "threshold": -1.5517698221571017,
+          "left": {
+            "leaf": true,
+            "value": 0.08155174790183178,
+            "n": 11
+          },
+          "right": {
+            "leaf": true,
+            "value": 0.006980099098014777,
+            "n": 30
+          }
+        }
+      }
+    }
+  },
+  "train_size": 240,
+  "cal_size": 60,
+  "test_size": 60,
+  "split": {
+    "train": 240,
+    "cal": 60,
+    "test": 60
+  },
+  "sample_count": 360,
+  "label_source": "cantilever_friction_v1",
+  "metrics": {
+    "mae_n": 0.528323714857163,
+    "median_ae_n": 0.12466553928784152,
+    "band_median_ae_n": 0.20981229710990235,
+    "coverage": 0.8085106382978723,
+    "n": 60,
+    "band_n": 47
+  },
+  "cal_metrics": {
+    "mae_n": 0.6797650913380654,
+    "median_ae_n": 0.17898610619123456,
+    "band_median_ae_n": 0.2119439118561326,
+    "coverage": 0.7959183673469388,
+    "n": 60,
+    "band_n": 49
+  },
+  "scope": {
+    "length_mm": [
+      6.0,
+      15.0
+    ],
+    "width_mm": [
+      1.0,
+      4.0
+    ],
+    "thickness_mm": [
+      0.2,
+      0.6
+    ],
+    "overlap_mm": [
+      0.1,
+      0.5
+    ],
+    "friction_coeff": [
+      0.12,
+      0.3
+    ],
+    "materials": [
+      "CuSn6",
+      "CuBe2",
+      "CuZn37"
+    ]
+  },
+  "targets": {
+    "band_median_ae_n": 1.0,
+    "coverage": 0.7
+  }
+}
