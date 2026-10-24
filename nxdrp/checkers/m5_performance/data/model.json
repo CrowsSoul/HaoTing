@@ -1,0 +1,207 @@
+{
+  "schema": "perf01-tree-v1",
+  "feature_names": [
+    "log_area_mm2",
+    "log_length_mm",
+    "log_rho_ohm_m",
+    "log_current_a",
+    "log_h_w_m2k"
+  ],
+  "target": "log_correction",
+  "interval_confidence": 0.8,
+  "q_low": 0.9407644450745576,
+  "q_high": 1.156099424649303,
+  "tree": {
+    "leaf": false,
+    "feature": 2,
+    "threshold": -17.23608251180609,
+    "left": {
+      "leaf": false,
+      "feature": 1,
+      "threshold": 2.6573048851755177,
+      "left": {
+        "leaf": false,
+        "feature": 1,
+        "threshold": 2.159842019292049,
+        "left": {
+          "leaf": true,
+          "value": 0.7253883846218143,
+          "n": 7
+        },
+        "right": {
+          "leaf": false,
+          "feature": 1,
+          "threshold": 2.444070299187464,
+          "left": {
+            "leaf": true,
+            "value": 0.5562488436699885,
+            "n": 6
+          },
+          "right": {
+            "leaf": true,
+            "value": 0.49141993293590486,
+            "n": 6
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 1,
+        "threshold": 3.167236369091899,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "threshold": 2.9151242456647717,
+          "left": {
+            "leaf": true,
+            "value": 0.39394013443424175,
+            "n": 6
+          },
+          "right": {
+            "leaf": true,
+            "value": 0.31863820916713576,
+            "n": 12
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 4,
+          "threshold": 2.4776689571429236,
+          "left": {
+            "leaf": true,
+            "value": 0.10482655996813307,
+            "n": 6
+          },
+          "right": {
+            "leaf": true,
+            "value": 0.23739536062767305,
+            "n": 18
+          }
+        }
+      }
+    },
+    "right": {
+      "leaf": false,
+      "feature": 0,
+      "threshold": 0.15437347880607744,
+      "left": {
+        "leaf": false,
+        "feature": 3,
+        "threshold": 3.288601460460782,
+        "left": {
+          "leaf": false,
+          "feature": 4,
+          "threshold": 2.807582945044455,
+          "left": {
+            "leaf": true,
+            "value": -0.14385407097358802,
+            "n": 15
+          },
+          "right": {
+            "leaf": true,
+            "value": 0.06640134450406456,
+            "n": 12
+          }
+        },
+        "right": {
+          "leaf": true,
+          "value": -0.6351111701718208,
+          "n": 7
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 1,
+        "threshold": 2.7234783020465017,
+        "left": {
+          "leaf": false,
+          "feature": 2,
+          "threshold": -16.111144198373825,
+          "left": {
+            "leaf": true,
+            "value": 0.12429318346197687,
+            "n": 24
+          },
+          "right": {
+            "leaf": true,
+            "value": 0.0007175774880876229,
+            "n": 13
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 4,
+          "threshold": 2.4682009791846067,
+          "left": {
+            "leaf": true,
+            "value": -0.09771282834551188,
+            "n": 27
+          },
+          "right": {
+            "leaf": true,
+            "value": 0.004141816246983143,
+            "n": 81
+          }
+        }
+      }
+    }
+  },
+  "train_size": 240,
+  "cal_size": 60,
+  "test_size": 60,
+  "split": {
+    "train": 240,
+    "cal": 60,
+    "test": 60
+  },
+  "sample_count": 360,
+  "label_source": "simulated_nx_v1",
+  "metrics": {
+    "mae_c": 19.452398764248148,
+    "median_ae_c": 0.7086994339451893,
+    "band_median_ae_c": 0.8254885894266994,
+    "coverage": 0.8421052631578947,
+    "n": 60,
+    "band_n": 38
+  },
+  "cal_metrics": {
+    "mae_c": 15.89153768229281,
+    "median_ae_c": 0.24436952864528472,
+    "band_median_ae_c": 0.9508726883933196,
+    "coverage": 0.7837837837837838,
+    "n": 60,
+    "band_n": 37
+  },
+  "scope": {
+    "area_mm2": [
+      0.5,
+      20.0
+    ],
+    "length_mm": [
+      5.0,
+      40.0
+    ],
+    "current_a": [
+      1.0,
+      40.0
+    ],
+    "ambient_temp_c": [
+      0.0,
+      80.0
+    ],
+    "h_w_m2k": [
+      8.0,
+      25.0
+    ],
+    "materials": [
+      "Cu",
+      "CuSn6",
+      "CuZn37",
+      "CuBe2"
+    ]
+  },
+  "targets": {
+    "band_median_ae_c": 2.0,
+    "coverage": 0.7
+  }
+}

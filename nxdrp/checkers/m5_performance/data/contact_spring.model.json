@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "contact_spring",
+  "source": "mock://contact_spring",
+  "nx_version": "mock",
+  "units": "mm",
+  "created_at": "2026-10-24",
+  "generator": "nxdrp.checkers.m5_performance",
+  "parts": [
+    {
+      "part_id": "P01",
+      "name": "CONTACT_SPRING",
+      "journal_id": "",
+      "part_file": "",
+      "material": "CuSn6",
+      "body_type": "solid",
+      "is_sheet": false,
+      "volume": 14.4,
+      "mass": null,
+      "area": 54.4,
+      "bbox": {
+        "xmin": 0.0,
+        "ymin": 0.0,
+        "zmin": 0.0,
+        "xmax": 6.0,
+        "ymax": 4.0,
+        "zmax": 0.6
+      },
+      "face_count": 2,
+      "edge_count": 0,
+      "occurrence_path": ""
+    }
+  ],
+  "faces": [
+    {
+      "face_id": "F1",
+      "part_id": "P01",
+      "tag": 1,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 16,
+      "point": [3.0, 2.0, 0.6],
+      "normal": [0.0, 0.0, 1.0],
+      "axis": null,
+      "area": 24.0,
+      "perimeter": 20.0,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [3.0, 2.0, 0.6],
+      "bbox": {
+        "xmin": 0.0,
+        "ymin": 0.0,
+        "zmin": 0.6,
+        "xmax": 6.0,
+        "ymax": 4.0,
+        "zmax": 0.6
+      },
+      "edge_count": 4
+    },
+    {
+      "face_id": "F2",
+      "part_id": "P01",
+      "tag": 2,
+      "solid_face_type": "planar",
+      "solid_face_code": 1,
+      "uf_face_type": 16,
+      "point": [3.0, 2.0, 0.0],
+      "normal": [0.0, 0.0, -1.0],
+      "axis": null,
+      "area": 24.0,
+      "perimeter": 20.0,
+      "radius_diameter": null,
+      "is_radius": true,
+      "cog": [3.0, 2.0, 0.0],
+      "bbox": {
+        "xmin": 0.0,
+        "ymin": 0.0,
+        "zmin": 0.0,
+        "xmax": 6.0,
+        "ymax": 4.0,
+        "zmax": 0.0
+      },
+      "edge_count": 4
+    }
+  ],
+  "edges": [],
+  "occurrences": [],
+  "adjacency": [],
+  "diagnostics": {},
+  "meta": {"note": "手写样例，6×4×0.6 mm，CuSn6"}
+}
