@@ -10,7 +10,7 @@
 | 1 | 宋馨雨 | M2 安规 | `nxdrp/checkers/m2_safety/` | SAF-01 ~ SAF-04 | 4 |
 | 2 | 于大淇 | M6A 钣金 | `nxdrp/checkers/m6a_sheet_metal/` | DFM-19 ~ DFM-26 | 8 |
 | 3 | 代世航 | M3 注塑/铸造 | `nxdrp/checkers/m3_injection/` | DFM-08 ~ DFM-18 | 11 |
-| 4 | 汪琪俊 | M4 装配 | `nxdrp/checkers/m4_assembly/` | DFM-01 ~ DFM-07 | 7 |
+| 4 | 汪琪竣 | M4 装配 | `nxdrp/checkers/m4_assembly/` | DFM-01 ~ DFM-07 | 7 |
 | 5 | 杜滨芳 | M5 性能预测 | `nxdrp/checkers/m5_performance/` | PERF-01, PERF-02 | 2 |
 | 6 | 张百瑞 | M6 机加工 | `nxdrp/checkers/m6b_machining/` | DFM-27 ~ DFM-38 | 12 |
 | 7 | 陈卉妍 | M7 Web 平台 | `nxdrp/checkers/m7_platform_web/` | — | — |
@@ -118,7 +118,7 @@
 
 ---
 
-## 4. 汪琪俊 · M4 装配 DFM
+## 4. 汪琪竣 · M4 装配 DFM
 
 **你要解决什么**
 
@@ -259,7 +259,7 @@
 | 宋馨雨 | SAF-01~04 共 4 项自研全部出结果 + AutoCrear 装好并能跑对照 |
 | 于大淇 | DFM-19~26 共 8 项全部出结果，改表即改判定 |
 | 代世航 | DFM-08~18 共 11 项全部出结果 |
-| 汪琪俊 | DFM-01~07 共 7 项，干涉误报压得住 |
+| 汪琪竣 | DFM-01~07 共 7 项，干涉误报压得住 |
 | 杜滨芳 | ≥300 条样本 + 模型 + 推理接口，给工况能出预测 |
 | 张百瑞 | DFM-27~38 共 12 项，改表即改判定 |
 | 陈卉妍 | 主流程能演示，10 并发不塌 |

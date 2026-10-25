@@ -13,10 +13,12 @@
       "params": {
         "interference_volume_mm3": 0.01,
         "critical_gap_mm": 0.05,
-        "ignore_face_area_below_mm2": 0.1
+        "ignore_face_area_below_mm2": 0.1,
+        "min_overlap_extent_mm": 0.05,
+        "confidence_crude": 0.5
       },
       "version": "0.1",
-      "source_standard": "",
+      "source_standard": "项目工程经验默认值（待甲方工艺工程师确认）",
       "severity": "P1",
       "notes": "两两实体求交，体积>0；需区分硬干涉/临界间隙/碎面虚假干涉",
       "owner": "M4"
@@ -28,10 +30,11 @@
       "name": "最小间隙",
       "enabled": true,
       "params": {
-        "min_clearance_mm": 0.3
+        "min_clearance_mm": 0.3,
+        "confidence_crude": 0.55
       },
       "version": "0.1",
-      "source_standard": "",
+      "source_standard": "项目评测边界，见 docs/DEMO_SCENE.md（待甲方工艺工程师确认）",
       "severity": "P2",
       "notes": "零件间最小距离 < 阈值（默认 0.2~0.5mm，可配）",
       "owner": "M4"
@@ -42,9 +45,15 @@
       "process_type": "assembly",
       "name": "孔对齐",
       "enabled": true,
-      "params": {},
+      "params": {
+        "axis_offset_tolerance_mm": 0.1,
+        "diameter_tolerance_mm": 0.1,
+        "axis_angle_tolerance_deg": 1.0,
+        "candidate_search_radius_mm": 2.0,
+        "candidate_angle_deg": 10.0
+      },
       "version": "0.1",
-      "source_standard": "",
+      "source_standard": "项目工程经验默认值（待甲方工艺工程师确认）",
       "severity": "P2",
       "notes": "跨零件孔轴线同轴度偏差 ≤ 允许值，且公称直径匹配",
       "owner": "M4"
@@ -55,9 +64,14 @@
       "process_type": "assembly",
       "name": "孔/槽对齐",
       "enabled": true,
-      "params": {},
+      "params": {
+        "center_offset_tolerance_mm": 0.2,
+        "axis_angle_tolerance_deg": 1.0,
+        "candidate_search_radius_mm": 3.0,
+        "candidate_angle_deg": 10.0
+      },
       "version": "0.1",
-      "source_standard": "",
+      "source_standard": "项目工程经验默认值（待甲方工艺工程师确认）",
       "severity": "P2",
       "notes": "槽中线与孔轴线偏差 ≤ 允许值",
       "owner": "M4"
@@ -73,7 +87,7 @@
         "tool_envelope_height_mm": 40.0
       },
       "version": "0.1",
-      "source_standard": "",
+      "source_standard": "项目工程经验默认值（待甲方工艺工程师确认）",
       "severity": "P1",
       "notes": "沿螺栓轴线扫掠工具包络，不得与周边件碰撞",
       "owner": "M4"
@@ -89,7 +103,7 @@
         "radial_clearance_mm": 0.5
       },
       "version": "0.1",
-      "source_standard": "",
+      "source_standard": "项目工程经验默认值（待甲方工艺工程师确认）",
       "severity": "P2",
       "notes": "螺栓头/垫圈与周边件的轴向、径向间隙 ≥ 阈值",
       "owner": "M4"
@@ -105,7 +119,7 @@
         "engagement_ratio_plastic": 1.5
       },
       "version": "0.1",
-      "source_standard": "",
+      "source_standard": "项目任务定义默认值，见 docs/TEAM_TASKS.md（待甲方工艺工程师确认）",
       "severity": "P2",
       "notes": "螺纹旋合长度/公称直径 ≥ 1.0（钢）~1.5（铝/塑料）",
       "owner": "M4"
