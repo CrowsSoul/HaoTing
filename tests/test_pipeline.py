@@ -120,7 +120,7 @@ class TestPipeline(unittest.TestCase):
         self.assertGreaterEqual(cov["implemented"], 3)
         self.assertEqual(cov["total"], len(cov["rows"]))
         self.assertIn("M4", cov["by_owner"])
-        self.assertEqual(cov["by_owner"]["M4"]["done"], 1)  # 只有 DFM-02 是示例
+        self.assertEqual(cov["by_owner"]["M4"]["done"], 7)  # M4 DFM-01～DFM-07 已完成
 
 
 class TestRealModelRegression(unittest.TestCase):

@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
-"""M4 装配类 DFM —— 负责人：汪琪俊
+"""M4 装配类 DFM —— 负责人：汪琪竣。"""
 
-本包由 tools/scaffold_team.py 生成。往下面导出你的 checker：
+from .dfm01_interference import InterferenceChecker
+from .dfm02_min_clearance import MinClearanceChecker
+from .dfm03_hole_alignment import HoleAlignmentChecker
+from .dfm04_hole_slot_alignment import HoleSlotAlignmentChecker
+from .dfm05_fastener_accessibility import FastenerAccessibilityChecker
+from .dfm06_fastener_clearance import FastenerClearanceChecker
+from .dfm07_engagement_length import EngagementLengthChecker
 
-    from .my_checker import MyChecker
-    CHECKERS = [MyChecker()]
-
-导出后框架会自动发现，不需要改任何核心文件。
-详细步骤：docs/HOW_TO_ADD_A_CHECKER.md
-"""
-
-# 尚未实现任何 checker 时保持为空列表，框架不会报错。
-CHECKERS = []
+CHECKERS = [
+    InterferenceChecker(), MinClearanceChecker(), HoleAlignmentChecker(),
+    HoleSlotAlignmentChecker(), FastenerAccessibilityChecker(),
+    FastenerClearanceChecker(), EngagementLengthChecker(),
+]

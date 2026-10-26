@@ -34,7 +34,7 @@ class CatalogItem:
 
 
 _RAW = [
-    # ---------------- 装配类（M4 汪琪俊）----------------
+    # ---------------- 装配类（M4 汪琪竣）----------------
     ("DFM-01", "干涉检测", "Interference Detection", "assembly", ("assembly",), "L3", "M4", "一期",
      "两两实体求交，体积>0；需区分硬干涉/临界间隙/碎面虚假干涉"),
     ("DFM-02", "最小间隙", "Minimum Clearance", "assembly", ("assembly",), "L1", "M4", "一期",

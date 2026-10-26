@@ -8,7 +8,7 @@
       examples/              参考实现（可读不可作为最终交付）
       m2_safety/             宋馨雨   安规（SAF-*）
       m3_injection/          代世航   注塑/铸造 DFM（DFM-08 ~ DFM-18）
-      m4_assembly/           汪琪俊   装配 DFM（DFM-01 ~ DFM-07）
+      m4_assembly/           汪琪竣   装配 DFM（DFM-01 ~ DFM-07）
       m5_performance/        杜滨芳   性能预测（PERF-*）
       m6a_sheet_metal/       于大淇   钣金 DFM（DFM-19 ~ DFM-26）
       m6b_machining/         张百瑞   机加工 DFM（DFM-27 ~ DFM-38）
