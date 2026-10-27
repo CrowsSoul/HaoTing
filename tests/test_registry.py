@@ -18,8 +18,8 @@ PLUGIN_SRC = """
 from nxdrp.checkers.base import BaseChecker
 
 class MyCustomChecker(BaseChecker):
-    check_item_id = "DFM-33"
-    name = "顶部圆角（外部插件）"
+    check_item_id = "DFM-99"
+    name = "外部测试检查项（不在 catalog，仅供插件机制测试）"
     version = "9.9"
     default_params = {"hola": 1}
 
@@ -82,8 +82,8 @@ class TestExternalPlugins(unittest.TestCase):
             with open(os.path.join(d, "my_plugin.py"), "w", encoding="utf-8") as fh:
                 fh.write(textwrap.dedent(PLUGIN_SRC))
             reg = discover([d])
-            self.assertIn("DFM-33", reg.ids())
-            self.assertEqual(reg.get("DFM-33").version, "9.9")
+            self.assertIn("DFM-99", reg.ids())
+            self.assertEqual(reg.get("DFM-99").version, "9.9")
 
     def test_env_var_plugin_path(self):
         with tempfile.TemporaryDirectory() as d:
@@ -93,7 +93,7 @@ class TestExternalPlugins(unittest.TestCase):
             os.environ["NXDRP_PLUGIN_PATH"] = d
             try:
                 reg = discover()
-                self.assertIn("DFM-33", reg.ids())
+                self.assertIn("DFM-99", reg.ids())
             finally:
                 if old is None:
                     os.environ.pop("NXDRP_PLUGIN_PATH", None)

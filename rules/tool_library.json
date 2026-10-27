@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "name": "m6b_tool_library",
+  "version": "0.1",
+  "updated_at": "2026-10-22",
+  "notes": "M6B 机加工标准刀具库。checker 不硬编码任何阈值；规则 params 可覆盖本库对应字段。甲方厂内刀具库到位后整表替换。",
+  "drill_diameters_mm": [
+    1.0, 1.2, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0,
+    6.5, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 16.0, 18.0, 20.0
+  ],
+  "endmill_diameters_mm": [
+    1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0, 8.0, 10.0, 12.0, 16.0, 20.0
+  ],
+  "standard_chamfer_angles_deg": [30.0, 45.0, 60.0],
+  "standard_chamfer_sizes_mm": [0.2, 0.3, 0.5, 1.0, 1.5, 2.0],
+  "standard_plane_angles_deg": [0.0, 30.0, 45.0, 60.0, 90.0],
+  "min_tool_diameter_mm": 1.0,
+  "min_tool_radius_mm": 0.5,
+  "sources": {
+    "drill_diameters_mm": "GB/T 6135 直柄麻花钻常用直径系列（经验摘录）",
+    "endmill_diameters_mm": "GB/T 6117 直柄立铣刀常用直径系列（经验摘录）",
+    "standard_chamfer_angles_deg": "厂内常用倒角刀角度（经验值）",
+    "standard_chamfer_sizes_mm": "厂内常用倒角尺寸系列（经验值）",
+    "standard_plane_angles_deg": "常用角度铣削面角度（经验值）",
+    "min_tool_diameter_mm": "可稳定采购的最小刀具直径（经验值）",
+    "min_tool_radius_mm": "标准立铣刀最小刀尖圆角（经验值）"
+  }
+}
