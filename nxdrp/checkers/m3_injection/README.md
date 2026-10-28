@@ -6,6 +6,72 @@
 
 塑料件设计出来，模具不一定做得出来：壁太薄注不满、壁厚不均会缩水、拔模角不够会拉伤、有倒扣模具拔不出来。开一次模几十万，改设计不要钱——这 11 项检查就是在开模之前把这些坑找出来。
 
+## 当前实现状态
+
+DFM-08～DFM-18 均已注册并接入管线，包含正例、负例和阈值边界测试。
+
+| 检查项 | 当前数据来源 | 说明 |
+|---|---|---|
+| DFM-08 / 09 / 10 | 上游 `wall_samples`，否则平行面几何推断 | DFM-09 至少 3 个样本才统计面积占比，避免退化成单值判断 |
+| DFM-11 / 12 | 上游 `ribs`，DFM-12 也可用几何推断的 `bosses` | 模具钢净厚按开模方向的垂直投影计算 |
+| DFM-13 | 平面法向 + `pull_direction` | 统一开模方向，结果为候选缺陷，分型方向须工艺确认 |
+| DFM-14 / 17 | 上游 `undercuts` | 仅凭面法向无法可靠区分倒扣与普通侧壁，缺记录时明确 `skipped` |
+| DFM-15 | 上游 `bosses`，否则圆柱面 + 圆形端盖推断 | 可检查凸台壁厚、顶厚、根部 R/壁厚、侧壁净距 |
+| DFM-16 | 上游 `corners`，否则环面半径粗筛 | 没有圆角语义时只按内圆角阈值提示，不宣称内外角归属 |
+| DFM-18 | 相邻平面的实体二面角 | 可用 `exempt_edge_ids` 配置设计意图边 |
+
+阈值及来源统一维护在公共 `rules/dfm_default.json` 的
+`R-DFM-08`～`R-DFM-18`。checker 代码不保存业务阈值副本。
+
+## 可选上游特征记录
+
+平台契约不允许为 checker 私加字段，因此精确特征放在 `ModelBundle.meta`
+已有的扩展口子中。没有记录时，能几何推断的项会推断并降低置信度；不能可靠推断的项会跳过。
+
+```jsonc
+{
+  "meta": {
+    "m3_features": {
+      "wall_samples": [
+        {"part_id": "P01", "thickness_mm": 1.2, "area_mm2": 80.0,
+         "face_ids": ["F1", "F2"], "location": [10, 5, 2]}
+      ],
+      "ribs": [
+        {"part_id": "P01", "root_thickness_mm": 0.8, "height_mm": 3.0,
+         "face_ids": ["F10"], "location": [10, 5, 3],
+         "origin": "upstream_feature"}
+      ],
+      "bosses": [
+        {"part_id": "P01", "outer_radius_mm": 3.0, "wall_thickness_mm": 1.0,
+         "top_thickness_mm": 0.8, "root_fillet_radius_mm": 0.4,
+         "side_wall_clearance_mm": 2.0, "face_ids": ["F20"],
+         "location": [10, 10, 5], "origin": "upstream_feature"}
+      ],
+      "undercuts": [
+        {"part_id": "P01", "direction": [1, 0, 0], "depth_mm": 1.2,
+         "face_ids": ["F30"], "location": [10, 5, 2]}
+      ],
+      "corners": [
+        {"part_id": "P01", "kind": "inner", "radius_mm": 0.4,
+         "nominal_wall_mm": 2.0, "face_ids": ["F40"],
+         "location": [10, 5, 2], "origin": "upstream_feature"}
+      ]
+    }
+  }
+}
+```
+
+几何推断属于粗筛，Finding 中会写明方法和 `needs_precise_check`。上游特征记录可使用更高置信度。
+
+## 验证命令
+
+```powershell
+python -m nxdrp checkers
+python -m unittest discover -s nxdrp/checkers/m3_injection/tests -v
+python -m unittest discover -s tests
+python -m nxdrp check mockdata/models/pressure_port.model.json -r rules/dfm_default.json --only DFM-13
+```
+
 ## 你负责的检查项
 
 | ID | 名称 | 难度 | 期次 | 判定要点 |
@@ -30,7 +96,7 @@
 
 ```powershell
 python -m nxdrp checkers                                   # 确认自己被认出来了
-python -m nxdrp check mockdata/models/board_a.model.json --only <你的ID>
+python -m nxdrp check mockdata/models/board_a.model.json -r rules/dfm_default.json --only <你的ID>
 python -m unittest discover -s tests
 ```
 

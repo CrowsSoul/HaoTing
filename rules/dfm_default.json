@@ -131,11 +131,27 @@
       "name": "最小壁厚",
       "enabled": true,
       "params": {
-        "material": "PA66",
-        "min_wall_thickness_mm": 0.8
+        "material_min_wall_thickness_mm": {
+          "ABS": 1.2,
+          "PA6": 0.9,
+          "PA66": 0.8,
+          "PBT": 0.8,
+          "PC": 1.5,
+          "PE": 1.0,
+          "POM": 1.0,
+          "PP": 0.8,
+          "PPS": 0.8,
+          "PVC": 1.5
+        },
+        "wall_sample_min_mm": 0.05,
+        "wall_sample_max_mm": 12.0,
+        "min_projected_overlap_ratio": 0.15,
+        "opposing_normal_cos": -0.9,
+        "min_inspect_area_mm2": 0.1,
+        "critical_wall_ratio": 0.75
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "项目 DFM 材料工艺基线 v0.2；待甲方材料库和厂标替换",
       "severity": "P1",
       "notes": "壁厚 < 材料最小壁厚（PC 1.5 / PA66 0.8 / PBT 0.8 …）",
       "owner": "M3"
@@ -149,10 +165,15 @@
       "params": {
         "uniform_ratio_low": 0.8,
         "uniform_ratio_high": 1.25,
-        "max_area_ratio": 0.1
+        "max_area_ratio": 0.1,
+        "min_samples_for_uniformity": 3,
+        "wall_sample_min_mm": 0.05,
+        "wall_sample_max_mm": 12.0,
+        "min_projected_overlap_ratio": 0.15,
+        "opposing_normal_cos": -0.9
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "项目 DFM 均匀壁厚基线 v0.2；待甲方外观件验收标准确认",
       "severity": "P2",
       "notes": "局部壁厚/名义壁厚超出 [0.8,1.25] 的面积占比 > 阈值",
       "owner": "M3"
@@ -163,9 +184,15 @@
       "process_type": "injection",
       "name": "壁厚变化",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
-      "source_standard": "",
+      "params": {
+        "max_gradient_ratio": 0.25,
+        "wall_sample_min_mm": 0.05,
+        "wall_sample_max_mm": 12.0,
+        "min_projected_overlap_ratio": 0.15,
+        "opposing_normal_cos": -0.9
+      },
+      "version": "0.2",
+      "source_standard": "项目 DFM 壁厚过渡经验基线 v0.2",
       "severity": "P2",
       "notes": "相邻区域壁厚梯度超过允许变化率",
       "owner": "M3"
@@ -176,9 +203,19 @@
       "process_type": "injection",
       "name": "加强筋设计",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
-      "source_standard": "",
+      "params": {
+        "max_rib_root_to_wall_ratio": 0.6,
+        "max_rib_height_to_root_ratio": 5.0,
+        "min_samples_for_rib_inference": 3,
+        "inferred_rib_dimension_ratio": 1.5,
+        "inferred_rib_dimension_min_mm": 0.2,
+        "wall_sample_min_mm": 0.05,
+        "wall_sample_max_mm": 12.0,
+        "min_projected_overlap_ratio": 0.15,
+        "opposing_normal_cos": -0.9
+      },
+      "version": "0.2",
+      "source_standard": "项目 DFM 加强筋经验基线 v0.2；待甲方筋位设计规范确认",
       "severity": "P2",
       "notes": "筋根厚/名义壁厚 ≤ 0.5~0.6；筋高/根厚 ≤ 3~5",
       "owner": "M3"
@@ -189,9 +226,25 @@
       "process_type": "injection",
       "name": "模具壁厚",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
-      "source_standard": "",
+      "params": {
+        "min_mold_steel_thickness_mm": 4.0,
+        "pull_direction": [
+          0,
+          0,
+          1
+        ],
+        "infer_bosses_from_geometry": true,
+        "boss_axis_pull_min_dot": 0.8,
+        "boss_cap_normal_min_dot": 0.95,
+        "boss_cap_radius_tolerance_mm": 0.2,
+        "boss_cap_radius_tolerance_ratio": 0.18,
+        "boss_cap_radial_tolerance_mm": 0.25,
+        "boss_cap_radial_tolerance_ratio": 0.12,
+        "boss_cap_end_tolerance_mm": 0.5,
+        "boss_cap_end_tolerance_ratio": 0.08
+      },
+      "version": "0.2",
+      "source_standard": "项目模具钢净厚经验基线 v0.2；待模具供应商复核",
       "severity": "P2",
       "notes": "筋与筋、凸台与凸台之间模具钢厚度 ≥ 阈值",
       "owner": "M3"
@@ -208,10 +261,11 @@
           0,
           1
         ],
-        "min_draft_angle_deg": 0.5
+        "min_draft_angle_deg": 0.5,
+        "angle_tolerance_deg": 1e-6
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "项目 DFM 拔模经验基线 v0.2；开模方向须由工艺确认",
       "severity": "P1",
       "notes": "面法向与开模方向夹角 < 最小拔模角（0.5°~1°）",
       "owner": "M3"
@@ -222,9 +276,11 @@
       "process_type": "injection",
       "name": "倒扣",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
-      "source_standard": "",
+      "params": {
+        "min_undercut_depth_mm": 0.0
+      },
+      "version": "0.2",
+      "source_standard": "倒扣几何以 NX 特征分析/工艺确认为准",
       "severity": "P2",
       "notes": "沿开模方向存在遮挡（面在投影方向互相覆盖）",
       "owner": "M3"
@@ -235,9 +291,32 @@
       "process_type": "injection",
       "name": "凸台设计",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
-      "source_standard": "",
+      "params": {
+        "min_boss_wall_thickness_mm": 0.8,
+        "min_top_thickness_mm": 0.6,
+        "min_root_fillet_to_wall_ratio": 0.25,
+        "min_side_wall_clearance_mm": 1.0,
+        "infer_bosses_from_geometry": true,
+        "pull_direction": [
+          0,
+          0,
+          1
+        ],
+        "boss_axis_pull_min_dot": 0.8,
+        "boss_cap_normal_min_dot": 0.95,
+        "boss_cap_radius_tolerance_mm": 0.2,
+        "boss_cap_radius_tolerance_ratio": 0.18,
+        "boss_cap_radial_tolerance_mm": 0.25,
+        "boss_cap_radial_tolerance_ratio": 0.12,
+        "boss_cap_end_tolerance_mm": 0.5,
+        "boss_cap_end_tolerance_ratio": 0.08,
+        "wall_sample_min_mm": 0.05,
+        "wall_sample_max_mm": 12.0,
+        "min_projected_overlap_ratio": 0.15,
+        "opposing_normal_cos": -0.9
+      },
+      "version": "0.2",
+      "source_standard": "项目 DFM 凸台经验基线 v0.2；待甲方结构设计规范确认",
       "severity": "P2",
       "notes": "凸台根部 R/壁厚、顶部厚度、凸台与侧壁距离",
       "owner": "M3"
@@ -250,10 +329,14 @@
       "enabled": true,
       "params": {
         "inner_radius_ratio": 0.25,
-        "outer_radius_ratio": 0.5
+        "outer_radius_ratio": 0.5,
+        "wall_sample_min_mm": 0.05,
+        "wall_sample_max_mm": 12.0,
+        "min_projected_overlap_ratio": 0.15,
+        "opposing_normal_cos": -0.9
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "项目 DFM 圆角经验基线 v0.2（内 R≥0.25t，外 R≥0.5t）",
       "severity": "P2",
       "notes": "内角缺 R 或 R<0.25t；外角 R<0.5t",
       "owner": "M3"
@@ -264,9 +347,11 @@
       "process_type": "injection",
       "name": "多抽芯方向",
       "enabled": true,
-      "params": {},
-      "version": "0.1",
-      "source_standard": "",
+      "params": {
+        "direction_cluster_angle_deg": 15.0
+      },
+      "version": "0.2",
+      "source_standard": "抽芯方向来自倒扣特征分析，按 15°夹角聚类",
       "severity": "P2",
       "notes": "统计倒扣方向聚类，>1 个主方向则判定需多抽芯",
       "owner": "M3"
@@ -278,10 +363,12 @@
       "name": "尖角",
       "enabled": true,
       "params": {
-        "sharp_angle_deg": 60.0
+        "sharp_angle_deg": 60.0,
+        "angle_tolerance_deg": 1e-6,
+        "exempt_edge_ids": []
       },
-      "version": "0.1",
-      "source_standard": "",
+      "version": "0.2",
+      "source_standard": "项目 DFM 尖角经验基线 v0.2；设计意图边可配置豁免",
       "severity": "P2",
       "notes": "相邻面二面角 < 阈值（如 60°）且非设计意图",
       "owner": "M3"
