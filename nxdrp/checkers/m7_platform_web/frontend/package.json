@@ -1,0 +1,26 @@
+{
+  "name": "nxdrp-m7-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "types": "python ../generate_types.py",
+    "build": "npm run types && vue-tsc --noEmit && vite build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "three": "^0.180.0",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/test-utils": "^2.5.1",
+    "happy-dom": "^21.0.4",
+    "typescript": "~5.9.0",
+    "vite": "^7.1.0",
+    "vitest": "^5.0.5",
+    "vue-tsc": "^3.1.0"
+  }
+}

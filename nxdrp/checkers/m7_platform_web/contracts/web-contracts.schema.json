@@ -1,0 +1,1081 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "BBox": {
+      "type": "object",
+      "properties": {
+        "xmin": {
+          "type": "number"
+        },
+        "ymin": {
+          "type": "number"
+        },
+        "zmin": {
+          "type": "number"
+        },
+        "xmax": {
+          "type": "number"
+        },
+        "ymax": {
+          "type": "number"
+        },
+        "zmax": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "xmin",
+        "ymin",
+        "zmin",
+        "xmax",
+        "ymax",
+        "zmax"
+      ]
+    },
+    "Part": {
+      "type": "object",
+      "properties": {
+        "part_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "journal_id": {
+          "type": "string"
+        },
+        "part_file": {
+          "type": "string"
+        },
+        "material": {
+          "type": "string"
+        },
+        "body_type": {
+          "type": "string"
+        },
+        "is_sheet": {
+          "type": "boolean"
+        },
+        "volume": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mass": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "area": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BBox"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "face_count": {
+          "type": "integer"
+        },
+        "edge_count": {
+          "type": "integer"
+        },
+        "occurrence_path": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "part_id",
+        "name",
+        "journal_id",
+        "part_file",
+        "material",
+        "body_type",
+        "is_sheet",
+        "volume",
+        "mass",
+        "area",
+        "bbox",
+        "face_count",
+        "edge_count",
+        "occurrence_path"
+      ]
+    },
+    "Face": {
+      "type": "object",
+      "properties": {
+        "face_id": {
+          "type": "string"
+        },
+        "part_id": {
+          "type": "string"
+        },
+        "tag": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "solid_face_type": {
+          "type": "string"
+        },
+        "solid_face_code": {
+          "type": "integer"
+        },
+        "uf_face_type": {
+          "type": "integer"
+        },
+        "point": {
+          "anyOf": [
+            {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "normal": {
+          "anyOf": [
+            {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "axis": {
+          "anyOf": [
+            {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "area": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "perimeter": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "radius_diameter": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "is_radius": {
+          "type": "boolean"
+        },
+        "cog": {
+          "anyOf": [
+            {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BBox"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "edge_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "face_id",
+        "part_id",
+        "tag",
+        "solid_face_type",
+        "solid_face_code",
+        "uf_face_type",
+        "point",
+        "normal",
+        "axis",
+        "area",
+        "perimeter",
+        "radius_diameter",
+        "is_radius",
+        "cog",
+        "bbox",
+        "edge_count"
+      ]
+    },
+    "Edge": {
+      "type": "object",
+      "properties": {
+        "edge_id": {
+          "type": "string"
+        },
+        "part_id": {
+          "type": "string"
+        },
+        "tag": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "curve_type": {
+          "type": "string"
+        },
+        "length": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BBox"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "face_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "edge_id",
+        "part_id",
+        "tag",
+        "curve_type",
+        "length",
+        "bbox",
+        "face_ids"
+      ]
+    },
+    "Occurrence": {
+      "type": "object",
+      "properties": {
+        "occurrence_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "part_ref": {
+          "type": "string"
+        },
+        "parent": {
+          "type": "string"
+        },
+        "transform": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BBox"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "occurrence_id",
+        "name",
+        "part_ref",
+        "parent",
+        "transform",
+        "bbox"
+      ]
+    },
+    "ModelBundle": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "nx_version": {
+          "type": "string"
+        },
+        "units": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "generator": {
+          "type": "string"
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Part"
+          }
+        },
+        "faces": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Face"
+          }
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Edge"
+          }
+        },
+        "occurrences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Occurrence"
+          }
+        },
+        "adjacency": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "diagnostics": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "meta": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      },
+      "required": [
+        "model_id",
+        "source",
+        "nx_version",
+        "units",
+        "created_at",
+        "generator",
+        "schema_version",
+        "parts",
+        "faces",
+        "edges",
+        "occurrences",
+        "adjacency",
+        "diagnostics",
+        "meta"
+      ]
+    },
+    "Rule": {
+      "type": "object",
+      "properties": {
+        "rule_id": {
+          "type": "string"
+        },
+        "check_item_id": {
+          "type": "string"
+        },
+        "process_type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "params": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "version": {
+          "type": "string"
+        },
+        "source_standard": {
+          "type": "string"
+        },
+        "severity": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "rule_id",
+        "check_item_id",
+        "process_type",
+        "name",
+        "enabled",
+        "params",
+        "version",
+        "source_standard",
+        "severity",
+        "notes",
+        "owner"
+      ]
+    },
+    "RuleBook": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Rule"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "schema_version",
+        "updated_at",
+        "rules"
+      ]
+    },
+    "Evidence": {
+      "type": "object",
+      "properties": {
+        "face_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "edge_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "screenshot_ref": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "face_ids",
+        "edge_ids",
+        "screenshot_ref",
+        "note"
+      ]
+    },
+    "Suggestion": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "param_delta": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "rule_ref": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "param_delta",
+        "rule_ref"
+      ]
+    },
+    "Detector": {
+      "type": "object",
+      "properties": {
+        "module": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "runtime_ms": {
+          "type": "number"
+        },
+        "params_digest": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "module",
+        "version",
+        "runtime_ms",
+        "params_digest"
+      ]
+    },
+    "Finding": {
+      "type": "object",
+      "properties": {
+        "finding_id": {
+          "type": "string"
+        },
+        "check_item_id": {
+          "type": "string"
+        },
+        "check_item_name": {
+          "type": "string"
+        },
+        "process_type": {
+          "type": "string"
+        },
+        "severity": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "number"
+        },
+        "part_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "location": {
+          "anyOf": [
+            {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BBox"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "path_points": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "measured_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit": {
+          "type": "string"
+        },
+        "threshold_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "deviation": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/Evidence"
+        },
+        "suggestion": {
+          "$ref": "#/$defs/Suggestion"
+        },
+        "detector": {
+          "$ref": "#/$defs/Detector"
+        },
+        "message": {
+          "type": "string"
+        },
+        "extra": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      },
+      "required": [
+        "finding_id",
+        "check_item_id",
+        "check_item_name",
+        "process_type",
+        "severity",
+        "confidence",
+        "part_refs",
+        "location",
+        "bbox",
+        "path_points",
+        "measured_value",
+        "unit",
+        "threshold_value",
+        "deviation",
+        "evidence",
+        "suggestion",
+        "detector",
+        "message",
+        "extra"
+      ]
+    },
+    "CheckerResult": {
+      "type": "object",
+      "properties": {
+        "check_item_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "module": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "runtime_ms": {
+          "type": "number"
+        },
+        "finding_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "check_item_id",
+        "name",
+        "module",
+        "version",
+        "owner",
+        "status",
+        "reason",
+        "runtime_ms",
+        "finding_count"
+      ]
+    },
+    "CheckRun": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "type": "string"
+        },
+        "started_at": {
+          "type": "string"
+        },
+        "finished_at": {
+          "type": "string"
+        },
+        "elapsed_ms": {
+          "type": "number"
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Finding"
+          }
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/CheckerResult"
+          }
+        },
+        "load_errors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": {}
+          }
+        },
+        "rulebook": {
+          "type": "string"
+        },
+        "rulebook_version": {
+          "type": "string"
+        },
+        "framework_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "model_id",
+        "started_at",
+        "finished_at",
+        "elapsed_ms",
+        "findings",
+        "results",
+        "load_errors",
+        "rulebook",
+        "rulebook_version",
+        "framework_version"
+      ]
+    },
+    "Task": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "model_id": {
+          "type": "string"
+        },
+        "filename": {
+          "type": "string"
+        },
+        "rulebook_id": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "only": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "state": {
+          "type": "string"
+        },
+        "stage": {
+          "type": "string"
+        },
+        "started_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "finished_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "elapsed_ms": {
+          "type": "number"
+        },
+        "completed_items": {
+          "type": "integer"
+        },
+        "total_items": {
+          "type": "integer"
+        },
+        "current_item": {
+          "type": "string"
+        },
+        "error": {
+          "type": "string"
+        },
+        "report_state": {
+          "type": "string"
+        },
+        "report_error": {
+          "type": "string"
+        },
+        "queue_position": {
+          "type": "integer"
+        },
+        "summary": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": {}
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "model_id",
+        "filename",
+        "rulebook_id",
+        "created_at",
+        "only",
+        "state",
+        "stage",
+        "started_at",
+        "finished_at",
+        "elapsed_ms",
+        "completed_items",
+        "total_items",
+        "current_item",
+        "error",
+        "report_state",
+        "report_error",
+        "queue_position",
+        "summary"
+      ]
+    },
+    "DisplayMesh": {
+      "type": "object",
+      "properties": {
+        "vertices": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "triangles": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "face_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "units": {
+          "type": "string"
+        },
+        "coordinate_space": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "vertices",
+        "triangles",
+        "face_ids",
+        "units",
+        "coordinate_space"
+      ]
+    }
+  }
+}
