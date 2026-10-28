@@ -1,0 +1,279 @@
+{
+  "schema_version": "2.0",
+  "standard": "IEC 60664-1:2020",
+  "edition": "3.0",
+  "source_document": "IEC 60664-1-2020 .pdf",
+  "status": "transcribed_from_user_provided_standard_for_rules",
+  "units": {
+    "voltage": "V unless the field name ends with _kv",
+    "distance": "mm",
+    "altitude": "m",
+    "pressure": "kPa"
+  },
+  "scope_notes": [
+    "电气间隙不是由材料组别决定：先按 Table F.1 由额定电压和过电压类别得到额定冲击耐受电压，再按 Table F.2 由冲击耐受电压、场条件和污染等级得到电气间隙。",
+    "爬电距离不是由过电压类别决定：按 5.3.2 和 Table F.5，由工作电压、污染等级和材料组别得到爬电距离。",
+    "污染等级 4 下存在持续导电污染，4.5.3 明确规定不能给出爬电距离尺寸；因此本文件对污染等级 4 的爬电距离记录为 null，并注明标准条款，而不编造数值。",
+    "Table F.5 中材料组 III 的数值同时适用于 IIIa 和 IIIb；但脚注 b 不建议在污染等级 3 且电压高于 630 V 时使用材料组 IIIb。",
+    "Table F.5 允许对中间工作电压进行线性插值，见脚注 e 和 5.3.4、5.3.5。"
+  ],
+  "material_groups": {
+    "source_clause": "5.3.2.4",
+    "rows": [
+      {"group": "I", "cti_min": 600, "cti_max_exclusive": null, "source": "IEC 60664-1:2020, 5.3.2.4"},
+      {"group": "II", "cti_min": 400, "cti_max_exclusive": 600, "source": "IEC 60664-1:2020, 5.3.2.4"},
+      {"group": "IIIa", "cti_min": 175, "cti_max_exclusive": 400, "source": "IEC 60664-1:2020, 5.3.2.4"},
+      {"group": "IIIb", "cti_min": 100, "cti_max_exclusive": 175, "source": "IEC 60664-1:2020, 5.3.2.4"}
+    ]
+  },
+  "pollution_degrees": {
+    "source_clause": "4.5.2 and 4.5.3",
+    "rows": [
+      {"degree": 1, "description": "无污染或仅有干燥、非导电污染", "source": "IEC 60664-1:2020, 4.5.2"},
+      {"degree": 2, "description": "通常仅有非导电污染，偶尔因凝露产生暂时导电性", "source": "IEC 60664-1:2020, 4.5.2"},
+      {"degree": 3, "description": "存在导电污染，或干燥非导电污染因预期凝露而变为导电", "source": "IEC 60664-1:2020, 4.5.2"},
+      {"degree": 4, "description": "导电粉尘、雨水或其他潮湿条件造成持续导电", "source": "IEC 60664-1:2020, 4.5.2"}
+    ]
+  },
+  "tables": {
+    "F.1": {
+      "title": "Rated impulse withstand voltage for equipment energized directly from the mains supply",
+      "standard_page": 68,
+      "rows": [
+        {
+          "voltage_line_to_neutral_max_v": 50,
+          "nominal_three_phase_v": [],
+          "nominal_single_phase_v": [],
+          "rated_impulse_withstand_v": {"I": 330, "II": 500, "III": 800, "IV": 1500},
+          "source_table": "Table F.1"
+        },
+        {
+          "voltage_line_to_neutral_max_v": 100,
+          "nominal_three_phase_v": [],
+          "nominal_single_phase_v": [],
+          "rated_impulse_withstand_v": {"I": 500, "II": 800, "III": 1500, "IV": 2500},
+          "source_table": "Table F.1"
+        },
+        {
+          "voltage_line_to_neutral_max_v": 150,
+          "nominal_three_phase_v": [],
+          "nominal_single_phase_v": ["120-240"],
+          "rated_impulse_withstand_v": {"I": 800, "II": 1500, "III": 2500, "IV": 4000},
+          "source_table": "Table F.1"
+        },
+        {
+          "voltage_line_to_neutral_max_v": 300,
+          "nominal_three_phase_v": ["230/400", "277/480"],
+          "nominal_single_phase_v": [],
+          "rated_impulse_withstand_v": {"I": 1500, "II": 2500, "III": 4000, "IV": 6000},
+          "source_table": "Table F.1"
+        },
+        {
+          "voltage_line_to_neutral_max_v": 600,
+          "nominal_three_phase_v": ["400/690"],
+          "nominal_single_phase_v": [],
+          "rated_impulse_withstand_v": {"I": 2500, "II": 4000, "III": 6000, "IV": 8000},
+          "source_table": "Table F.1"
+        },
+        {
+          "voltage_line_to_neutral_max_v": 1000,
+          "nominal_three_phase_v": ["1000"],
+          "nominal_single_phase_v": [],
+          "rated_impulse_withstand_v": {"I": 4000, "II": 6000, "III": 8000, "IV": 12000},
+          "source_table": "Table F.1"
+        },
+        {
+          "voltage_line_to_neutral_max_v": 1250,
+          "nominal_three_phase_v": [],
+          "nominal_single_phase_v": [">1000-1250 DC"],
+          "dc_only": true,
+          "rated_impulse_withstand_v": {"I": 4000, "II": 6000, "III": 8000, "IV": 12000},
+          "source_table": "Table F.1"
+        },
+        {
+          "voltage_line_to_neutral_max_v": 1500,
+          "nominal_three_phase_v": [],
+          "nominal_single_phase_v": [">1250-1500 DC"],
+          "dc_only": true,
+          "rated_impulse_withstand_v": {"I": 6000, "II": 8000, "III": 10000, "IV": 15000},
+          "source_table": "Table F.1"
+        }
+      ]
+    },
+    "F.2": {
+      "title": "Clearances to withstand transient overvoltages",
+      "standard_page": 69,
+      "conditions": {
+        "altitude_max_m": 2000,
+        "case_a": "inhomogeneous field",
+        "case_b": "homogeneous field",
+        "pollution_degree_4_rule": "Use pollution degree 3 dimensions, but the minimum clearance is 1.6 mm (Table F.2 footnote e)."
+      },
+      "rows": [
+        {"required_impulse_withstand_kv": 0.33, "case_a_mm": {"pd1": 0.01, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "case_b_mm": {"pd1": 0.01, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 0.4, "case_a_mm": {"pd1": 0.02, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "case_b_mm": {"pd1": 0.02, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 0.5, "case_a_mm": {"pd1": 0.04, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "case_b_mm": {"pd1": 0.04, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 0.6, "case_a_mm": {"pd1": 0.06, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "case_b_mm": {"pd1": 0.06, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 0.8, "case_a_mm": {"pd1": 0.1, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "case_b_mm": {"pd1": 0.1, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 1.0, "case_a_mm": {"pd1": 0.15, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "case_b_mm": {"pd1": 0.15, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 1.2, "case_a_mm": {"pd1": 0.25, "pd2": 0.25, "pd3": 0.8, "pd4": 1.6}, "case_b_mm": {"pd1": 0.2, "pd2": 0.2, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 1.5, "case_a_mm": {"pd1": 0.5, "pd2": 0.5, "pd3": 0.8, "pd4": 1.6}, "case_b_mm": {"pd1": 0.3, "pd2": 0.3, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 2.0, "case_a_mm": {"pd1": 1.0, "pd2": 1.0, "pd3": 1.0, "pd4": 1.6}, "case_b_mm": {"pd1": 0.45, "pd2": 0.45, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 2.5, "case_a_mm": {"pd1": 1.5, "pd2": 1.5, "pd3": 1.5, "pd4": 1.6}, "case_b_mm": {"pd1": 0.6, "pd2": 0.6, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 3.0, "case_a_mm": {"pd1": 2.0, "pd2": 2.0, "pd3": 2.0, "pd4": 2.0}, "case_b_mm": {"pd1": 0.8, "pd2": 0.8, "pd3": 0.8, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 4.0, "case_a_mm": {"pd1": 3.0, "pd2": 3.0, "pd3": 3.0, "pd4": 3.0}, "case_b_mm": {"pd1": 1.2, "pd2": 1.2, "pd3": 1.2, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 5.0, "case_a_mm": {"pd1": 4.0, "pd2": 4.0, "pd3": 4.0, "pd4": 4.0}, "case_b_mm": {"pd1": 1.5, "pd2": 1.5, "pd3": 1.5, "pd4": 1.6}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 6.0, "case_a_mm": {"pd1": 5.5, "pd2": 5.5, "pd3": 5.5, "pd4": 5.5}, "case_b_mm": {"pd1": 2.0, "pd2": 2.0, "pd3": 2.0, "pd4": 2.0}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 8.0, "case_a_mm": {"pd1": 8.0, "pd2": 8.0, "pd3": 8.0, "pd4": 8.0}, "case_b_mm": {"pd1": 3.0, "pd2": 3.0, "pd3": 3.0, "pd4": 3.0}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 10.0, "case_a_mm": {"pd1": 11.0, "pd2": 11.0, "pd3": 11.0, "pd4": 11.0}, "case_b_mm": {"pd1": 3.5, "pd2": 3.5, "pd3": 3.5, "pd4": 3.5}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 12.0, "case_a_mm": {"pd1": 14.0, "pd2": 14.0, "pd3": 14.0, "pd4": 14.0}, "case_b_mm": {"pd1": 4.5, "pd2": 4.5, "pd3": 4.5, "pd4": 4.5}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 15.0, "case_a_mm": {"pd1": 18.0, "pd2": 18.0, "pd3": 18.0, "pd4": 18.0}, "case_b_mm": {"pd1": 5.5, "pd2": 5.5, "pd3": 5.5, "pd4": 5.5}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 20.0, "case_a_mm": {"pd1": 25.0, "pd2": 25.0, "pd3": 25.0, "pd4": 25.0}, "case_b_mm": {"pd1": 8.0, "pd2": 8.0, "pd3": 8.0, "pd4": 8.0}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 25.0, "case_a_mm": {"pd1": 33.0, "pd2": 33.0, "pd3": 33.0, "pd4": 33.0}, "case_b_mm": {"pd1": 10.0, "pd2": 10.0, "pd3": 10.0, "pd4": 10.0}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 30.0, "case_a_mm": {"pd1": 40.0, "pd2": 40.0, "pd3": 40.0, "pd4": 40.0}, "case_b_mm": {"pd1": 12.5, "pd2": 12.5, "pd3": 12.5, "pd4": 12.5}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 40.0, "case_a_mm": {"pd1": 60.0, "pd2": 60.0, "pd3": 60.0, "pd4": 60.0}, "case_b_mm": {"pd1": 17.0, "pd2": 17.0, "pd3": 17.0, "pd4": 17.0}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 50.0, "case_a_mm": {"pd1": 75.0, "pd2": 75.0, "pd3": 75.0, "pd4": 75.0}, "case_b_mm": {"pd1": 22.0, "pd2": 22.0, "pd3": 22.0, "pd4": 22.0}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 60.0, "case_a_mm": {"pd1": 90.0, "pd2": 90.0, "pd3": 90.0, "pd4": 90.0}, "case_b_mm": {"pd1": 27.0, "pd2": 27.0, "pd3": 27.0, "pd4": 27.0}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 80.0, "case_a_mm": {"pd1": 130.0, "pd2": 130.0, "pd3": 130.0, "pd4": 130.0}, "case_b_mm": {"pd1": 35.0, "pd2": 35.0, "pd3": 35.0, "pd4": 35.0}, "source_table": "Table F.2"},
+        {"required_impulse_withstand_kv": 100.0, "case_a_mm": {"pd1": 170.0, "pd2": 170.0, "pd3": 170.0, "pd4": 170.0}, "case_b_mm": {"pd1": 45.0, "pd2": 45.0, "pd3": 45.0, "pd4": 45.0}, "source_table": "Table F.2"}
+      ]
+    },
+    "F.3": {
+      "title": "Single-phase three-wire or two-wire AC or DC systems",
+      "standard_page": 70,
+      "rows": [
+        {"nominal_mains_v": "12.5", "rationalized_line_to_line_v": 12.5, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "24 or 25", "rationalized_line_to_line_v": 25, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "30", "rationalized_line_to_line_v": 32, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "42, 48 or 50", "rationalized_line_to_line_v": 50, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "60", "rationalized_line_to_line_v": 63, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "30-60, three-wire midpoint earthed", "rationalized_line_to_line_v": 63, "rationalized_line_to_earth_v": 32, "source_table": "Table F.3"},
+        {"nominal_mains_v": "100", "rationalized_line_to_line_v": 100, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "110 or 120", "rationalized_line_to_line_v": 125, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "150", "rationalized_line_to_line_v": 160, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "200", "rationalized_line_to_line_v": 200, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "100-200, three-wire midpoint earthed", "rationalized_line_to_line_v": 200, "rationalized_line_to_earth_v": 100, "source_table": "Table F.3"},
+        {"nominal_mains_v": "220", "rationalized_line_to_line_v": 250, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "110-220 or 120-240, three-wire midpoint earthed", "rationalized_line_to_line_v": 250, "rationalized_line_to_earth_v": 125, "source_table": "Table F.3"},
+        {"nominal_mains_v": "300", "rationalized_line_to_line_v": 320, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "220-440, three-wire midpoint earthed", "rationalized_line_to_line_v": 500, "rationalized_line_to_earth_v": 250, "source_table": "Table F.3"},
+        {"nominal_mains_v": "600", "rationalized_line_to_line_v": 630, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "480-960, three-wire midpoint earthed", "rationalized_line_to_line_v": 1000, "rationalized_line_to_earth_v": 500, "source_table": "Table F.3"},
+        {"nominal_mains_v": "1000", "rationalized_line_to_line_v": 1000, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"},
+        {"nominal_mains_v": "1500 DC", "rationalized_line_to_line_v": 1500, "rationalized_line_to_earth_v": null, "source_table": "Table F.3"}
+      ]
+    },
+    "F.4": {
+      "title": "Three-phase four-wire or three-wire AC systems",
+      "standard_page": 71,
+      "rows": [
+        {"nominal_mains_v": "60", "line_to_line_v": 63, "line_to_earth_neutral_earthed_v": 32, "line_to_earth_unearthed_or_corner_earthed_v": 63, "source_table": "Table F.4"},
+        {"nominal_mains_v": "110, 120 or 127", "line_to_line_v": 125, "line_to_earth_neutral_earthed_v": 80, "line_to_earth_unearthed_or_corner_earthed_v": 125, "source_table": "Table F.4"},
+        {"nominal_mains_v": "150", "line_to_line_v": 160, "line_to_earth_neutral_earthed_v": null, "line_to_earth_unearthed_or_corner_earthed_v": 160, "source_table": "Table F.4"},
+        {"nominal_mains_v": "200", "line_to_line_v": 200, "line_to_earth_neutral_earthed_v": null, "line_to_earth_unearthed_or_corner_earthed_v": 200, "source_table": "Table F.4"},
+        {"nominal_mains_v": "208", "line_to_line_v": 200, "line_to_earth_neutral_earthed_v": 125, "line_to_earth_unearthed_or_corner_earthed_v": 200, "source_table": "Table F.4"},
+        {"nominal_mains_v": "220, 230 or 240", "line_to_line_v": 250, "line_to_earth_neutral_earthed_v": 160, "line_to_earth_unearthed_or_corner_earthed_v": 250, "source_table": "Table F.4"},
+        {"nominal_mains_v": "300", "line_to_line_v": 320, "line_to_earth_neutral_earthed_v": null, "line_to_earth_unearthed_or_corner_earthed_v": 320, "source_table": "Table F.4"},
+        {"nominal_mains_v": "380, 400 or 415", "line_to_line_v": 400, "line_to_earth_neutral_earthed_v": 250, "line_to_earth_unearthed_or_corner_earthed_v": 400, "source_table": "Table F.4"},
+        {"nominal_mains_v": "440", "line_to_line_v": 500, "line_to_earth_neutral_earthed_v": 250, "line_to_earth_unearthed_or_corner_earthed_v": 500, "source_table": "Table F.4"},
+        {"nominal_mains_v": "480 or 500", "line_to_line_v": 500, "line_to_earth_neutral_earthed_v": 320, "line_to_earth_unearthed_or_corner_earthed_v": 500, "source_table": "Table F.4"},
+        {"nominal_mains_v": "575", "line_to_line_v": 630, "line_to_earth_neutral_earthed_v": 400, "line_to_earth_unearthed_or_corner_earthed_v": 630, "source_table": "Table F.4"},
+        {"nominal_mains_v": "600", "line_to_line_v": 630, "line_to_earth_neutral_earthed_v": null, "line_to_earth_unearthed_or_corner_earthed_v": 630, "source_table": "Table F.4"},
+        {"nominal_mains_v": "660 or 690", "line_to_line_v": 630, "line_to_earth_neutral_earthed_v": 400, "line_to_earth_unearthed_or_corner_earthed_v": 630, "source_table": "Table F.4"},
+        {"nominal_mains_v": "720 or 830", "line_to_line_v": 800, "line_to_earth_neutral_earthed_v": 500, "line_to_earth_unearthed_or_corner_earthed_v": 800, "source_table": "Table F.4"},
+        {"nominal_mains_v": "960", "line_to_line_v": 1000, "line_to_earth_neutral_earthed_v": 630, "line_to_earth_unearthed_or_corner_earthed_v": 1000, "source_table": "Table F.4"},
+        {"nominal_mains_v": "1000", "line_to_line_v": 1000, "line_to_earth_neutral_earthed_v": null, "line_to_earth_unearthed_or_corner_earthed_v": 1000, "source_table": "Table F.4"}
+      ]
+    },
+    "F.5": {
+      "title": "Creepage distances to avoid failure due to tracking",
+      "standard_pages": [72, 73],
+      "columns": {
+        "pwm_pd1_all_mm": "Printed wiring material, pollution degree 1, all material groups",
+        "pwm_pd2_except_IIIb_mm": "Printed wiring material, pollution degree 2, all material groups except IIIb",
+        "pd1_all_mm": "Other insulating material, pollution degree 1, all material groups",
+        "pd2_I_mm": "Pollution degree 2, material group I",
+        "pd2_II_mm": "Pollution degree 2, material group II",
+        "pd2_III_mm": "Pollution degree 2, material groups IIIa and IIIb",
+        "pd3_I_mm": "Pollution degree 3, material group I",
+        "pd3_II_mm": "Pollution degree 3, material group II",
+        "pd3_III_mm": "Pollution degree 3, material groups IIIa and IIIb"
+      },
+      "rows": [
+        {"voltage_rms_v": 10, "pwm_pd1_all_mm": 0.025, "pwm_pd2_except_IIIb_mm": 0.04, "pd1_all_mm": 0.08, "pd2_I_mm": 0.4, "pd2_II_mm": 0.4, "pd2_III_mm": 0.4, "pd3_I_mm": 1.0, "pd3_II_mm": 1.0, "pd3_III_mm": 1.0, "source_table": "Table F.5"},
+        {"voltage_rms_v": 12.5, "pwm_pd1_all_mm": 0.025, "pwm_pd2_except_IIIb_mm": 0.04, "pd1_all_mm": 0.09, "pd2_I_mm": 0.42, "pd2_II_mm": 0.42, "pd2_III_mm": 0.42, "pd3_I_mm": 1.05, "pd3_II_mm": 1.05, "pd3_III_mm": 1.05, "source_table": "Table F.5"},
+        {"voltage_rms_v": 16, "pwm_pd1_all_mm": 0.025, "pwm_pd2_except_IIIb_mm": 0.04, "pd1_all_mm": 0.1, "pd2_I_mm": 0.45, "pd2_II_mm": 0.45, "pd2_III_mm": 0.45, "pd3_I_mm": 1.1, "pd3_II_mm": 1.1, "pd3_III_mm": 1.1, "source_table": "Table F.5"},
+        {"voltage_rms_v": 20, "pwm_pd1_all_mm": 0.025, "pwm_pd2_except_IIIb_mm": 0.04, "pd1_all_mm": 0.11, "pd2_I_mm": 0.48, "pd2_II_mm": 0.48, "pd2_III_mm": 0.48, "pd3_I_mm": 1.2, "pd3_II_mm": 1.2, "pd3_III_mm": 1.2, "source_table": "Table F.5"},
+        {"voltage_rms_v": 25, "pwm_pd1_all_mm": 0.025, "pwm_pd2_except_IIIb_mm": 0.04, "pd1_all_mm": 0.125, "pd2_I_mm": 0.5, "pd2_II_mm": 0.5, "pd2_III_mm": 0.5, "pd3_I_mm": 1.25, "pd3_II_mm": 1.25, "pd3_III_mm": 1.25, "source_table": "Table F.5"},
+        {"voltage_rms_v": 32, "pwm_pd1_all_mm": 0.025, "pwm_pd2_except_IIIb_mm": 0.04, "pd1_all_mm": 0.14, "pd2_I_mm": 0.53, "pd2_II_mm": 0.53, "pd2_III_mm": 0.53, "pd3_I_mm": 1.3, "pd3_II_mm": 1.3, "pd3_III_mm": 1.3, "source_table": "Table F.5"},
+        {"voltage_rms_v": 40, "pwm_pd1_all_mm": 0.025, "pwm_pd2_except_IIIb_mm": 0.04, "pd1_all_mm": 0.16, "pd2_I_mm": 0.56, "pd2_II_mm": 0.8, "pd2_III_mm": 1.1, "pd3_I_mm": 1.4, "pd3_II_mm": 1.6, "pd3_III_mm": 1.8, "source_table": "Table F.5"},
+        {"voltage_rms_v": 50, "pwm_pd1_all_mm": 0.025, "pwm_pd2_except_IIIb_mm": 0.04, "pd1_all_mm": 0.18, "pd2_I_mm": 0.6, "pd2_II_mm": 0.85, "pd2_III_mm": 1.2, "pd3_I_mm": 1.5, "pd3_II_mm": 1.7, "pd3_III_mm": 1.9, "source_table": "Table F.5"},
+        {"voltage_rms_v": 63, "pwm_pd1_all_mm": 0.04, "pwm_pd2_except_IIIb_mm": 0.063, "pd1_all_mm": 0.2, "pd2_I_mm": 0.63, "pd2_II_mm": 0.9, "pd2_III_mm": 1.25, "pd3_I_mm": 1.6, "pd3_II_mm": 1.8, "pd3_III_mm": 2.0, "source_table": "Table F.5"},
+        {"voltage_rms_v": 80, "pwm_pd1_all_mm": 0.063, "pwm_pd2_except_IIIb_mm": 0.1, "pd1_all_mm": 0.22, "pd2_I_mm": 0.67, "pd2_II_mm": 0.95, "pd2_III_mm": 1.3, "pd3_I_mm": 1.7, "pd3_II_mm": 1.9, "pd3_III_mm": 2.1, "source_table": "Table F.5"},
+        {"voltage_rms_v": 100, "pwm_pd1_all_mm": 0.1, "pwm_pd2_except_IIIb_mm": 0.16, "pd1_all_mm": 0.25, "pd2_I_mm": 0.71, "pd2_II_mm": 1.0, "pd2_III_mm": 1.4, "pd3_I_mm": 1.8, "pd3_II_mm": 2.0, "pd3_III_mm": 2.2, "source_table": "Table F.5"},
+        {"voltage_rms_v": 125, "pwm_pd1_all_mm": 0.16, "pwm_pd2_except_IIIb_mm": 0.25, "pd1_all_mm": 0.28, "pd2_I_mm": 0.75, "pd2_II_mm": 1.05, "pd2_III_mm": 1.5, "pd3_I_mm": 1.9, "pd3_II_mm": 2.1, "pd3_III_mm": 2.4, "source_table": "Table F.5"},
+        {"voltage_rms_v": 160, "pwm_pd1_all_mm": 0.25, "pwm_pd2_except_IIIb_mm": 0.4, "pd1_all_mm": 0.32, "pd2_I_mm": 0.8, "pd2_II_mm": 1.1, "pd2_III_mm": 1.6, "pd3_I_mm": 2.0, "pd3_II_mm": 2.2, "pd3_III_mm": 2.5, "source_table": "Table F.5"},
+        {"voltage_rms_v": 200, "pwm_pd1_all_mm": 0.4, "pwm_pd2_except_IIIb_mm": 0.63, "pd1_all_mm": 0.42, "pd2_I_mm": 1.0, "pd2_II_mm": 1.4, "pd2_III_mm": 2.0, "pd3_I_mm": 2.5, "pd3_II_mm": 2.8, "pd3_III_mm": 3.2, "source_table": "Table F.5"},
+        {"voltage_rms_v": 250, "pwm_pd1_all_mm": 0.56, "pwm_pd2_except_IIIb_mm": 1.0, "pd1_all_mm": 0.56, "pd2_I_mm": 1.25, "pd2_II_mm": 1.8, "pd2_III_mm": 2.5, "pd3_I_mm": 3.2, "pd3_II_mm": 3.6, "pd3_III_mm": 4.0, "source_table": "Table F.5"},
+        {"voltage_rms_v": 320, "pwm_pd1_all_mm": 0.75, "pwm_pd2_except_IIIb_mm": 1.6, "pd1_all_mm": 0.75, "pd2_I_mm": 1.6, "pd2_II_mm": 2.2, "pd2_III_mm": 3.2, "pd3_I_mm": 4.0, "pd3_II_mm": 4.5, "pd3_III_mm": 5.0, "source_table": "Table F.5"},
+        {"voltage_rms_v": 400, "pwm_pd1_all_mm": 1.0, "pwm_pd2_except_IIIb_mm": 2.0, "pd1_all_mm": 1.0, "pd2_I_mm": 2.0, "pd2_II_mm": 2.8, "pd2_III_mm": 4.0, "pd3_I_mm": 5.0, "pd3_II_mm": 5.6, "pd3_III_mm": 6.3, "source_table": "Table F.5"},
+        {"voltage_rms_v": 500, "pwm_pd1_all_mm": 1.3, "pwm_pd2_except_IIIb_mm": 2.5, "pd1_all_mm": 1.3, "pd2_I_mm": 2.5, "pd2_II_mm": 3.6, "pd2_III_mm": 5.0, "pd3_I_mm": 6.3, "pd3_II_mm": 7.1, "pd3_III_mm": 8.0, "pd3_rib_reduced_mm": {"I": null, "II": null, "III": 7.9}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 630, "pwm_pd1_all_mm": 1.8, "pwm_pd2_except_IIIb_mm": 3.2, "pd1_all_mm": 1.8, "pd2_I_mm": 3.2, "pd2_II_mm": 4.5, "pd2_III_mm": 6.3, "pd3_I_mm": 8.0, "pd3_II_mm": 9.0, "pd3_III_mm": 10.0, "pd3_rib_reduced_mm": {"I": 7.9, "II": 8.4, "III": 9.0}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 800, "pwm_pd1_all_mm": 2.4, "pwm_pd2_except_IIIb_mm": 4.0, "pd1_all_mm": 2.4, "pd2_I_mm": 4.0, "pd2_II_mm": 5.6, "pd2_III_mm": 8.0, "pd3_I_mm": 10.0, "pd3_II_mm": 11.0, "pd3_III_mm": 12.5, "pd3_rib_reduced_mm": {"I": 9.0, "II": 9.6, "III": 10.2}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 1000, "pwm_pd1_all_mm": 3.2, "pwm_pd2_except_IIIb_mm": 5.0, "pd1_all_mm": 3.2, "pd2_I_mm": 5.0, "pd2_II_mm": 7.1, "pd2_III_mm": 10.0, "pd3_I_mm": 12.5, "pd3_II_mm": 14.0, "pd3_III_mm": 16.0, "pd3_rib_reduced_mm": {"I": 10.2, "II": 11.2, "III": 12.8}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 1250, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 4.2, "pd2_I_mm": 6.3, "pd2_II_mm": 9.0, "pd2_III_mm": 12.5, "pd3_I_mm": 16.0, "pd3_II_mm": 18.0, "pd3_III_mm": 20.0, "pd3_rib_reduced_mm": {"I": 12.8, "II": 14.4, "III": 16.0}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 1600, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 5.6, "pd2_I_mm": 8.0, "pd2_II_mm": 11.0, "pd2_III_mm": 16.0, "pd3_I_mm": 20.0, "pd3_II_mm": 22.0, "pd3_III_mm": 25.0, "pd3_rib_reduced_mm": {"I": 16.0, "II": 17.6, "III": 20.0}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 2000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 7.5, "pd2_I_mm": 10.0, "pd2_II_mm": 14.0, "pd2_III_mm": 20.0, "pd3_I_mm": 25.0, "pd3_II_mm": 28.0, "pd3_III_mm": 32.0, "pd3_rib_reduced_mm": {"I": 20.0, "II": 22.4, "III": 25.6}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 2500, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 10.0, "pd2_I_mm": 12.5, "pd2_II_mm": 18.0, "pd2_III_mm": 25.0, "pd3_I_mm": 32.0, "pd3_II_mm": 36.0, "pd3_III_mm": 40.0, "pd3_rib_reduced_mm": {"I": 25.6, "II": 28.8, "III": 32.0}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 3200, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 12.5, "pd2_I_mm": 16.0, "pd2_II_mm": 22.0, "pd2_III_mm": 32.0, "pd3_I_mm": 40.0, "pd3_II_mm": 45.0, "pd3_III_mm": 50.0, "pd3_rib_reduced_mm": {"I": 32.0, "II": 36.0, "III": 40.0}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 4000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 16.0, "pd2_I_mm": 20.0, "pd2_II_mm": 28.0, "pd2_III_mm": 40.0, "pd3_I_mm": 50.0, "pd3_II_mm": 56.0, "pd3_III_mm": 63.0, "pd3_rib_reduced_mm": {"I": 40.0, "II": 44.8, "III": 50.4}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 5000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 20.0, "pd2_I_mm": 25.0, "pd2_II_mm": 36.0, "pd2_III_mm": 50.0, "pd3_I_mm": 63.0, "pd3_II_mm": 71.0, "pd3_III_mm": 80.0, "pd3_rib_reduced_mm": {"I": 50.4, "II": 56.8, "III": 64.0}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 6300, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 25.0, "pd2_I_mm": 32.0, "pd2_II_mm": 45.0, "pd2_III_mm": 63.0, "pd3_I_mm": 80.0, "pd3_II_mm": 90.0, "pd3_III_mm": 100.0, "pd3_rib_reduced_mm": {"I": 64.0, "II": 72.0, "III": 80.0}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 8000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 32.0, "pd2_I_mm": 40.0, "pd2_II_mm": 56.0, "pd2_III_mm": 80.0, "pd3_I_mm": 100.0, "pd3_II_mm": 110.0, "pd3_III_mm": 125.0, "pd3_rib_reduced_mm": {"I": 80.0, "II": 88.0, "III": 100.0}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 10000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 40.0, "pd2_I_mm": 50.0, "pd2_II_mm": 71.0, "pd2_III_mm": 100.0, "pd3_I_mm": 125.0, "pd3_II_mm": 140.0, "pd3_III_mm": 160.0, "pd3_rib_reduced_mm": {"I": 100.0, "II": 112.0, "III": 128.0}, "source_table": "Table F.5"},
+        {"voltage_rms_v": 12500, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 50.0, "pd2_I_mm": 63.0, "pd2_II_mm": 90.0, "pd2_III_mm": 125.0, "pd3_I_mm": null, "pd3_II_mm": null, "pd3_III_mm": null, "provisional_data": true, "source_table": "Table F.5"},
+        {"voltage_rms_v": 16000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 63.0, "pd2_I_mm": 80.0, "pd2_II_mm": 110.0, "pd2_III_mm": 160.0, "pd3_I_mm": null, "pd3_II_mm": null, "pd3_III_mm": null, "provisional_data": true, "source_table": "Table F.5"},
+        {"voltage_rms_v": 20000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 80.0, "pd2_I_mm": 100.0, "pd2_II_mm": 140.0, "pd2_III_mm": 200.0, "pd3_I_mm": null, "pd3_II_mm": null, "pd3_III_mm": null, "provisional_data": true, "source_table": "Table F.5"},
+        {"voltage_rms_v": 25000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 100.0, "pd2_I_mm": 125.0, "pd2_II_mm": 180.0, "pd2_III_mm": 250.0, "pd3_I_mm": null, "pd3_II_mm": null, "pd3_III_mm": null, "provisional_data": true, "source_table": "Table F.5"},
+        {"voltage_rms_v": 32000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 125.0, "pd2_I_mm": 160.0, "pd2_II_mm": 220.0, "pd2_III_mm": 320.0, "pd3_I_mm": null, "pd3_II_mm": null, "pd3_III_mm": null, "provisional_data": true, "source_table": "Table F.5"},
+        {"voltage_rms_v": 40000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 160.0, "pd2_I_mm": 200.0, "pd2_II_mm": 280.0, "pd2_III_mm": 400.0, "pd3_I_mm": null, "pd3_II_mm": null, "pd3_III_mm": null, "provisional_data": true, "source_table": "Table F.5"},
+        {"voltage_rms_v": 50000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 200.0, "pd2_I_mm": 250.0, "pd2_II_mm": 360.0, "pd2_III_mm": 500.0, "pd3_I_mm": null, "pd3_II_mm": null, "pd3_III_mm": null, "provisional_data": true, "source_table": "Table F.5"},
+        {"voltage_rms_v": 63000, "pwm_pd1_all_mm": null, "pwm_pd2_except_IIIb_mm": null, "pd1_all_mm": 250.0, "pd2_I_mm": 320.0, "pd2_II_mm": 450.0, "pd2_III_mm": 600.0, "pd3_I_mm": null, "pd3_II_mm": null, "pd3_III_mm": null, "provisional_data": true, "source_table": "Table F.5"}
+      ],
+      "pollution_degree_4": {
+        "values_mm": null,
+        "reason": "Creepage dimensions cannot be specified where permanently conductive pollution is present.",
+        "source": "IEC 60664-1:2020, 4.5.3"
+      }
+    },
+    "F.10": {
+      "title": "Altitude correction factors for clearance correction",
+      "standard_page": 76,
+      "rows": [
+        {"altitude_m": 0, "distance_correction_factor": 0.784, "source_table": "Table F.10"},
+        {"altitude_m": 200, "distance_correction_factor": 0.803, "source_table": "Table F.10"},
+        {"altitude_m": 500, "distance_correction_factor": 0.833, "source_table": "Table F.10"},
+        {"altitude_m": 1000, "distance_correction_factor": 0.884, "source_table": "Table F.10"},
+        {"altitude_m": 2000, "distance_correction_factor": 1.0, "source_table": "Table F.10"}
+      ]
+    },
+    "A.2": {
+      "title": "Altitude correction factors for clearance correction",
+      "annex_type": "informative",
+      "standard_page": 52,
+      "rows": [
+        {"altitude_m": 2000, "normal_barometric_pressure_kpa": 80.0, "clearance_multiplication_factor": 1.0, "source_table": "Table A.2"},
+        {"altitude_m": 3000, "normal_barometric_pressure_kpa": 70.0, "clearance_multiplication_factor": 1.14, "source_table": "Table A.2"},
+        {"altitude_m": 4000, "normal_barometric_pressure_kpa": 62.0, "clearance_multiplication_factor": 1.29, "source_table": "Table A.2"},
+        {"altitude_m": 5000, "normal_barometric_pressure_kpa": 54.0, "clearance_multiplication_factor": 1.48, "source_table": "Table A.2"},
+        {"altitude_m": 6000, "normal_barometric_pressure_kpa": 47.0, "clearance_multiplication_factor": 1.7, "source_table": "Table A.2"},
+        {"altitude_m": 7000, "normal_barometric_pressure_kpa": 41.0, "clearance_multiplication_factor": 1.95, "source_table": "Table A.2"},
+        {"altitude_m": 8000, "normal_barometric_pressure_kpa": 35.5, "clearance_multiplication_factor": 2.25, "source_table": "Table A.2"},
+        {"altitude_m": 9000, "normal_barometric_pressure_kpa": 30.5, "clearance_multiplication_factor": 2.62, "source_table": "Table A.2"},
+        {"altitude_m": 10000, "normal_barometric_pressure_kpa": 26.5, "clearance_multiplication_factor": 3.02, "source_table": "Table A.2"},
+        {"altitude_m": 15000, "normal_barometric_pressure_kpa": 12.0, "clearance_multiplication_factor": 6.67, "source_table": "Table A.2"},
+        {"altitude_m": 20000, "normal_barometric_pressure_kpa": 5.5, "clearance_multiplication_factor": 14.5, "source_table": "Table A.2"}
+      ]
+    }
+  }
+}
